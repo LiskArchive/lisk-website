@@ -1,0 +1,108 @@
+@include style_separator(test, global, admin) {
+	//---jQuery UI---*/
+
+	.ui-helper-hidden {
+		display: none;
+	}
+
+	.ui-helper-hidden-accessible {
+		z-index: 5000;
+		position: absolute;
+		opacity: 0;
+		left: 0;
+		color: transparent;
+		visibility: hidden;
+	}
+
+	//-------------------------------------------------------ui-dialog
+	.ui-dialog {
+		z-index: 1000;
+		position: absolute;
+		display: none;
+		outline: 0;
+
+		.no_animation & {
+			display: none !important;
+		}
+	}
+
+	.dialog_global {
+
+	}
+
+	.ui-resizable-handle {
+		display: none !important;
+	}
+
+	.ui-widget-overlay {
+		z-index: 500;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		//	background: #fff;
+		background: transparentize(#293b47, .6);
+	}
+
+	.ui-helper-clearfix {
+		display: block;
+		&:after {
+			display: block;
+			height: 0;
+			clear: both;
+			content: "";
+			visibility: hidden;
+		}
+	}
+
+	.ui-dialog-titlebar-close {
+		.dialog_close_butt_mod_1 & {
+			// виды крестиков закрытия
+		}
+
+		.no_close_mod & {
+			display: none !important;
+		}
+
+		.no_title_mod & {
+		}
+
+	}
+
+	.ui-dialog-titlebar {
+		.dialog_g_size_1 & {
+			//на этот класс подвязывать размеры всех элементов диалога
+		}
+
+	}
+
+	.ui-dialog-title {
+		.no_title_mod & {
+			font-size: 0 !important;
+		}
+
+		.dialog_colorschema_1_mod & {
+			//создать цветовую схему
+		}
+	}
+
+	.ui-dialog-content {
+		position: relative;
+
+		.no_title_mod & {
+			border-radius: 6px;
+		}
+
+		.dialog_g_size_1 & {
+		}
+	}
+
+	.dialog_g_butt_wrap {
+
+	}
+
+
+	//---------------------------------------------------------------------ui-dialog
+
+}

@@ -1,0 +1,334 @@
+<main class="wrapper h_screen">
+    <div class="base">
+        <div class="section white_section">
+            <div class="section_inner"><a href="https://twitter.com/intent/tweet?text=Take%20a%20look%20at%20decentralized%20platform%20features!&amp;url=http://crypti.me/features" target="_blank" class="material-icons consensus_btn">share</a>
+                <div class="feature_counter_block">
+                    <div class="feature_counter_unit">
+                        <!--<h2 class="feature_counter_value text_green">1,000,000+</h2>
+                        <div class="feature_counter_info">Blocks</div>-->
+                        <h2 class="feature_counter_value text_green">~ XCR</h2>
+                        <div class="feature_counter_info">collected</div>
+                    </div>
+                    <div class="feature_counter_unit">
+                        <!--<h2 class="feature_counter_value text_violet">1,500+</h2>
+                        <div class="feature_counter_info">Registered Users</div>-->
+                        <h2 class="feature_counter_value text_violet">~ BTC</h2>
+                        <div class="feature_counter_info">collected</div>
+                    </div>
+                    <div class="feature_counter_unit">
+                        <!--<h2 class="feature_counter_value text_blue">{{market}}</h2>
+                        <div class="feature_counter_info">USD Marketcap</div>-->              
+                        <h2 class="feature_counter_value text_blue">~ ETH</h2>
+                        <div class="feature_counter_info">collected</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-step='1' class="section gray_section stepSection">
+            <div class="section_inner">
+                <div class="deploy_dapps">
+                    <div class="section_caption text_center">Deploy your dapps</div>
+                    <div class="sub_caption text_gray_2 text_center">Three simple steps to your own dapp on the Lisk network</div>
+                    <div class="deploy_steps">
+                        <div class="deploy_step stepBtn step_1"><i class="material-icons">phonelink</i>
+                            <p>Step 1</p>
+                            <div class="deploy_step_name">Code</div>
+                        </div>
+                        <div class="deploy_step stepBtn step_2"><i class="material-icons">cloud_upload</i>
+                            <p>Step 2</p>
+                            <div class="deploy_step_name">Deploy</div>
+                        </div>
+                        <div class="deploy_step stepBtn step_3"><i class="material-icons">device_hub</i>
+                            <p>Step 3</p>
+                            <div class="deploy_step_name">Compute</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section step_section stepSlider">
+            <div class="step_unit step_1">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Build Incredible Applications</h2>
+                                <p>All applications can be built from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, all dapps are open source to allow for peer reviews and are run in the Lisk VM to ensure they are safe to run on any node.</p><a href="/features" class="btn_v2 step_feature_btn fw_600">Our Features</a>
+                            </div>
+                        </div>
+                        <div class="step_code_block">
+                            <div class="code_window">
+                                <div class="code_window_btns"></div>
+                                <div class="code_lines">
+                                    <div class="code_line_index">1</div>
+                                    <div class="code_line_index">2</div>
+                                    <div class="code_line_index">3</div>
+                                    <div class="code_line_index">4</div>
+                                    <div class="code_line_index">5</div>
+                                    <div class="code_line_index">6</div>
+                                    <div class="code_line_index">7</div>
+                                    <div class="code_line_index">8</div>
+                                    <div class="code_line_index">9</div>
+                                    <div class="code_line_index">10</div>
+                                    <div class="code_line_index">11</div>
+                                    <div class="code_line_index">12</div>
+                                    <div class="code_line_index">13</div>
+                                    <div class="code_line_index">14</div>
+                                    <div class="code_line_index">15</div>
+                                    <div class="code_line_index">16</div>
+                                    <div class="code_line_index">17</div>
+                                    <div class="code_line_index">18</div>
+                                    <div class="code_line_index">19</div>
+                                    <div class="code_line_index">20</div>
+                                    <div class="code_line_index">21</div>
+                                    <div class="code_line_index">22</div>
+                                    <div class="code_line_index">23</div>
+                                    <div class="code_line_index">24</div>
+                                    <div class="code_line_index">25</div>
+                                    <div class="code_line_index">26</div>
+                                    <div class="code_line_index">27</div>
+                                    <div class="code_line_index">28</div>
+                                    <div class="code_line_index">29</div>
+                                    <div class="code_line_index">30</div>
+                                </div>
+                                <div class="code_container">
+                                  <pre><code class="codeHighlight">// Decentralized Application ============
+
+var sandbox = process.binding('sandbox');
+
+sandbox.sendMessage({
+    call: "dapps#receive",
+    args: {body: "Hello Lisk!"}
+});
+
+sandbox.onMessage(function (msg, cb) {
+    console.log("receive message from lisk", msg.body);
+    cb();
+});
+
+// lisk ======================
+
+var sandbox = new Sandbox("index.js", dappId, function (msg, cb) {
+    console.log("receive message from dapp " + dappId, msg.body);
+    cb();
+}, true);
+
+sandbox.sendMessage({body: "Hello dapp!"});
+
+sandbox.run();</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step_unit step_2">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Easy, Rapid Deployment</h2>
+                                <p>The Lisk network allows for a multitude of storage options for your applications. Easily deploy your code to services such as GitHub or Sia for seamless integration. </p><!--<a href="#" class="btn_v2 step_feature_btn fw_600">Read more</a>-->
+                            </div>
+                            <figure class="step_figure">
+                                <p><img src="i/step_2.png" alt="Upload to one of the following services"></p>
+                                <!--figcaption Upload to one of the following services-->
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step_unit step_3">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Unlock the Power of the Lisk Network</h2>
+                                <p>The Lisk network is a decentralized powerhouse. By utilizing our extensive base of nodes, you can execute your code through servers all over the world in a truly decentralized manner.</p><!--<a href="#" class="btn_v2 step_feature_btn fw_600">Read more</a>-->
+                            </div>
+                            <ul class="work_process">
+                                <li class="work_process_step">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="i/process_step_1.png" alt="Store your code on GitHub or our Sia integration."></p>
+                                        <figcaption>Store your code on GitHub or our Sia integration.</figcaption>
+                                    </figure>
+                                </li>
+                                <li class="work_process_step work_process_step_2">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="i/process_step_2.png" alt="Utilize the Lisk master nodes to execute the code."></p>
+                                        <figcaption>Utilize the Lisk master nodes to execute the code.</figcaption>
+                                    </figure>
+                                </li>
+                                <li class="work_process_step work_process_step_3">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="i/process_step_3.png" alt="Serve up a seamless experience to users like any other app."></p>
+                                        <figcaption>Serve up a seamless experience to users like any other app.</figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section gray_section">
+            <div class="section_content text_block">
+                <div class="dapp_slider_holder">
+                    <div class="slider_prev material-icons">chevron_left</div>
+                    <div class="slider_next material-icons">chevron_right</div>
+                    <div class="dapp_slider dappSlider">
+                      <div class="dapp_slide">
+                          <div class="deploy_dapps_info">
+                              <div class="section_caption text_gray">On all Platforms</div>
+                              <p class="text_center">Lisk's Decentralized Applications operate on their own unique sidechain to keep the main blockchain small and efficient. The sidechains can run with up to 10 second block times.</p>
+                          </div>
+                          <div class="dapp_slide_img"><img src="/i/process_step_3.png" alt="Sidechains"/></div>
+                      </div>
+                      <div class="dapp_slide">
+                          <div class="deploy_dapps_info">
+                              <div class="section_caption text_gray">Dapp Store</div>
+                              <p class="text_center">Lisk's Decentralized Applications operate on their own unique sidechain to keep the main blockchain small and efficient. The sidechains can run with up to 10 second block times.</p>
+                          </div>
+                          <div class="dapp_slide_img"><img src="/i/process_step_1.png" alt="Sidechains"/></div>
+                      </div>
+                      <div class="dapp_slide">
+                          <div class="deploy_dapps_info">
+                              <div class="section_caption text_gray">Decentralized Applications</div>
+                              <p class="text_center">Lisk's Decentralized Applications operate on their own unique sidechain to keep the main blockchain small and efficient. The sidechains can run with up to 10 second block times.</p>
+                          </div>
+                          <div class="dapp_slide_img"><img src="/i/process_step_2.png" alt="Sidechains"/></div>
+                      </div>
+                      <div class="dapp_slide">
+                          <div class="deploy_dapps_info">
+                              <div class="section_caption text_gray">Sidechains</div>
+                              <p class="text_center">Lisk's Decentralized Applications operate on their own unique sidechain to keep the main blockchain small and efficient. The sidechains can run with up to 10 second block times.</p>
+                          </div>
+                          <div class="dapp_slide_img"><img src="/i/process_step_1.png" alt="Sidechains"/></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="section_inner dapp_store_info">
+                  <!--<div class="section_inner">
+                    <div class="sub_caption">Discover Lisk Dapps in our Dapp Store!</div><a href="http://dappstore.me" class="btn_v2 dapp_store_btn fw_600">Visit Dapp Store</a>
+                  </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="investNow" class="section black_section">
+            <div class="section_inner clearfix">
+                <div class="section_content text_block">
+                    <div class="section_caption text_center text_white">Invest Now</div>
+                    <p class="text_center text_white_2">You can invest with Bitcoin (BTC), Crypti (XCR), and Ethereum (ETH). Read how below! </p>
+                    <p class="text_center text_white_2 section_caption"><span id="countdown">31 days, 10 hours, 14 minutes, 22 seconds</span></p>
+                    <div class="graph_legend">
+                        <p>Be part of the Lisk, the decentralized application and custom sidechain platform for JavaScript developers.</p>
+                        <p class="text_center text_white_2">Example text. All applications can be built from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition.</p>
+                        <p class="text_center text_white_2"><a href="/ico" class="btn_v2 step_feature_btn fw_600">Invest Now</a></p></div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="section black_section">
+            <div class="section_inner clearfix">
+                <div class="section_content text_block">
+                    <div class="section_caption text_center text_white">Dapps are the next paradigm shift</div>
+                    <p class="text_center text_white_2">Lisk will be the missing link for your everyday applications to become decentralized</p>
+                    <div id="graph_1" class="graph_holder"></div>
+                    <div class="graph_legend">
+                        <p>Technology should no longer be in the hands of governments, wealthy organizations, or centralized powers. Instead, the future resides in the hands of the people. </p>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="section clearfix white_section">
+            <div class="section_inner">
+                <div class="dapps_update_block">
+                    <div class="section_caption text_center text_gray">Lisk Updates</div>
+                    <div class="sub_caption text_center">Stay up to date by subscribing to our newsletter. Promise, we don’t spam.	</div>
+                    <div class="container mailchimp">
+                      <div id="mc_embed_signup" class="update_subscribe_form clearfix">
+                          <form action="//crypti.us10.list-manage.com/subscribe/post?u=b7d7499dd3c4545eecc738fe1&amp;id=e4dec53f70" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                              <div id="mc_embed_signup_scroll">
+                                  <div class="mc-field-group form_cell">
+                                      <input type="email" placeholder="Your email" value="" name="EMAIL" class="f_input input_v1" id="mce-EMAIL">
+                                  </div>
+                                  <div id="mce-responses" class="clear">
+                                      <div class="response" id="mce-error-response" style="display:none"></div>
+                                      <div class="response" id="mce-success-response" style="display:none"></div>
+                                  </div>
+                                  <div class="clear form_cell text_center">
+                                  <input type="submit" value="Subscribe" name="Sign me up!" id="mc-embedded-subscribe" class="btn_v2 subscribe_btn blue_btn fw_600"></div>
+                                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_b7d7499dd3c4545eecc738fe1_e4dec53f70" tabindex="-1" value=""></div>
+                              </div>
+                          </form>
+                      </div>
+                             {{> social }}
+                      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="section gray_section">
+            <div class="section_inner">
+                <div class="section_content clearfix text_block">
+                    <div class="partners_block">
+                        <div class="section_caption text_center text_gray">Our great partnerships</div>
+                        <ul class="partners_list">
+                            {{#each partners}}
+                            <li class="partners_item"><a href="{{site}}" target="_blank" class="partners_link"><img src="{{image}}" alt="{{name}}"></a></li>
+                            {{/each}}
+                        </ul>
+                        <div class="sub_caption text_center">Interested in becoming a partner? Tell us your plans!</div>
+                        <div class="form_cell text_center">
+                            <a href="/become-a-partner" class="btn_v2 partner_btn fw_600">Become a Partner</a>
+                        </div>
+                    </div>
+                    <div class="partners_review_block">
+                        <div class="sub_caption text_center">See what they are saying about us</div>
+                        <div class="review_slider_holder">
+                            <div class="review_slider clearfix reviewSlider">
+                                <div class="review_slide text_center">
+                                    <div class="review_text">
+                                        <p>“..” </p>
+                                    </div>
+                                    <div class="review_author fw_600 text_violet">Name</div>
+                                </div>
+                                <div class="review_slide text_center">
+                                    <div class="review_text">
+                                        <p>“..” </p>
+                                    </div>
+                                    <div class="review_author fw_600 text_violet">Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section white_section">
+            <div class="section_inner">
+                <div class="section_content clearfix">
+                    <div class="as_seen_block">
+                        <div class="section_caption text_center text_gray">As seen in</div>
+                        <ul class="partners_list">
+                          <li class="partners_item"><a href="" class="partners_link"><img src="" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        {{> footer }}
+    </div>
+    <div class="hero_block text_center">
+        <div class="abs_container">
+            <div class="bg_video_wrapper">
+            </div>
+            <div class="gl_table_cell">
+                <div class="section_inner">
+                    <h1 class="hero_title">IPO starting soon</h1>
+                    <div class="hero_text">Be a part of the decentralized application movement!</div> <a href="https://login.lisk.io/" class="btn_v2 hero_btn fw_600 partner_btn">Try out Lisk</a> <a href="#" id="investNowBtn" class="btn_v2 hero_btn fw_600 ">Invest Now</a> <!--class discoverBtn-->
+                </div>
+            </div>
+        </div>
+        {{> menu }}
+    </div>
+</main>

@@ -1,0 +1,170 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a, input, label, textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin                      : 0;
+	padding                     : 0;
+	border                      : 0;
+	outline                     : 0;
+	font-size                   : 100%;
+	vertical-align              : baseline;
+	background                  : transparent;
+	-webkit-box-sizing          : border-box;
+	-moz-box-sizing             : border-box;
+	box-sizing                  : border-box;
+	-webkit-tap-highlight-color : rgba(0, 0, 0, 0);
+	
+	&:before,
+	&:after {
+		-webkit-box-sizing : border-box;
+		-moz-box-sizing    : border-box;
+		box-sizing         : border-box;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight : 400;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin     : 0;
+	padding    : 0;
+	border     : 0;
+	outline    : 0;
+	font-size  : 100%;
+	background : transparent;
+}
+
+article, aside, details, figcaption, figure, main,
+footer, header, hgroup, menu, nav, section {
+	display : block;
+}
+
+ol, ul {
+	list-style : none;
+}
+
+blockquote, q {
+	quotes : none;
+}
+
+blockquote {
+	&:before, &:after {
+		content : '';
+		content : none;
+	}
+}
+
+q {
+	&:before, &:after {
+		content : '';
+		content : none;
+	}
+}
+
+:focus {
+	outline : 0;
+}
+
+textarea {
+	resize : none;
+}
+
+ins {
+	text-decoration : none;
+}
+
+del {
+	text-decoration : line-through;
+}
+
+table {
+	border-collapse : collapse;
+	border-spacing  : 0;
+}
+
+//-------------------------------------------------reset*/
+
+/*----------------------------------form elements*/
+input, select {
+	vertical-align : middle;
+}
+
+textarea {
+	resize     : none;
+	overflow-y : auto;
+}
+
+input[type="radio"] {
+	vertical-align : text-bottom;
+}
+
+input[type="checkbox"] {
+	vertical-align : bottom;
+}
+
+input,
+textarea {
+	margin     : 0;
+	padding    : 0;
+	border     : 0;
+	background : none;
+}
+
+input:hover, input:focus, input:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline : none;
+}
+
+input[type="submit"] {
+	cursor : pointer;
+}
+
+button {
+	border  : none;
+	padding : 0;
+	margin  : 0;
+	cursor  : pointer;
+}
+
+button:focus, button:active {
+	outline : none;
+}
+
+input,
+textarea {
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing    : border-box;
+	box-sizing         : border-box;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color : $placeholder_color;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color : $placeholder_color;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+	color : rgba(0, 0, 0, 0) !important;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+	color : rgba(0, 0, 0, 0) !important;
+}
+
+/*-----------------------------form elements###*/

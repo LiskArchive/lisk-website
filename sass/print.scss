@@ -1,0 +1,180 @@
+@media print {
+	html, body {
+		min-width: 600px !important;
+	}
+	.wrapper, .base, .main_row {
+		padding: 0 !important;
+		margin: 0 !important;
+		color: #000 !important;
+		overflow: visible !important;
+		background: none !important;
+		min-width: 600px !important;
+	}
+	.content_row {
+		padding: 0 !important;
+		margin: 0 !important;
+		color: #000 !important;
+		overflow: visible !important;
+		background: none !important;
+		min-width: 600px !important;
+		width: 99% !important;
+		float: none !important;
+	}
+	.portfolio_h_line, .blog_line, .services_h_line {
+		color: #000 !important;
+		font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	}
+	.primary_row, .header, .footer, .en_ver {
+		display: none !important;
+	}
+	.portfolio {
+		&:before, &:after {
+			display: none !important;
+		}
+	}
+	.blog {
+		&:before, &:after {
+			display: none !important;
+		}
+	}
+	.services {
+		&:before, &:after {
+			display: none !important;
+		}
+	}
+	.our_projects {
+		&:before, &:after {
+			display: none !important;
+		}
+	}
+	.portfolio_carusel, .circle, .wrapper:before, .portfolio_all, .blog_all, .section_description div.s_d_wrap {
+		display: none !important;
+	}
+	.portfolio, .blog, .services, .our_projects {
+		background: none !important;
+	}
+	.section_description {
+		background: none !important;
+		&:after, &:before {
+			background: none !important;
+		}
+	}
+	.portfolio_sub_hline, .portfolio_link, .portfolio_text {
+		color: #000 !important;
+	}
+	.print_head, .print_footer {
+		display: block;
+		//padding: 10px 0;*/
+	}
+	.print_head {
+		height: 60px;
+		border-bottom: 3px solid #000;
+		left: 0;
+		padding: 0 0 3px 0;
+		top: 0;
+		width: 99%;
+		margin-bottom: 20px;
+		img {
+			display: block;
+			top: 0;
+			left: 20px;
+		}
+	}
+	.print_footer {
+		height: 30px;
+		border-top: 3px solid #000;
+		left: 0;
+		padding: 10px 0 0 0;
+		top: 0;
+		width: 99%;
+	}
+	.inner .print_footer, .article .print_footer {
+		margin-top: 30px !important;
+	}
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+	}
+	a {
+		color: #444 !important;
+		text-decoration: underline;
+		&:visited {
+			color: #444 !important;
+			text-decoration: underline;
+		}
+		&:after {
+			content: " (" attr(href) ")";
+		}
+	}
+	abbr:after {
+		content: " (" attr(title) ")";
+	}
+	.ir a:after, .o_p_h_line a:after, .portfolio_desc .img a:after, .portfolio_carusel .p_c_l_item a:after, .gallery_3 .g3_item a:after, .mod_1 a:after, .entry-meta a:after, .entry-content a:after, .comment-author a:after {
+		content: "";
+	}
+	// Don't show links for images */
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	// css-discuss.incutio.com/wiki/Printing_Tables */
+	tr, img {
+		page-break-inside: avoid;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	li {
+		list-style: disc inside;
+	}
+	.o_p_list li, .services_list li, .blog_list li, .produkt_slide_list li, .p_c_list li, .gallery_3 li, .list_terms li, .static_butt_block li {
+		list-style: none !important;
+	}
+	.commentlist {
+		li, .children li {
+			list-style: none !important;
+		}
+	}
+	.section_description .s_d_wrap {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.additionally {
+		ul {
+			padding-left: 0px;
+		}
+		li {
+			padding-left: 9px;
+		}
+	}
+	.portfolio, .blog, .services, .our_projects {
+		background: none;
+		color: #000 !important;
+	}
+	.s_butt_b_link {
+		background: none;
+		color: #000 !important;
+		&:before, &:after {
+			background: none;
+			color: #000 !important;
+		}
+	}
+	//.portfolio_carusel, .p_c_wrap, .p_c_list, .p_c_l_item, .portfolio_nav, .p_c_left, .p_c_right {
+//		  display: block !important;
+//	  }
+//	  .p_c_l_link_back {
+//		  display: none !important;
+//	  }*/
+}

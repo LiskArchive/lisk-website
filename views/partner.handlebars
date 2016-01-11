@@ -1,0 +1,173 @@
+<main class="wrapper h_420">
+    <div class="base">
+        <div class="section gray_section">
+            <div class="section_inner">
+                <div class="partner_section text_block"><a href="#partner_section" class="material-icons become_partner_btn scrollTo">arrow_back</a>
+                    <div class="about_block">
+                        <div class="section_caption text_gray">Benefits of Becoming a Crypti Partner</div>
+                        <p>Crypti is a revolutionary technology that allows for the creation, deployment, and distribution of cutting edge decentralized applications through an easy to use interface. If you have an idea for a new application or have already built something that you think can help push the Crypti network forward into new territory, we would love to hear from you! </p>
+                        <p>As a partner of the Crypti Foundation, we can offer you direct assistance in integrating with our technology. The Crypti network brings with it an evolutionary experience through our custom wallet and dapp store that come built in with a user base consisting of thousands of users just waiting for new content to absorb. We love to support new and exciting applications and technology so don’t hesitate to reach out to us with your ideas! </p>
+                        <p class="text_center_mob btns_v1"><a href="http://forum.crypti.me" class="btn_v2 news_btn blue_btn fw_600" target="_blank">Our Forum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="partner_section" class="section white_section">
+            <div class="section_inner">
+                <div class="partner_section text_block">
+                    <div class="about_block">
+                        <div class="section_caption text_gray">Apply for Partnership</div>
+                        <div class="form_v1 label_hidden">
+                            <form id="partner_form" onsubmit="return false;">
+                                <div class="form_cell half_cell">
+                                    <label for="partner_name" class="form_label">Name</label>
+                                    <input type="text" id="partner_name" placeholder="Name" name="name" pattern=".{1,}" maxlength="64" class="form_input" required>
+                                       <div id="partner_inline_error_name" class="partner_error"></div>
+                                </div>
+                                <div class="form_cell half_cell">
+                                    <label for="partner_email" class="form_label">Email</label>
+                                    <input id="partner_email" type="email" placeholder="Email" name="email" pattern=".{1,}" class="form_input" required>
+                                    <div id="partner_inline_error_email" class="partner_error">Please enter a valid email address.</div>
+                                </div>
+                                <div class="form_cell cb">
+                                    <label for="partner_company_name" class="form_label">Company Name</label>
+                                    <input type="text" id="partner_company_name" placeholder="Company Name" name="company" pattern=".{,64}" class="form_input">
+                                    <div id="partner_inline_error_company_name" class="partner_error"></div>
+                                </div>
+                                <div class="form_cell">
+                                    <label for="partner_msg" class="form_label">Message </label>
+                                    <textarea id="partner_msg" placeholder="Message" name="message" class="form_input" required></textarea>
+                                       <div id="partner_inline_error_msg" class="partner_error"></div>
+                                </div>
+                                <div class="form_cell">
+                                <div class="partner_error_response"></div>
+                                 <div class="partner_success_response">Thank you for contacting us!</div>
+                                    <label for="partner_apply_btn" class="form_label">Message </label>
+                                    <button type="submit" id="partner_apply_btn" class="btn_v2 news_btn lilac_btn">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    {{> social }}
+                </div>
+            </div>
+        </div>
+        {{> footer }}
+    </div>
+    <div class="hero_block text_center">
+        <div class="abs_container">
+            <div class="gl_table_cell">
+                <div class="section_inner">
+                    <h1 class="hero_title">Become a Partner</h1>
+                    <div class="hero_text">Crypti is only as strong as it’s Partners. Come Join Us!</div>
+                </div>
+            </div>
+        </div>
+        {{> menu }}
+    </div>
+</main>
+<script type="text/javascript">
+(function($) {
+var re = /([^&=]+)=?([^&]*)/g;
+var decodeRE = /\+/g;  // Regex for replacing addition symbol with a space
+var decode = function (str) {return decodeURIComponent( str.replace(decodeRE, " ") );};
+$.parseParams = function(query) {
+    var params = {}, e;
+    while ( e = re.exec(query) ) {
+        var k = decode( e[1] ), v = decode( e[2] );
+        if (k.substring(k.length - 2) === '[]') {
+            k = k.substring(0, k.length - 2);
+            (params[k] || (params[k] = [])).push(v);
+        }
+        else params[k] = v;
+    }
+    return params;
+};
+})(jQuery);
+
+function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+};
+
+ $("#partner_form").on("submit", function (event) {
+ event.preventDefault();
+ var error = false;
+var queryParams =  $.parseParams($(this).serialize());
+if (!IsEmail(queryParams.email)){
+$('#partner_inline_error_email').addClass('partner_inline_error');
+$('#partner_email').addClass('partner_inline_error');
+error= true;}
+else {
+$('#partner_inline_error_email').removeClass('partner_inline_error');
+$('#partner_email').removeClass('partner_inline_error');
+}
+
+if ((queryParams.name)<1){
+$('#partner_inline_error_name').addClass('partner_inline_error');
+$('#partner_name').addClass('partner_inline_error');
+$('#partner_inline_error_name').text('Complete name');
+error= true;}
+else {
+$('#partner_inline_error_email').removeClass('partner_inline_error');
+$('#partner_email').removeClass('partner_inline_error');
+}
+if (error){
+return;}
+
+if ((queryParams.name)>64){
+$('#partner_inline_error_name').addClass('partner_inline_error');
+$('#partner_name').addClass('partner_inline_error');
+$('#partner_inline_error_name').text('Name is too long it should be less than 65 characters in length');
+error= true;}
+else {
+$('#partner_inline_error_email').removeClass('partner_inline_error');
+$('#partner_email').removeClass('partner_inline_error');
+}
+if (error){
+return;}
+
+if ((queryParams.company)>64){
+$('#partner_inline_error_company_name').addClass('partner_inline_error');
+$('#partner_company_name').addClass('partner_inline_error');
+$('#partner_inline_error_company_name').text('Company name is too long it should be less than 65 characters in length');
+error= true;}
+else {
+$('#partner_inline_error_company_name').removeClass('partner_inline_error');
+$('#partner_company_name').removeClass('partner_inline_error');
+}
+if (error){
+return;}
+
+
+if ((queryParams.message)<1){
+$('#partner_inline_error_msg').addClass('partner_inline_error');
+$('#partner_msg').addClass('partner_inline_error');
+$('#partner_inline_error_msg').text('Complete message');
+error= true;}
+else {
+$('#partner_inline_error_msg').removeClass('partner_inline_error');
+$('#partner_msg').removeClass('partner_inline_error');
+}
+if (error){
+return;}
+
+$.post( "/about", $.parseParams($(this).serialize()))
+  .done(function( data ) {
+  if (data.success){
+
+           $('.partner_error_response').removeClass('error');
+             $('.partner_success_response').addClass('success');
+             $("#partner_form")[0].reset();
+    }
+    else {
+    $('.partner_error_response').text(data.error);
+       $('.partner_error_response').addClass('error');
+       $('.partner_success_response').removeClass('success');
+    }
+  })
+  .fail(function() {
+       console.log('error');
+     })
+    });
+</script>

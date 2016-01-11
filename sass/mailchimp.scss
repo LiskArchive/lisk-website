@@ -1,0 +1,43 @@
+/*Adding for mailchimp*/
+#mc_embed_signup div#mce-responses {
+  padding: 0 8px !important;
+  width: 100% !important;
+  margin: 0 !important
+}
+
+#mc_embed_signup div.response {
+  font-weight: 400 !important
+}
+
+#mc_embed_signup #mce-error-response {
+  text-align: center !important;
+  width: 100% !important;
+  margin-bottom: 30px;
+  background-color: inherit;
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: rgb(23, 117, 200);
+  }
+}
+
+#mc_embed_signup #mce-success-response {
+  color: #7cb342 !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin-bottom: 30px;
+}
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: #dd4b39 !important;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  margin: 0 0 1em !important;
+  padding: 5px 10px !important;
+  background-color: #dd4b39 !important;
+  font-weight: normal !important;
+  z-index: 1;
+  color: #fff;
+}
+
+/*end Adding of mailchimp*/

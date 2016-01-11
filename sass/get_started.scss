@@ -1,0 +1,189 @@
+.get_started_block {
+  //padding-top : 115px;
+  max-width      : 780px;
+  margin         : 0 auto;
+  //text-align     : center;
+  padding-bottom : 40px;
+  
+  p {
+    margin-bottom : 30px;
+    line-height   : 1.9;
+  }
+}
+
+.video_block {
+  position: relative;
+}
+
+.video_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+}
+
+.video_preview {
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.get_started_steps {
+  padding-top: 90px;
+  margin: 0 auto 35px;
+  max-width: 780px;
+}
+
+.get_started_unit {
+  position: relative;
+
+  //&:before {
+  //	content    : '';
+  //	position   : absolute;
+  //	top        : 0;
+  //	bottom     : 0;
+  //	left       : 60px;
+  //	width      : 2px;
+  //	background : #cad1d7;
+  //}
+
+  &:last-child {
+    .get_started_step_description {
+      border-left-color: transparent;
+    }
+  }
+
+}
+
+.get_started_step_description {
+  margin-left: 60px;
+  padding: 30px 0 44px 38px;
+  border-left: 2px solid #cad1d7;
+  color: $color_gray_g;
+  line-height: 1.9;
+
+  p {
+    margin-bottom: 35px;
+  }
+}
+
+.get_started_step_title {
+  position: relative;
+  z-index: 1;
+  line-height: 112px;
+  padding-left: 100px;
+  border-radius: 2px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    width: 26px;
+    height: 26px;
+    margin-top: -13px;
+    border-radius: 100%;
+    background: #fff;
+    border: 3px solid;
+  }
+
+  &.step_green {
+    background: $color_green_g;
+
+    &:before {
+      border-color: #4d7424;
+    }
+  }
+
+  &.step_lilac {
+    background: $color_violet_g;
+
+    &:before {
+      border-color: #5e35b1;
+    }
+  }
+
+  &.step_blue {
+    background: $color_blue_g;
+
+    &:before {
+      border-color: #155e98;
+    }
+  }
+
+  &.step_gray {
+    background: $color_gray_g;
+
+    &:before {
+      border-color: #374c56;
+    }
+  }
+
+}
+
+.get_started_step_name {
+  color: #fff;
+  font: 24px $RobotoMedium;
+}
+
+.get_started_step_tip {
+  margin-top: 15px;
+  color: #cfd8dc;
+  font: 16px $RobotoMedium;
+}
+
+.xcr_list {
+  @extend %global_flex_block_row_nowrap_space_between_center;
+}
+
+.xcr_list {
+  display: block;
+  text-align: center;
+}
+
+.xcr_item {
+  margin-bottom: 38px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.xcr_link {
+  display: block;
+  text-decoration: none;
+  .logo_poloniex {
+    display: block;
+    height: 35px;
+    width: 156px;
+    background-image: url('/i/logo_1.png');
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+  }
+  .logo_poloniex:hover {
+    background-image: url('/i/logo_1_selected.png');
+  }
+  .logo_bter{
+    margin-top: -5px;
+    display: block;
+    height: 35px;
+    width: 123px;
+    background-image: url('/i/logo_3.png');
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+  }
+  .logo_bter:hover {
+    background-image: url('/i/logo_3_selected.png');
+  }
+
+  img {
+    display: block;
+  }
+}

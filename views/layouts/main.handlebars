@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lisk - {{title}}</title><!-- saved from url=(0014)about:internet -->
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="{{words}}"/>
+    <meta name="description" content="{{description}}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main_global.css" media="all"/>
+    {{#if isMap}}
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIi5MeuuH2pL2M7AEl5Vq6TUBLjXKvbY"></script>
+    {{/if}}
+    <script src="js/min/all.js"></script>
+    {{#if indexPageClass}}
+        <script src="js/min/index_page.js"></script>
+    {{/if}}
+    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+    {{#if isContest}}
+        <script src="js/min/contest.js"></script>
+    {{/if}}
+    {{#if isDoc}}
+        <link rel="stylesheet" href="styles/prism.css">
+        <script src="js/documentation.js"></script>
+    {{/if}}
+</head>
+<body class="{{#if indexPageClass}}{{indexPageClass}}{{/if}}{{#if isDoc}}documents_mode{{/if}}">
+    {{{body}}}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72273713-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

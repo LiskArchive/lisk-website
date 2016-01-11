@@ -1,0 +1,276 @@
+.btn_v1 {
+	height : 32px;
+	
+	&.login_btn {
+		@extend %green_btn;
+		display         : inline-block;
+		margin-left     : 17px;
+		padding         : 0 20px;
+		vertical-align  : middle;
+		text-decoration : none;
+		line-height     : 32px;
+		border-radius   : 2px;
+	}
+}
+
+.btn_v2 {
+	height : 48px;
+    -webkit-appearance: none;
+	
+	.btns_v1 & {
+		margin-right : 18px;
+	}
+	
+	&.partner_btn {
+		@extend %lilac_btn;
+		display         : inline-block;
+		padding         : 0 16px;
+		vertical-align  : top;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.download_btn {
+		min-width       : 160px;
+		display         : inline-block;
+		padding         : 0 16px;
+		vertical-align  : top;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.subscribe_btn {
+		//@extend %blue_btn;
+		display         : inline-block;
+		padding         : 0 20px;
+		vertical-align  : top;
+		min-width       : 180px;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.kit_download_btn {
+		position        : relative;
+		display         : inline-block;
+		padding         : 0 45px;
+		vertical-align  : top;
+		min-width       : 180px;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+		
+		.download_icon {
+			@extend %vert_centr;
+			position : absolute;
+			left     : 15px;
+			color    : #fff;
+		}
+		
+	}
+	
+	&.news_btn {
+		//@extend %blue_btn;
+		display         : inline-block;
+		padding         : 0 20px;
+		vertical-align  : top;
+		min-width       : 160px;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.dapp_store_btn {
+		@extend %green_btn;
+		display         : inline-block;
+		padding         : 0 22px;
+		vertical-align  : top;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.hero_btn {
+		@extend %blue_btn;
+		display         : inline-block;
+		padding         : 0 50px;
+		vertical-align  : top;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+
+	  	margin-top: 4px;
+	}
+	
+	&.get_started_btn {
+		display         : inline-block;
+		padding         : 0 42px;
+		vertical-align  : top;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		margin-right    : 18px;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	
+	&.step_feature_btn {
+		@extend %white_btn;
+		display         : inline-block;
+		padding         : 0 34px;
+		vertical-align  : top;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+	}
+	
+}
+
+.green_btn,
+%green_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : #7cb342;
+	
+	&:hover {
+		background : darken(#7cb342, 7%);
+	}
+	
+	&:active {
+		background : darken(#7cb342, 14%);
+	}
+}
+
+.blue_btn,
+%blue_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : #1e88e5;
+	
+	&:hover {
+		background : darken(#1e88e5, 7%);
+	}
+	
+	&:active {
+		background : darken(#1e88e5, 14%);
+	}
+}
+
+.lilac_btn,
+%lilac_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : #7e57c2;
+	
+	&:hover {
+		background : darken(#7e57c2, 7%);
+	}
+	
+	&:active {
+		background : darken(#7e57c2, 14%);
+	}
+}
+
+.white_btn,
+%white_btn {
+	@include transition_all(background-color .3s);
+	color      : #424242;
+	background : #fff;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken(#fff, 7%);
+	}
+	
+	&:active {
+		background : darken(#fff, 14%);
+	}
+}
+
+.gray_btn,
+%gray_btn {
+	@include transition_all(background-color .3s);
+	color      : #455a64;
+	background : #f5f5f5;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken(#f5f5f5, 7%);
+	}
+	
+	&:active {
+		background : darken(#f5f5f5, 14%);
+	}
+}
+
+.f_input {
+	display : block;
+	width   : 100%;
+	
+	&.input_v1 {
+		height        : 35px;
+		line-height   : 35px;
+		border-bottom : 1px solid #e0e0e0;
+	}
+	
+}
+
+.form_v1 {
+	padding-top : 20px;
+	margin-left : -60px;
+	
+	.form_cell {
+		padding-left : 60px;
+	}
+}
+
+.form_cell {
+	margin-bottom : 70px;
+	
+	&:last-child {
+		margin-bottom : 50px;
+	}
+}
+
+.half_cell {
+	float : left;
+	width : 50%;
+}
+
+.form_input {
+	display       : block;
+	width         : 100%;
+	line-height   : 30px;
+	border-bottom : 1px solid #e0e0e0;
+}
+
+.label_hidden {
+	label {
+		display : none;
+	}
+}
+
+textarea {
+	font-family : $RobotoRegular;
+	
+	&.form_input {
+		min-height : 160px;
+	}
+}

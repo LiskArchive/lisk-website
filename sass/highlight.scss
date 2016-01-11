@@ -1,0 +1,153 @@
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+.hljs,
+.subst,
+.tag .title,
+.nginx .title {
+	color : black;
+}
+
+.hljs {
+	display                  : block;
+	overflow-x               : auto;
+	-webkit-text-size-adjust : none;
+	
+	.string,
+	.title,
+	.constant,
+	.parent,
+	.tag .value,
+	.rule .value,
+	.preprocessor,
+	.pragma,
+	.name,
+	.haml .symbol,
+	.ruby .symbol,
+	.ruby .symbol .string,
+	.template_tag,
+	.django .variable,
+	.smalltalk .class,
+	.addition,
+	.flow,
+	.stream,
+	.bash .variable,
+	.pf .variable,
+	.apache .tag,
+	.apache .cbracket,
+	.tex .command,
+	.tex .special,
+	.erlang_repl .function_or_atom,
+	.asciidoc .header,
+	.markdown .header,
+	.coffeescript .attribute,
+	.tp .variable {
+		color : #800;
+	}
+	
+	.smartquote,
+	.comment,
+	.annotation,
+	.diff .header,
+	.chunk,
+	.asciidoc .blockquote,
+	.markdown .blockquote {
+		color : #888;
+	}
+	
+	.number,
+	.date,
+	.regexp,
+	.literal,
+	.hexcolor,
+	.smalltalk .symbol,
+	.smalltalk .char,
+	.go .constant,
+	.change,
+	.lasso .variable,
+	.makefile .variable,
+	.asciidoc .bullet,
+	.markdown .bullet,
+	.asciidoc .link_url,
+	.markdown .link_url {
+		color : #080;
+	}
+	
+	.label,
+	.ruby .string,
+	.decorator,
+	.filter .argument,
+	.localvars,
+	.array,
+	.attr_selector,
+	.important,
+	.pseudo,
+	.pi,
+	.haml .bullet,
+	.doctype,
+	.deletion,
+	.envvar,
+	.shebang,
+	.apache .sqbracket,
+	.nginx .built_in,
+	.tex .formula,
+	.erlang_repl .reserved,
+	.prompt,
+	.asciidoc .link_label,
+	.markdown .link_label,
+	.vhdl .attribute,
+	.clojure .attribute,
+	.asciidoc .attribute,
+	.lasso .attribute,
+	.coffeescript .property,
+	.phony {
+		color : #88f;
+	}
+	
+	.keyword,
+	.id,
+	.title,
+	.built_in,
+	.css .tag,
+	.doctag,
+	.smalltalk .class,
+	.winutils,
+	.bash .variable,
+	.pf .variable,
+	.apache .tag,
+	.type,
+	.typename,
+	.tex .command,
+	.asciidoc .strong,
+	.markdown .strong,
+	.request,
+	.status,
+	.tp .data,
+	.tp .io {
+		font-weight : bold;
+	}
+	
+	.asciidoc .emphasis,
+	.markdown .emphasis,
+	.tp .units {
+		font-style : italic;
+	}
+	
+	.nginx .built_in {
+		font-weight : normal;
+	}
+	
+	.coffeescript .javascript,
+	.javascript .xml,
+	.lasso .markup,
+	.tex .formula,
+	.xml .javascript,
+	.xml .vbscript,
+	.xml .css,
+	.xml .cdata {
+		opacity : 0.5;
+	}
+}
