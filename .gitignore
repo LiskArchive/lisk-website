@@ -8,3 +8,6 @@ crypti
 /js
 node_modules
 npm-debug.log
+public/js/min/all.js
+public/js/min/index_page.js
+public/styles/main_global.*
