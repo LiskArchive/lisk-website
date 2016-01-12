@@ -8,7 +8,6 @@ module.exports = {
 	about: require('./about.js'),
 	contact_us: require('./contact.js'),
 	documentation: require('./documentation.js'),
-	//beta: require('./beta.js'),
 	faq: require('./faq.js'),
 	ico: require('./ico.js'),
 	missing: require('./missing.js')
