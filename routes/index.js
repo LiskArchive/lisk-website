@@ -11,6 +11,6 @@ module.exports = {
 	//beta: require('./beta.js'),
 	faq: require('./faq.js'),
 	ico: require('./ico.js'),
-	missing: require('./missing.js'),
+	missing: require('./missing.js')//,
 	//contest: require('./contest.js')
 }
