@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://crypti.me/</loc>
-        <lastmod>2015-08-05T05:20:07+01:00</lastmod>
+        <loc>http://lisk.io/</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/features</loc>
-        <lastmod>2015-08-05T05:20:08+01:00</lastmod>
+        <loc>http://lisk.io/features</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/become-a-partner</loc>
-        <lastmod>2015-08-05T05:20:09+01:00</lastmod>
+        <loc>http://lisk.io/become-a-partner</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.4</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/get-started</loc>
-        <lastmod>2015-08-05T05:20:12+01:00</lastmod>
+        <loc>http://lisk.io/get-started</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.9</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>http://soon.crypti.me/contact-us</loc>
-        <lastmod>2015-08-05T05:20:12+01:00</lastmod>
+        <loc>http://lisk.io/contact-us</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.5</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/about</loc>
-        <lastmod>2015-08-05T05:20:12+01:00</lastmod>
+        <loc>http://lisk.io/about</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.7</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/download</loc>
-        <lastmod>2015-08-05T05:20:14+01:00</lastmod>
+        <loc>http://lisk.io/download</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.6</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>http://crypti.me/beta</loc>
-        <lastmod>2015-08-05T05:20:14+01:00</lastmod>
+        <loc>http://lisk.io/beta</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
