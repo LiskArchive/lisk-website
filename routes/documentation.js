@@ -142,8 +142,9 @@ module.exports = function (app) {
 				var next = _.find(docs, function (item) {
 					return item.i == doc.next;
 				});
-
-				doc.next = next;
+				if (next) {
+					doc.next = next;
+				}
 			}
 
 			fs.readFile(path.join('./', 'docs', doc.i + ".md"), 'utf8', function (err, data) {
