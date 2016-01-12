@@ -31,13 +31,6 @@ module.exports = function(grunt){
 					'public/js/graph_init.js'
 				],
 				dest: 'public/js/min/index_page.js'
-			},
-			contest_js : {
-				src : [
-					'public/js/jquery.countdown.min.js',
-					'public/js/contest.js'
-				],
-				dest: 'public/js/min/contest.js'
 			}
 		},
 		jshint : {

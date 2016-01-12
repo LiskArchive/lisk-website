@@ -48,10 +48,4 @@
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
-    <url>
-        <loc>http://crypti.me/contest</loc>
-        <lastmod>2015-11-12T05:20:30+01:00</lastmod>
-        <priority>0.6</priority>
-        <changefreq>monthly</changefreq>
-    </url>
 </urlset>
