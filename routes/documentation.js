@@ -1,6 +1,7 @@
 var fs = require('fs'),
 	path = require('path'),
-	markdown = require( "markdown" ).markdown;
+	markdown = require( "markdown" ).markdown,
+	_ = require('lodash');
 
 var menu = [
 	{
@@ -113,7 +114,7 @@ module.exports = function (app) {
 			}
 		}
 
-		var doc = docs.find(function (item) {
+		var doc = _.find(docs, function (item) {
 			return item.i == i;
 		});
 
@@ -121,7 +122,7 @@ module.exports = function (app) {
 			return finish();
 		} else {
 			if (doc.next) {
-				var next = docs.find(function (item) {
+				var next = _.find(docs, function (item) {
 					return item.i == doc.next;
 				});
 

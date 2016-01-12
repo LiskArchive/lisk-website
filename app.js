@@ -157,15 +157,6 @@ request({
 			console.error(err);
 		} else {
 			console.log("Server started at: " + config.port);
-
-			// Olivier, why does this needs to be running? Else I get an error at the documentation page?!
-			require('slackin')({
-				token: 'xoxp-2492587921-2547273463-9445538033-1ff136',
-				interval: 300000,
-				org: 'crypti',
-				channels: 'public,',
-				silent: false
-			}).listen(3000);
 		}
 	})
 });
