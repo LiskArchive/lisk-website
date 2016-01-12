@@ -51,6 +51,8 @@ For more information on how to proceed with developing your first Crypti based d
 * [Adding a User Interface](UserInterface.md)
 * [Introducing the Dapp Toolkit](DappToolkit.md)
 * [Creating a Custom Sidechain](Sidechain.md)
+* [Creating a Reddit Dapp](RedditDapp.md)
+* [Debugging Dapps](DebuggingDapps.md)
 
 ## Sandboxing
 

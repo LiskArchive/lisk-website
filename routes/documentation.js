@@ -25,6 +25,10 @@ var menu = [
 				i: "MessagingDapp"
 			},
 			{
+				name: "Creating a Reddit Dapp",
+				i: "RedditDapp"
+			},
+			{
 				name: "User Interface",
 				i: "UserInterface"
 			},
@@ -35,6 +39,10 @@ var menu = [
 			{
 				name: "Sidechain Overview",
 				i: "Sidechain"
+			},
+			{
+				name: "Debugging Dapps",
+				i: "DebuggingDapps"
 			}
 		]
 	},
@@ -54,7 +62,6 @@ var docs = [
 		i: "README",
 		next: "EnvironmentSetup"
 	},
-
 	{
 		title: "Environment Setup",
 		i: "EnvironmentSetup",
@@ -68,6 +75,11 @@ var docs = [
 	{
 		title: "Creating a Messaging Dapp",
 		i: "MessagingDapp",
+		next: "RedditDapp"
+	},
+	{
+		title: "Creating a Reddit Dapp",
+		i: "RedditDapp",
 		next: "UserInterface"
 	},
 	{
@@ -83,6 +95,11 @@ var docs = [
 	{
 		title: "Sidechain Overview",
 		i: "Sidechain",
+		next: "DebuggingDapps"
+	},
+	{
+		title: "Debugging Dapps",
+		i: "DebuggingDapps"
 	}
 ]
 
