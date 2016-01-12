@@ -1,7 +1,8 @@
 function initialize(){
 	var mapOptions = {
 		center: {lat: 51.2609, lng: 3.2221},
-		zoom  : 5
+		zoom  : 6,
+		scrollwheel: false
 	};
 	var map = new google.maps.Map(document.getElementById('g_map'),
 			mapOptions);
