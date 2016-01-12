@@ -122,7 +122,7 @@ module.exports = function (app) {
 				});
 			} else {
 				return res.render("documentation", {
-					title: "Documentation",
+					title: "Documentation - Not Found",
 					description: "Crypti DApps Documentation",
 					words: "crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 					menu: menu,
@@ -146,7 +146,7 @@ module.exports = function (app) {
 				doc.next = next;
 			}
 
-			fs.readFile(path.join('./', 'docs/', doc.i + ".md"), 'utf8', function (err, data) {
+			fs.readFile(path.join('./', 'docs', doc.i + ".md"), 'utf8', function (err, data) {
 				if (err) {
 					console.log(err);
 					finish();
