@@ -1,3 +1,3 @@
-# Crypti Site
+# Lisk Website
 
-The main Crypti website.
+The official Lisk website.
