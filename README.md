@@ -35,7 +35,7 @@ The official Lisk website.
   node app.js
   ```
 
-3. Open http://localhost:8090/ in your browser.
+3. Open [http://localhost:8090/](http://localhost:8090/) in your browser.
 
 ## Development
 
