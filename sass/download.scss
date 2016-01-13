@@ -1,3 +1,11 @@
+.disabled {
+	opacity: 0.5;
+
+	a {
+		pointer-events: none;
+	}
+}
+
 .download_section {
 	margin    : 0 auto;
 	padding   : 0 10px;
