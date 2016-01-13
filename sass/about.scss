@@ -142,7 +142,8 @@
 .team_share_link {
 	display         : inline-block;
 	margin          : 0 25px;
-	vertical-align  : top;
+	//vertical-align  : top;
+	float: right;
 	text-decoration : none;
 	font-size       : 26px;
 	color           : $color_gray_g;
