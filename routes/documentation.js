@@ -1,7 +1,18 @@
 var fs = require('fs'),
 	path = require('path'),
-	markdown = require( "markdown" ).markdown,
+	marked = require('marked'),
 	_ = require('lodash');
+
+marked.setOptions({
+	renderer: new marked.Renderer(),
+	gfm: true,
+	tables: true,
+	breaks: false,
+	pedantic: false,
+	sanitize: true,
+	smartLists: true,
+  smartypants: false
+});
 
 var menu = [
 	{
@@ -110,7 +121,7 @@ module.exports = function (app) {
 
 		function finish(doc) {
 			if (doc) {
-				doc.content = markdown.toHTML(doc.content);
+				doc.content = marked(doc.content);
 
 				return res.render("documentation", {
 					title: doc.title,
