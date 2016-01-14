@@ -203,6 +203,12 @@
 		line-height : 2;
 	}
 	
+	a {
+		@include transition_all(color .3s);
+		text-decoration : none;
+		color : $color_blue_g;
+	}
+	
 }
 
 .documentation_controls {
