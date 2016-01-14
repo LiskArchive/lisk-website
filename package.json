@@ -12,6 +12,7 @@
   },
   "author": "",
   "license": "",
+  "private": true,
   "bugs": {
     "url": "https://github.com/LiskHQ/lisk-website/issues"
   },
