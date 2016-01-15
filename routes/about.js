@@ -102,7 +102,7 @@ module.exports = function (app) {
 			item.photo = item.name.toLowerCase().replace(' ', '');
 		});
 
-		return res.render("about", {title: "About", correspondents: correspondents, members : members, partnerships: partnerships,  description: "Take a look at the team which makes hard problems simple and maintain Crypti on a regular basis.", words: "crypti, contact, foundation, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain"});
+		return res.render("about", {title: "About", correspondents: correspondents, members : members, partnerships: partnerships,  description: "Take a look at the team which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, crypti, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain"});
 	});
 
 	app.post('/about', function (req, res) {

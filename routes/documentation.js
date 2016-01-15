@@ -125,8 +125,8 @@ module.exports = function (app) {
 
 				return res.render("documentation", {
 					title: doc.title,
-					description: "Crypti DApps Documentation",
-					words: "crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
+					description: "Lisk DApps Documentation",
+					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 					menu: menu,
 					isDoc: true,
 					doc: doc
@@ -134,8 +134,8 @@ module.exports = function (app) {
 			} else {
 				return res.render("documentation", {
 					title: "Documentation - Not Found",
-					description: "Crypti DApps Documentation",
-					words: "crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
+					description: "Lisk DApps Documentation",
+					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 					menu: menu,
 					isDoc: true
 				});
