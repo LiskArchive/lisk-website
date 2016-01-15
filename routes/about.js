@@ -130,9 +130,9 @@ module.exports = function (app) {
 		var message = 'Name: ' + name + "\n" + "Email: " + email + "\n" + (company? "Company: " + company + "\n" : "") + "Message: " + "\n" + message;
 
 		var mailOptions = {
-			from: 'Crypti Admin <admin@crypti.me>', // sender address
-			to: 'max@crypti.me, stas@crypti.me, boris@crypti.me', // list of receivers
-			subject: 'Partner Message From Crypti.me', // Subject line
+			from: 'Lisk Business <business@lisk.io>', // sender address
+			to: 'business@lisk.io',                   // list of receivers
+			subject: 'Partner Message From Lisk.io',  // Subject line
 			text: message
 		};
 
