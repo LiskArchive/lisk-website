@@ -15,10 +15,10 @@ The official Lisk website.
   npm install
   ```
 
-2. Install ruby gems:
+2. Install sass:
 
   ```
-  bundle install
+  gem install sass
   ```
 
 ## Launch
