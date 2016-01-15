@@ -58,12 +58,12 @@ var menu = [
 		]
 	},
 	{
-		name: "Dapp API",
-		url: "http://docs.crypti.me"
+		name: "Lisk Dapps API",
+		url: "http://dapps-api.lisk.io"
 	},
 	{
-		name: "Crypti API",
-		url: "http://docs.crypti.apiary.io"
+		name: "Lisk API",
+		url: "http://api.lisk.io"
 	}
 ];
 
