@@ -94,7 +94,7 @@ var hbs = exphbs.create({
 		liskcli : function () {
 			return "https://www.npmjs.com/package/lisk-cli";
 		},
-		dapptoolkit : function () {
+		lisksdk : function () {
 			return "";
 		},
 		sourcecode : function () {
