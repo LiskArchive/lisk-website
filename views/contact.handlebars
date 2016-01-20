@@ -144,7 +144,7 @@
             if (error){
                 return;}
 
-            $.post( "/about", $.parseParams($(this).serialize()))
+            $.post( "/contact-us", $.parseParams($(this).serialize()))
                     .done(function( data ) {
                         if (data.success){
 
