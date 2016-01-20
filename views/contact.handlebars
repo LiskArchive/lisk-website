@@ -2,36 +2,36 @@
     <div class="base">
         <div class="section white_section">
             <div class="section_inner"><a href="mailto:business@lisk.io" class="material-icons consensus_btn">email</a>
-                <div class="partner_section text_block">
+                <div class="contact_section text_block">
                     <div class="about_block">
                         <div class="section_caption text_gray">Get in touch with us</div>
                         <div class="form_v1 label_hidden">
-                            <form id="partner_form" onsubmit="return false;">
+                            <form id="contact_form" onsubmit="return false;">
                                 <div class="form_cell half_cell">
-                                    <label for="partner_name" class="form_label">Name</label>
-                                    <input type="text" id="partner_name" placeholder="Name" name="name" pattern=".{1,}" maxlength="64" class="form_input" required>
-                                    <div id="partner_inline_error_name" class="partner_error"></div>
+                                    <label for="contact_name" class="form_label">Name</label>
+                                    <input type="text" id="contact_name" placeholder="Name" name="name" pattern=".{1,}" maxlength="64" class="form_input" required>
+                                    <div id="contact_inline_error_name" class="contact_error"></div>
                                 </div>
                                 <div class="form_cell half_cell">
-                                    <label for="partner_email" class="form_label">Email</label>
-                                    <input id="partner_email" type="email" placeholder="Email" name="email" pattern=".{1,}" class="form_input" required>
-                                    <div id="partner_inline_error_email" class="partner_error">Please enter a valid email address.</div>
+                                    <label for="contact_email" class="form_label">Email</label>
+                                    <input id="contact_email" type="email" placeholder="Email" name="email" pattern=".{1,}" class="form_input" required>
+                                    <div id="contact_inline_error_email" class="contact_error">Please enter a valid email address.</div>
                                 </div>
                                 <div class="form_cell cb">
-                                    <label for="partner_company_name" class="form_label">Company Name</label>
-                                    <input type="text" id="partner_company_name" placeholder="Company Name" name="company" class="form_input">
-                                    <div id="partner_inline_error_company_name" class="partner_error"></div>
+                                    <label for="contact_company_name" class="form_label">Company Name</label>
+                                    <input type="text" id="contact_company_name" placeholder="Company Name" name="company" class="form_input">
+                                    <div id="contact_inline_error_company_name" class="contact_error"></div>
                                 </div>
                                 <div class="form_cell">
-                                    <label for="partner_msg" class="form_label">Message </label>
-                                    <textarea id="partner_msg" placeholder="Message" name="message" class="form_input" required></textarea>
-                                    <div id="partner_inline_error_msg" class="partner_error"></div>
+                                    <label for="contact_msg" class="form_label">Message </label>
+                                    <textarea id="contact_msg" placeholder="Message" name="message" class="form_input" required></textarea>
+                                    <div id="contact_inline_error_msg" class="contact_error"></div>
                                 </div>
                                 <div class="form_cell">
-                                    <div class="partner_error_response"></div>
-                                    <div class="partner_success_response">Thank you for contacting us!</div>
-                                    <label for="partner_apply_btn" class="form_label">Message </label>
-                                    <button type="submit" id="partner_apply_btn" class="btn_v2 news_btn lilac_btn">Submit</button>
+                                    <div class="contact_error_response"></div>
+                                    <div class="contact_success_response">Thank you for contacting us!</div>
+                                    <label for="contact_apply_btn" class="form_label">Message </label>
+                                    <button type="submit" id="contact_apply_btn" class="btn_v2 news_btn lilac_btn">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -82,64 +82,64 @@
             return regex.test(email);
         };
 
-        $("#partner_form").on("submit", function (event) {
+        $("#contact_form").on("submit", function (event) {
             event.preventDefault();
             var error = false;
             var queryParams =  $.parseParams($(this).serialize());
             if (!IsEmail(queryParams.email)){
-                $('#partner_inline_error_email').addClass('partner_inline_error');
-                $('#partner_email').addClass('partner_inline_error');
+                $('#contact_inline_error_email').addClass('contact_inline_error');
+                $('#contact_email').addClass('contact_inline_error');
                 error= true;}
             else {
-                $('#partner_inline_error_email').removeClass('partner_inline_error');
-                $('#partner_email').removeClass('partner_inline_error');
+                $('#contact_inline_error_email').removeClass('contact_inline_error');
+                $('#contact_email').removeClass('contact_inline_error');
             }
 
             if ((queryParams.name)<1){
-                $('#partner_inline_error_name').addClass('partner_inline_error');
-                $('#partner_name').addClass('partner_inline_error');
-                $('#partner_inline_error_name').text('Complete name');
+                $('#contact_inline_error_name').addClass('contact_inline_error');
+                $('#contact_name').addClass('contact_inline_error');
+                $('#contact_inline_error_name').text('Complete name');
                 error= true;}
             else {
-                $('#partner_inline_error_email').removeClass('partner_inline_error');
-                $('#partner_email').removeClass('partner_inline_error');
+                $('#contact_inline_error_email').removeClass('contact_inline_error');
+                $('#contact_email').removeClass('contact_inline_error');
             }
             if (error){
                 return;}
 
             if ((queryParams.name)>64){
-                $('#partner_inline_error_name').addClass('partner_inline_error');
-                $('#partner_name').addClass('partner_inline_error');
-                $('#partner_inline_error_name').text('Name is too long it should be less than 65 characters in length');
+                $('#contact_inline_error_name').addClass('contact_inline_error');
+                $('#contact_name').addClass('contact_inline_error');
+                $('#contact_inline_error_name').text('Name is too long it should be less than 65 characters in length');
                 error= true;}
             else {
-                $('#partner_inline_error_email').removeClass('partner_inline_error');
-                $('#partner_email').removeClass('partner_inline_error');
+                $('#contact_inline_error_email').removeClass('contact_inline_error');
+                $('#contact_email').removeClass('contact_inline_error');
             }
             if (error){
                 return;}
 
             if ((queryParams.company)>64){
-                $('#partner_inline_error_company_name').addClass('partner_inline_error');
-                $('#partner_company_name').addClass('partner_inline_error');
-                $('#partner_inline_error_company_name').text('Company name is too long it should be less than 65 characters in length');
+                $('#contact_inline_error_company_name').addClass('contact_inline_error');
+                $('#contact_company_name').addClass('contact_inline_error');
+                $('#contact_inline_error_company_name').text('Company name is too long it should be less than 65 characters in length');
                 error= true;}
             else {
-                $('#partner_inline_error_company_name').removeClass('partner_inline_error');
-                $('#partner_company_name').removeClass('partner_inline_error');
+                $('#contact_inline_error_company_name').removeClass('contact_inline_error');
+                $('#contact_company_name').removeClass('contact_inline_error');
             }
             if (error){
                 return;}
 
 
             if ((queryParams.message)<1){
-                $('#partner_inline_error_msg').addClass('partner_inline_error');
-                $('#partner_msg').addClass('partner_inline_error');
-                $('#partner_inline_error_msg').text('Complete message');
+                $('#contact_inline_error_msg').addClass('contact_inline_error');
+                $('#contact_msg').addClass('contact_inline_error');
+                $('#contact_inline_error_msg').text('Complete message');
                 error= true;}
             else {
-                $('#partner_inline_error_msg').removeClass('partner_inline_error');
-                $('#partner_msg').removeClass('partner_inline_error');
+                $('#contact_inline_error_msg').removeClass('contact_inline_error');
+                $('#contact_msg').removeClass('contact_inline_error');
             }
             if (error){
                 return;}
@@ -148,14 +148,14 @@
                     .done(function( data ) {
                         if (data.success){
 
-                            $('.partner_error_response').removeClass('error');
-                            $('.partner_success_response').addClass('success');
-                            $("#partner_form")[0].reset();
+                            $('.contact_error_response').removeClass('error');
+                            $('.contact_success_response').addClass('success');
+                            $("#contact_form")[0].reset();
                         }
                         else {
-                            $('.partner_error_response').text(data.error);
-                            $('.partner_error_response').addClass('error');
-                            $('.partner_success_response').removeClass('success');
+                            $('.contact_error_response').text(data.error);
+                            $('.contact_error_response').addClass('error');
+                            $('.contact_success_response').removeClass('success');
                         }
                     })
                     .fail(function() {

@@ -1,4 +1,4 @@
-.partner_section {
+.contact_section {
 	padding-top : 100px;
 	
 	.section_caption {
@@ -11,7 +11,7 @@
 	
 }
 
-.become_partner_btn {
+.become_contact_btn {
 	@extend %blue_btn;
 	z-index         : 1;
 	position        : absolute;
@@ -39,7 +39,7 @@
 }
 
 
-.partner_section .partner_error_response {
+.contact_section .contact_error_response {
   color: #dd4b39 !important;
   text-align: center !important;
   width: 100% !important;
@@ -47,11 +47,11 @@
   display: none;
 }
 
-.partner_section .partner_error_response.error {
+.contact_section .contact_error_response.error {
   display: block;
 }
 
-.partner_section .partner_success_response {
+.contact_section .contact_success_response {
   color: #7cb342 !important;
   text-align: center !important;
   width: 100% !important;
@@ -59,18 +59,18 @@
   display: none;
 }
 
-.partner_section .partner_success_response.success {
+.contact_section .contact_success_response.success {
   display: block;
 }
 
-.partner_section input.partner_inline_error {
+.contact_section input.contact_inline_error {
   border-color: #dd4b39 !important;
 }
-.partner_error {
+.contact_error {
   display: none;
 }
 
-.partner_error.partner_inline_error {
+.contact_error.contact_inline_error {
   display: block;
   margin: 0 0 1em !important;
   padding: 5px 10px !important;
