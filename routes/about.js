@@ -138,7 +138,7 @@ module.exports = function (app) {
 		transporter.sendMail(mailOptions, function(error, info){
 			if(error) {
 				console.log(error);
-				return res.json({success: false, error: "Something wrong with our smtp channel, please, contact admins"});
+				return res.json({success: false, error: "Failed to send message! Something went wrong on our server."});
 			}
 
 			console.log('Message sent: ' + info.response);
