@@ -6,7 +6,7 @@ module.exports = {
 	features : require('./features.js'),
 	//partner: require('./partner.js'),
 	about: require('./about.js'),
-	contact_us: require('./contact.js'),
+	contact_us: require('./contact_us.js'),
 	documentation: require('./documentation.js'),
 	faq: require('./faq.js'),
 	ico: require('./ico.js'),
