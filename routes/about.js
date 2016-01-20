@@ -2,11 +2,10 @@ var emailValidator = require('email-validator');
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-	service: 'Gmail',
-	auth: {
-		user: 'admin@crypti.me',
-		pass: '4g92kut51'
-	}
+	host: 'localhost',
+	port: '25',
+	requireTLS: true,
+	tls: { rejectUnauthorized: false }
 });
 
 var members = [
