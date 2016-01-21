@@ -4,7 +4,6 @@ module.exports = {
 	//mediakit : require('./mediakit.js'),
 	getstarted : require('./getstarted.js'),
 	features : require('./features.js'),
-	//partner: require('./partner.js'),
 	about: require('./about.js'),
 	contact_us: require('./contact_us.js'),
 	documentation: require('./documentation.js'),
