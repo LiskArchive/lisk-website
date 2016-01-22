@@ -2,7 +2,6 @@
 	height : 32px;
 	
 	&.login_btn {
-		@extend %green_btn;
 		display         : inline-block;
 		margin-left     : 17px;
 		padding         : 0 20px;
@@ -19,6 +18,29 @@
 	
 	.btns_v1 & {
 		margin-right : 18px;
+	}
+
+	&.wide_btn {
+		display         : inline-block;
+		padding         : 0 50px;
+		vertical-align  : top;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+	  	margin-top: 	4px;
+	}
+
+	&.normal_btn {
+		display         : inline-block;
+		padding         : 0 20px;
+		vertical-align  : top;
+		min-width       : 150px;
+		font-size       : 16px;
+		line-height     : 48px;
+		text-decoration : none;
+		border-radius   : 2px;
+		text-align      : center;
+		box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
 	}
 	
 	&.partner_btn {
@@ -109,7 +131,6 @@
 	}
 	
 	&.hero_btn {
-		@extend %blue_btn;
 		display         : inline-block;
 		padding         : 0 50px;
 		vertical-align  : top;
@@ -141,6 +162,118 @@
 		border-radius   : 2px;
 	}
 	
+}
+
+.curious_btn,
+%curious_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $curious;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($curious, 7%);
+	}
+	
+	&:active {
+		background : darken($curious, 14%);
+	}
+}
+
+.tahiti_btn,
+%madison_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $tahiti;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($tahiti, 7%);
+	}
+	
+	&:active {
+		background : darken($tahiti, 14%);
+	}
+}
+
+.rebecca_btn,
+%madison_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $rebecca;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($rebecca, 7%);
+	}
+	
+	&:active {
+		background : darken($rebecca, 14%);
+	}
+}
+
+.madison_btn,
+%madison_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $madison;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);	
+	
+	&:hover {
+		background : darken($madison, 7%);
+	}
+	
+	&:active {
+		background : darken($madison, 14%);
+	}
+}
+
+.bitcoin_btn,
+%bitcoin_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $bitcoin;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($bitcoin, 7%);
+	}
+	
+	&:active {
+		background : darken($bitcoin, 14%);
+	}
+}
+
+.crypti_btn,
+%crypti_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $crypti;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($crypti, 7%);
+	}
+	
+	&:active {
+		background : darken($crypti, 14%);
+	}
+}
+
+.ethereum_btn,
+%ethereum_btn {
+	@include transition_all(background-color .3s);
+	color      : #fff;
+	background : $ethereum;
+	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
+	
+	&:hover {
+		background : darken($ethereum, 7%);
+	}
+	
+	&:active {
+		background : darken($ethereum, 14%);
+	}
 }
 
 .green_btn,
