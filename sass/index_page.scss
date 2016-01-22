@@ -100,11 +100,11 @@
 			
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $color_blue_g;
+				border-bottom-color : $tahiti;
 			}
 			
 			.material-icons {
-				color : $color_blue_g;
+				color : $tahiti;
 			}
 		}
 	}
@@ -116,11 +116,11 @@
 			
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $color_green_g;
+				border-bottom-color : $curious;
 			}
 			
 			.material-icons {
-				color : $color_green_g;
+				color : $curious;
 			}
 		}
 	}
@@ -132,11 +132,11 @@
 			
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $color_black_g;
+				border-bottom-color : $rebecca;
 			}
 			
 			.material-icons {
-				color : $color_black_g;
+				color : $rebecca;
 			}
 		}
 	}
@@ -154,15 +154,15 @@
 	z-index  : 1;
 	
 	.stepSection[data-step='1'] + & {
-		background : $color_blue_g;
+		background : $tahiti;
 	}
 	
 	.stepSection[data-step='2'] + & {
-		background : $color_green_g;
+		background : $curious;
 	}
 	
 	.stepSection[data-step='3'] + & {
-		background : $color_black_g;
+		background : $rebecca;
 	}
 }
 
@@ -209,10 +209,10 @@
 		height        : 422px;
 		margin-right  : -2px;
 		line-height   : 1.95;
-		border        : solid #1666ac;
-		border-width  : 1px 0 0 1px;
+		//border        : solid #1666ac;
+		//border-width  : 1px 0 0 1px;
 		border-radius : 3px 0 0 0;
-		box-shadow    : 0 10px 18px rgba(29, 133, 225, .5);
+		box-shadow    : 0 10px 18px rgba(30, 30, 30, .5);
 	}
 	
 }
@@ -494,7 +494,7 @@
 	margin-left     : 90px;
 	
 	&:hover {
-		color : $color_blue_g;
+		color : $curious;
 	}
 	
 	&:first-child {
