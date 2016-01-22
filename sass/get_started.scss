@@ -94,35 +94,19 @@
     border: 3px solid;
   }
 
-  &.step_green {
-    background: $color_green_g;
+  &.step_curious {
+    background: $pickled;
 
     &:before {
-      border-color: #4d7424;
+      border-color: $madison;
     }
   }
 
-  &.step_lilac {
-    background: $color_violet_g;
+  &.step_last {
+    background : $tahiti;
 
     &:before {
-      border-color: #5e35b1;
-    }
-  }
-
-  &.step_blue {
-    background: $color_blue_g;
-
-    &:before {
-      border-color: #155e98;
-    }
-  }
-
-  &.step_gray {
-    background: $color_gray_g;
-
-    &:before {
-      border-color: #374c56;
+      border-color: $pickled;
     }
   }
 
