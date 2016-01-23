@@ -7,8 +7,8 @@ module.exports = function(grunt){
 			},
 			all_css : {
 				src : [
-					'public/styles/main_global.css',
-					'bower_components/animate.css/animate.min.css'
+					'bower_components/animate.css/animate.min.css',
+					'public/styles/main_global.css'
 				],
 				dest: 'public/styles/main_global.css'
 			},
