@@ -170,6 +170,8 @@
 	position : relative;
 	float    : left;
 	height   : 540px;
+	max-height : 540px;
+	overflow : hidden;
 
 	.section_inner {
 		@extend %global_flex_block_row_wrap_space_between_center;
@@ -401,15 +403,19 @@
 
 .dapp_slider {
 	@extend %clearfix;
-	margin   : 0 auto 0;
-	overflow : hidden;
+	margin     : 0 auto 0;
+	overflow   : hidden;
 	//height    : 458px;
 	//max-width : 732px;
+	height     : 458px;
+	max-height : 458px;
 }
 
 .dapp_slide {
+	width      : 9999px;
 	float      : left;
 	text-align : center;
+	padding    : 1em;
 	//font-size  : 380px;
 	//color      : #fff;
 }
