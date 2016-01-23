@@ -14,7 +14,7 @@ module.exports = function(grunt){
 			},
 			all_js   : {
 				src : [
-					'public/js/jquery1.10.js',
+					'bower_components/jquery/dist/jquery.min.js',
 					'public/js/slick.min.js',
 					'public/js/highlight.pack.js',
 					'public/js/device.min.js',
