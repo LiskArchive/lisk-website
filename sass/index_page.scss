@@ -100,11 +100,11 @@
 			
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $tahiti;
+				border-bottom-color : $cascade;
 			}
 			
 			.material-icons {
-				color : $tahiti;
+				color : $cascade;
 			}
 		}
 	}
@@ -154,7 +154,7 @@
 	z-index  : 1;
 	
 	.stepSection[data-step='1'] + & {
-		background : $tahiti;
+		background : $cascade;
 	}
 	
 	.stepSection[data-step='2'] + & {
