@@ -32,7 +32,6 @@
 
 .section_content {
 	padding-top : 100px;
-	//padding-top: 115px;
 
 	.section_caption {
 		margin-bottom : 50px;
@@ -211,8 +210,6 @@
 		height        : 422px;
 		margin-right  : -2px;
 		line-height   : 1.95;
-		//border        : solid #1666ac;
-		//border-width  : 1px 0 0 1px;
 		border-radius : 3px 0 0 0;
 		box-shadow    : 0 10px 18px rgba(30, 30, 30, .5);
 	}
@@ -368,9 +365,6 @@
 
 .dapp_slider_holder {
 	position : relative;
-	//padding    : 40px 0 100px;
-	//height     : 664px;
-	//background : url(../i/mac_book.png) no-repeat 50% 0;
 
 	.slick-track {
 		@extend %clearfix;
@@ -405,8 +399,6 @@
 	@extend %clearfix;
 	margin     : 0 auto 0;
 	overflow   : hidden;
-	//height    : 458px;
-	//max-width : 732px;
 	height     : 458px;
 	max-height : 458px;
 }
@@ -416,8 +408,6 @@
 	float      : left;
 	text-align : center;
 	padding    : 1em;
-	//font-size  : 380px;
-	//color      : #fff;
 }
 
 .dapp_slide_img {
