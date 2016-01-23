@@ -3,6 +3,8 @@
 bower_components
 node_modules
 npm-debug.log
-public/js/min/all.js
-public/js/min/index_page.js
+public/js/all.js
+public/js/min/all.min.js
+public/js/index_page.js
+public/js/min/index_page.min.js
 public/styles/main_global.*
