@@ -19,11 +19,11 @@
 
 .deploy_dapps {
 	padding-top : 100px;
-	
+
 	p {
 		margin-bottom : 50px;
 	}
-	
+
 }
 
 .dapps_update_block {
@@ -33,15 +33,15 @@
 .section_content {
 	padding-top : 100px;
 	//padding-top: 115px;
-	
+
 	.section_caption {
 		margin-bottom : 50px;
 	}
-	
+
 	.sub_caption {
 		margin-bottom : 40px;
 	}
-	
+
 	&.text_block {
 		p {
 			margin-bottom : 55px;
@@ -70,7 +70,7 @@
 	padding-bottom : 70px;
 	cursor         : pointer;
 	color          : #78909c;
-	
+
 	&:before {
 		@include transition_all(border-color .3s, bottom .3s);
 		position      : absolute;
@@ -82,59 +82,59 @@
 		border-bottom : 16px solid transparent;
 		border-left   : 16px solid transparent;
 	}
-	
+
 	.material-icons {
 		margin-bottom : 15px;
 		font-size     : 47px;
 	}
-	
+
 	p {
 		margin-bottom  : 5px;
 		text-transform : uppercase;
 	}
-	
+
 	.stepSection[data-step='1'] & {
 		&.step_1 {
 			cursor : default;
 			color  : #546e7a;
-			
+
 			&:before {
 				bottom              : 0;
 				border-bottom-color : $cascade;
 			}
-			
+
 			.material-icons {
 				color : $cascade;
 			}
 		}
 	}
-	
+
 	.stepSection[data-step='2'] & {
 		&.step_2 {
 			cursor : default;
 			color  : #546e7a;
-			
+
 			&:before {
 				bottom              : 0;
 				border-bottom-color : $curious;
 			}
-			
+
 			.material-icons {
 				color : $curious;
 			}
 		}
 	}
-	
+
 	.stepSection[data-step='3'] & {
 		&.step_3 {
 			cursor : default;
 			color  : #546e7a;
-			
+
 			&:before {
 				bottom              : 0;
 				border-bottom-color : $rebecca;
 			}
-			
+
 			.material-icons {
 				color : $rebecca;
 			}
@@ -152,15 +152,15 @@
 	@include transition_all(background-color .3s);
 	position : relative;
 	z-index  : 1;
-	
+
 	.stepSection[data-step='1'] + & {
 		background : $cascade;
 	}
-	
+
 	.stepSection[data-step='2'] + & {
 		background : $curious;
 	}
-	
+
 	.stepSection[data-step='3'] + & {
 		background : $rebecca;
 	}
@@ -170,7 +170,7 @@
 	position : relative;
 	float    : left;
 	height   : 540px;
-	
+
 	.section_inner {
 		@extend %global_flex_block_row_wrap_space_between_center;
 		position : relative;
@@ -181,16 +181,16 @@
 	width   : 50%;
 	padding : 0 100px 8px 0;
 	color   : #fff;
-	
+
 	.section_caption {
 		margin-bottom : 50px;
 	}
-	
+
 	.step_caption {
 		margin-bottom : 50px;
 		font          : 36px $RobotoMedium;
 	}
-	
+
 	p {
 		margin-bottom : 90px;
 		line-height   : 1.5;
@@ -204,7 +204,7 @@
 	overflow     : hidden;
 	width        : 50%;
 	padding-left : 10px;
-	
+
 	.code_window {
 		height        : 422px;
 		margin-right  : -2px;
@@ -214,14 +214,14 @@
 		border-radius : 3px 0 0 0;
 		box-shadow    : 0 10px 18px rgba(30, 30, 30, .5);
 	}
-	
+
 }
 
 .code_window {
 	position   : relative;
 	overflow   : hidden;
 	background : #fff;
-	
+
 	&:before {
 		position   : absolute;
 		top        : 36px;
@@ -241,7 +241,7 @@
 	height        : 12px;
 	border        : 1px solid #c4c4c4;
 	border-radius : 100%;
-	
+
 	&:after,
 	&:before {
 		position      : absolute;
@@ -253,7 +253,7 @@
 		border        : 1px solid #c4c4c4;
 		border-radius : 100%;
 	}
-	
+
 	&:before {
 		margin-left : 8px;
 	}
@@ -283,7 +283,7 @@
 .work_process,
 .step_figure {
 	width : 50%;
-	
+
 	img {
 		display   : block;
 		max-width : 100%;
@@ -296,11 +296,11 @@
 
 .work_process_fig {
 	@extend %global_flex_block_row_nowrap_flex_start_center;
-	
+
 	.fig_img {
 		position : relative;
 	}
-	
+
 	figcaption {
 		max-width     : 268px;
 		margin-left   : 26px;
@@ -323,7 +323,7 @@
 		border-right : 10px solid transparent;
 		border-left  : 10px solid transparent;
 	}
-	
+
 	&:after {
 		position    : absolute;
 		bottom      : 100%;
@@ -340,24 +340,24 @@
 	position   : relative;
 	margin-top : 60px;
 	z-index    : 3;
-	
+
 	&:first-child {
 		margin-top : 0;
 	}
-	
+
 	&.work_process_step_2 {
 		z-index     : 2;
 		margin-left : 20px;
-		
+
 		.fig_img {
 			@extend %fig_img_trace;
 		}
 	}
-	
+
 	&.work_process_step_3 {
 		z-index     : 1;
 		margin-left : 50px;
-		
+
 		.fig_img {
 			@extend %fig_img_trace;
 		}
@@ -369,11 +369,11 @@
 	//padding    : 40px 0 100px;
 	//height     : 664px;
 	//background : url(../i/mac_book.png) no-repeat 50% 0;
-	
+
 	.slick-track {
 		@extend %clearfix;
 	}
-	
+
 	.slider_next,
 	.slider_prev {
 		z-index    : 1;
@@ -383,17 +383,17 @@
 		text-align : center;
 		font-size  : 60px;
 		color      : $color_gray2_g;
-		
+
 		&.slick-disabled {
 			cursor : default;
 			color  : #e1e5e7;
 		}
 	}
-	
+
 	.slider_next {
 		right : 40px;
 	}
-	
+
 	.slider_prev {
 		left : 40px;
 	}
@@ -415,7 +415,7 @@
 }
 
 .dapp_slide_img {
-	
+
 	img {
 		display        : inline-block;
 		vertical-align : top;
@@ -426,7 +426,7 @@
 .dapp_store_info {
 	text-align     : center;
 	padding-bottom : 120px;
-	
+
 	.sub_caption {
 		margin-bottom : 40px;
 	}
@@ -438,7 +438,7 @@
 	width     : 580px;
 	height    : 300px;
 	max-width : 100%;
-	
+
 	svg {
 		overflow : visible !important;
 		width    : 100% !important;
@@ -458,11 +458,11 @@
 	max-width   : 380px;
 	margin      : 0 auto 50px;
 	padding-top : 65px;
-	
+
 	.form_cell {
 		margin-bottom : 30px;
 	}
-	
+
 }
 
 .share_subscribe_block {
@@ -473,10 +473,10 @@
 	padding        : 20px 0;
 	line-height    : 35px;
 	letter-spacing : .1px;
-	
+
 	@include respond-to-max(640px) {
 		margin-bottom : 20px;
-		
+
 		.fl, .fr {
 			float      : none;
 			text-align : center;
@@ -492,20 +492,20 @@
 	color           : #546e7a;
 	text-decoration : none;
 	margin-left     : 90px;
-	
+
 	&:hover {
 		color : $curious;
 	}
-	
+
 	&:first-child {
 		margin-left : 0;
 	}
-	
+
 	.fa {
 		margin-right : 19px;
 		font-size    : 1.5em;
 	}
-	
+
 	@include respond-to-max(640px) {
 		margin  : 20px 0 0;
 		display : block;
@@ -530,12 +530,12 @@
 	text-decoration : none;
 	width           : 180px;
 	height          : 80px;
-	
+
 	img {
 		display   : block;
 		max-width : 100%;
 	}
-	
+
 	&:empty {
 		&:before {
 			@extend %hor_vert_centr;
@@ -568,23 +568,23 @@
 	overflow : hidden;
 	position : relative;
 	padding  : 35px 0 100px;
-	
+
 	.slick-list {
 		@extend %clearfix;
 	}
-	
+
 	.slick-dots {
 		position   : absolute;
 		right      : 0;
 		left       : 0;
 		bottom     : 75px;
 		text-align : center;
-		
+
 		li {
 			display        : inline-block;
 			vertical-align : top;
 			margin         : 0 11px;
-			
+
 			&.slick-active {
 				button {
 					background   : #7e57c2;
@@ -592,7 +592,7 @@
 				}
 			}
 		}
-		
+
 		button {
 			display       : block;
 			width         : 16px;
@@ -621,7 +621,7 @@
 
 .review_text {
 	font-family : $RobotoItalic;
-	
+
 	p {
 		margin-bottom : 20px;
 	}
