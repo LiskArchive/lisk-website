@@ -5,6 +5,13 @@ module.exports = function(grunt){
 			options: {
 				separator: ';'
 			},
+			all_css : {
+				src : [
+					'public/styles/main_global.css',
+					'bower_components/animate.css/animate.min.css'
+				],
+				dest: 'public/styles/main_global.css'
+			},
 			all_js   : {
 				src : [
 					'public/js/jquery1.10.js',
