@@ -5,6 +5,7 @@ The official Lisk website.
 ## Prerequisites
 
 - Node.js + npm (https://github.com/nodesource/distributions)
+- Bower (http://bower.io/)
 - Ruby (https://rvm.io/)
 
 ## Installation
@@ -19,6 +20,12 @@ The official Lisk website.
 
   ```
   gem install sass
+  ```
+
+3. Install bower components:
+
+  ```
+  bower install
   ```
 
 ## Launch
