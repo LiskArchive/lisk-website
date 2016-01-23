@@ -10,7 +10,7 @@ html {
 body {
 	font  : 16px/1.2 $RobotoRegular;
 	color : $def_text_color;
-	
+
 	> svg {
 		left : -999px !important;
 	}
@@ -42,14 +42,14 @@ h1 {
 	position  : relative;
 	overflow  : hidden;
 	min-width : 320px;
-	
+
 	//	min-height  : 100%;
-	
+
 	&.h_screen {
 
 		$height: 100; //set your height in vh
 		$heightPercent: $height/100;
-	//	padding-top: #{$height}vh;
+		// padding-top: #{$height}vh;
 		padding-top: 580px;
 
 		@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
@@ -71,26 +71,26 @@ h1 {
 		  padding-top: 768px*$heightPercent;
 		}
 	}
-	
+
 	&.h_285 {
 		padding-top : 285px;
 	}
-	
+
 	&.h_420 {
 		padding-top : 420px;
 	}
-	
+
 	&.h_620 {
 		padding-top : 620px;
 	}
-	
+
 }
 
 .base {
 	position       : relative;
 	padding-bottom : 570px;
-	//	min-height     : 2000px;
-	
+	// min-height     : 2000px;
+
 	.documents_mode & {
 		padding-bottom : 100px;
 	}
@@ -124,7 +124,7 @@ h1 {
 
 .section_inner {
 	position : relative;
-	
+
 	.documents_mode & {
 		max-width : 1000px;
 	}
@@ -141,11 +141,11 @@ h1 {
 	bottom   : 0;
 	left     : 0;
 	@extend %global_flex_block_row_nowrap_center_center;
-	
+
 	.hero_block & {
 		padding-top : 90px;
 	}
-	
+
 	.footer_menu_holder & {
 		padding-top : 15px;
 	}
@@ -168,14 +168,13 @@ h1 {
 	&:hover {
 		color : $tahiti;
 	}
-	
 }
 
 .inherit_link {
 	@include transition_all(color .3s);
 	text-decoration : none;
 	color           : inherit;
-	
+
 	&:hover {
 		text-decoration : underline;
 	}
@@ -183,34 +182,33 @@ h1 {
 
 .section {
 	position : relative;
-	
+
 	&.white_section {
 		background : $white;
 	}
-	
+
 	&.white_section_2 {
 		background : #fafafa;
 	}
-	
+
 	&.black_section {
 		background : $ebony;
 	}
-	
+
 	&.gray_section {
 		background : $gray;
 	}
-	
+
 	&.step_section {
-		//min-height : 540px;
+		// min-height : 540px;
 	}
-	
 }
 
 .section_caption {
 	font-size     : 36px;
 	font-family   : $RobotoMedium;
 	margin-bottom : 25px;
-	//text-align    : center;
+	// text-align : center;
 }
 
 .block_caption {
@@ -230,7 +228,7 @@ h1 {
 	left             : 0;
 	padding          : 30px 0 10px;
 	background-color : transparent;
-	
+
 	&:not(.sticky) {
 		margin : auto !important;
 	}
@@ -243,29 +241,29 @@ h1 {
 		opacity: 0.93;
     	filter: alpha(opacity=93); /* For IE8 and earlier */
 		padding    : 8px 0 12px;
-		
+
 		.main_menu_holder {
 			margin-top : 5px;
 		}
-		
+
 		.user_menu {
 			color     : #838c93;
 			min-width : 285px;
 		}
-		
+
 		.login_btn {
-			//background : #fff;
-			//color      : #838c93;
+			// background : #fff;
+			// color      : #838c93;
 		}
 	}
-	
+
 	&.sticky {
 		@include transform_translate(0, 0);
 		position : fixed;
-		//background-position : 50% 100%;
-		//box-shadow          : 0 2px 3px rgba(0, 0, 0, .5);
+		// background-position : 50% 100%;
+		// box-shadow          : 0 2px 3px rgba(0, 0, 0, .5);
 	}
-	
+
 	&.sticky_fixed {
 		@include transform_translate(0, -100%);
 		position : fixed;
@@ -276,14 +274,14 @@ h1 {
 	float           : left;
 	text-decoration : none;
 	letter-spacing  : -.2px;
-	//text-transform  : uppercase;
+	// text-transform  : uppercase;
 	color           : #fff;
-	
+
 	span {
 		display        : inline-block;
 		vertical-align : top;
 	}
-	
+
 	.fixed & {
 		margin-top : 5px;
 	}
@@ -291,7 +289,7 @@ h1 {
 
 .small_logo {
 	display : none;
-	
+
 	.fixed & {
 		display : block;
 	}
@@ -299,7 +297,7 @@ h1 {
 
 .big_logo {
 	display : block;
-	
+
 	.fixed & {
 		display : none;
 	}
@@ -307,7 +305,7 @@ h1 {
 
 .logo_emphasis {
 	position : relative;
-	
+
 	&:before {
 		@extend %hor_centr;
 		position   : absolute;
@@ -325,33 +323,33 @@ h1 {
 	right                   : 0;
 	left                    : 0;
 	padding-top             : inherit;
-	//	height                  : 100vh;
+	// height                  : 100vh;
 	background              : url(/i/hero3.jpg);
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
 	-o-background-size      : cover;
 	background-size         : cover;
-	
+
 	.index_page & {
-		//background-image : url(../i/first_section.jpg);
+		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/hero3.jpg);
 	}
-	
+
 	.last_frame & {
-		//background-image : url(../i/first_section.jpg);
+		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/hero3.jpg);
 	}
-	
+
 	.blog_page & {
-		//background-image : url(../i/first_section.jpg);
+		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/blog_post.jpg);
 	}
-	
+
 	.mobile .index_page &,
 	.tablet .index_page & {
 		background-image : url(/i/30sec-hd.png);
 	}
-	
+
 	&:before {
 		content    : '';
 		position   : absolute;
@@ -359,7 +357,7 @@ h1 {
 		bottom     : 0;
 		left       : 0;
 		right      : 0;
-		background : rgba(38, 50, 56, .3); //.7
+		background : rgba(38, 50, 56, .3); // .7
 	}
 }
 
@@ -390,7 +388,7 @@ h1 {
 	margin-left     : 10px;
 	text-decoration : none;
 	color           : #fff;
-	
+
 	.collapsed_menu & {
 		display : block;
 	}
@@ -398,9 +396,9 @@ h1 {
 
 .main_menu {
 	padding-bottom : 2px;
-	//	float         : right;
-	//	padding-right : 18px;
-	
+	// float         : right;
+	// padding-right : 18px;
+
 	.collapsed_menu & {
 		display    : none;
 		position   : absolute;
@@ -408,10 +406,10 @@ h1 {
 		top        : 100%;
 		right      : 0;
 		left       : 0;
-		//max-height : 70vh;
-		//overflow-y : auto;
+		// max-height : 70vh;
+		// overflow-y : auto;
 	}
-	
+
 	.open_menu.collapsed_menu & {
 		display : block;
 	}
@@ -419,7 +417,7 @@ h1 {
 
 .menu_item {
 	float : left;
-	
+
 	.collapsed_menu & {
 		float : none;
 	}
@@ -435,7 +433,7 @@ h1 {
 	font-size       : 14px;
 	color           : #fff;
 	@include transition_all(padding .3s);
-	
+
 	&:before {
 		@include transition_all(opacity .3s, margin .3s);
 		content    : '';
@@ -448,69 +446,69 @@ h1 {
 		left       : 24px;
 		opacity    : 0;
 	}
-	
+
 	&.active,
 	&:not(.active):hover {
-		
+
 		&:before {
 			margin-top : 12px;
 			opacity    : 1;
 		}
-		
+
 	}
-	
+
 	&.active {
 		cursor : default;
 	}
-	
+
 	.collapsed_menu & {
 		color   : #838c93;
 		padding : 20px;
-		
+
 		&:before {
-			//right : 0;
-			//left  : 0;
+			// right : 0;
+			// left  : 0;
 		}
-		
+
 		&.active,
 		&:not(.active):hover {
-			
+
 			&:before {
 				margin-top : 0;
 			}
 		}
 	}
-	
+
 	.collapsed_menu .fixed & {
 		padding : 12px 20px;
 	}
-	
+
 	.fixed & {
 		padding   : 0 16px;
 		font-size : 16px;
 		color     : #838c93;
-		
+
 		&:before {
 			left  : 16px;
 			right : 16px;
 		}
-		
+
 		&.active {
 			cursor : default;
-			//color  : #fff !important;
+			// color  : #fff !important;
 		}
 	}
-	
+
 }
 
 .user_menu {
-	//@include transition_all(color .3s);
+	// @include transition_all(color .3s);
 	padding-left : 10px;
 	min-width    : 275px;
 	color        : #fff;
 	white-space  : nowrap;
 	text-align   : right;
-	
+
 	.collapsed_menu & {
 		min-width : 0 !important;
 	}
@@ -551,7 +549,7 @@ $rectWidth : 1180px;
 	min-height : 570px;
 	color      : $color_gray_g;
 	background : $ebony;
-	
+
 	&:before {
 		position   : absolute;
 		top        : 0;
@@ -561,7 +559,7 @@ $rectWidth : 1180px;
 		content    : '';
 		background : $madison;
 	}
-	
+
 	.documents_mode & {
 		min-height : 100px;
 	}
@@ -581,7 +579,7 @@ $rectWidth : 1180px;
 }
 
 .footer_menu_block {
-	
+
 	@include respond-to-min($tab_width - 200) {
 		float         : left;
 		width         : 25%;
@@ -597,11 +595,11 @@ $rectWidth : 1180px;
 
 .footer_m_item {
 	margin-bottom : 17px;
-	
+
 	.gl_link {
 		font-family : $RobotoCondensedRegular;
 		color       : #cfd8dc;
-		
+
 		&:hover {
 			color : $tahiti;
 		}
@@ -621,8 +619,7 @@ $rectWidth : 1180px;
 	@include flex(0 60%);
 }
 
-.logo_holder,
-.dev_block {
+.logo_holder, .dev_block {
 	@include flex(0 20%);
 }
 
@@ -694,7 +691,7 @@ $rectWidth : 1180px;
 
 a.fa {
 	@include transition_all(color .3s);
-	
+
 	&:hover {
 		color : $curious;
 	}
@@ -708,7 +705,7 @@ a.fa {
 	left     : 0;
 	z-index  : 0;
 	overflow : hidden;
-	
+
 	&:before {
 		content    : '';
 		position   : absolute;
@@ -718,13 +715,13 @@ a.fa {
 		right      : 0;
 		background : rgba(38, 50, 56, 0);
 	}
-	
+
 }
 
 .logo_footer {
 	margin-left: 100px;
 }
 
-.divider { 
+.divider {
 	border-top: 1px solid #ced5df;
 }
