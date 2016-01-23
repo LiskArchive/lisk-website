@@ -1,0 +1,27 @@
+{
+  "name": "lisk-website",
+  "description": "The official Lisk website.",
+  "main": "app.js",
+  "authors": [
+    "Max Kordek <max@lisk.io>",
+    "Olivier Beddows <olivier@lisk.io>"
+  ],
+  "homepage": "https://github.com/LiskHQ/lisk-website",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
