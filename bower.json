@@ -26,6 +26,7 @@
     "jquery": "=1.12.0",
     "slick.js": "=1.5.5",
     "animate.css": "=3.5.1",
-    "devicejs": "=0.2.7"
+    "devicejs": "=0.2.7",
+    "highlightjs": "=9.1.0"
   }
 }

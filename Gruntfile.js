@@ -16,7 +16,7 @@ module.exports = function(grunt){
 				src : [
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
-					'public/js/highlight.pack.js',
+					'bower_components/highlightjs/highlight.pack.js'
 					'bower_components/devicejs/lib/device.min.js',
 					'public/js/script.js',
 					'public/js/map_init.js'
