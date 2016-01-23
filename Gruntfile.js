@@ -18,10 +18,6 @@ module.exports = function(grunt){
 					'bower_components/slick.js/slick/slick.min.js',
 					'public/js/highlight.pack.js',
 					'bower_components/devicejs/lib/device.min.js',
-					//'js/raphael.js',
-					//'js/analytics.js',
-					//'js/popup.js',
-					//'js/graph_init.js',
 					'public/js/script.js',
 					'public/js/map_init.js'
 				],
