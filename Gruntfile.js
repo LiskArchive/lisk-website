@@ -17,7 +17,7 @@ module.exports = function(grunt){
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
 					'public/js/highlight.pack.js',
-					'public/js/device.min.js',
+					'bower_components/devicejs/lib/device.min.js',
 					//'js/raphael.js',
 					//'js/analytics.js',
 					//'js/popup.js',
