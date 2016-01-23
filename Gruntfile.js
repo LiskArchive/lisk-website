@@ -26,7 +26,6 @@ module.exports = function(grunt){
 			index_js   : {
 				src : [
 					'public/js/jquery.backgroundvideo.min.js',
-					//'js/jquery.vide.js',
 					'public/js/raphael.js',
 					'public/js/g.raphael-min.js',
 					'public/js/popup.js',
