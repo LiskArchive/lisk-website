@@ -1,11 +1,8 @@
-
 .about_block {
-	//padding-top : 115px;
 	max-width      : 780px;
 	margin         : 0 auto;
-	//text-align     : center;
 	padding-bottom : 70px;
-	
+
 	p {
 		margin-bottom : 30px;
 		line-height   : 1.9;
@@ -26,11 +23,10 @@
 
 .employee_card {
 	position   : relative;
-	
+
 	.employee_block {
 		@include transition_all(transform .3s);
 		@extend %global_flex_block_column_nowrap_space_between_stretch;
-		//@include transform_translate(0, 100%);
 		position   : absolute;
 		top        : 0;
 		right      : 0;
@@ -41,7 +37,7 @@
 		background : #fff;
 		box-shadow : 0 0 49px rgba(0, 0, 0, .29);
 	}
-	
+
 	&:not(:hover) {
 		.employee_block {
 			display : none;
@@ -75,14 +71,11 @@
 .team_slider_holder {
 	position : relative;
 	padding  : 0 20px;
-	//padding    : 40px 0 100px;
-	//height     : 664px;
-	//background : url(../i/mac_book.png) no-repeat 50% 0;
-	
+
 	.slick-track {
 		@extend %clearfix;
 	}
-	
+
 	.slider_next,
 	.slider_prev {
 		z-index    : 1;
@@ -92,17 +85,17 @@
 		text-align : center;
 		font-size  : 60px;
 		color      : $color_gray2_g;
-		
+
 		&.slick-disabled {
 			cursor : default;
 			color  : #e1e5e7;
 		}
 	}
-	
+
 	.slider_next {
 		right : 40px;
 	}
-	
+
 	.slider_prev {
 		left : 40px;
 	}
@@ -121,7 +114,7 @@
 	@extend %global_flex_block_row_nowrap_space_between_stretch;
 	float      : left;
 	min-height : 380px;
-	
+
 	p {
 		line-height : 1.5;
 		font-size   : 18px;
@@ -142,8 +135,7 @@
 .team_share_link {
 	display         : inline-block;
 	margin          : 0 25px;
-	//vertical-align  : top;
-	float: right;
+	float           : right;
 	text-decoration : none;
 	font-size       : 26px;
 	color           : $color_gray_g;
@@ -154,7 +146,7 @@
 	max-width    : 100%;
 	margin-right : 120px;
 	color        : $color_gray_g;
-	
+
 	img {
 		display        : inline-block;
 		vertical-align : top;
@@ -195,7 +187,7 @@
 .country_corr_flag {
 	float        : left;
 	margin-right : 25px;
-	
+
 	img {
 		display : block;
 	}
@@ -206,18 +198,18 @@
 	height       : 65px;
 	position     : relative;
 	padding-left : 14%;
-	
+
 	&:before {
 		@extend %vert_centr;
 		content  : '\2022';
 		position : absolute;
 		left     : 12.8%;
 	}
-	
+
 	&:hover {
 		box-shadow : 0 0 9px rgba(0, 0, 0, .3);
 	}
-	
+
 }
 
 .country_corr_name {
@@ -230,7 +222,6 @@
 .country_corr_info {
 	@extend %clearfix;
 	@include flex(0 56%);
-	//width : 48%;
 }
 
 .country_corr_share {
