@@ -7,39 +7,51 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>http://lisk.io/features</loc>
-        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>http://lisk.io/become-a-partner</loc>
-        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
-        <priority>0.4</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>http://lisk.io/get-started</loc>
-        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
-        <priority>0.9</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>http://lisk.io/contact-us</loc>
+        <loc>http://lisk.io/contact_us</loc>
         <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.5</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>http://lisk.io/about</loc>
+        <loc>http://lisk.io/documentation</loc>
         <lastmod>2016-01-12T05:00:00+00:00</lastmod>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>http://lisk.io/download</loc>
         <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.6</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://lisk.io/faq</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
+        <priority>0.6</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://lisk.io/features</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://lisk.io/get_started</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://lisk.io/ico</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
+        <priority>0.6</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://lisk.io/team</loc>
+        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
+        <priority>0.7</priority>
         <changefreq>weekly</changefreq>
     </url>
 </urlset>
