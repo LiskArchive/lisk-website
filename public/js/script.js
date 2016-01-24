@@ -170,12 +170,6 @@ function scrollDoc(pos, speed, callback){
 
 function scroll_f(){
 
-	var scrollLeft = doc_var.scrollLeft();
-	nav_container.css({
-		// 'marginLeft' : (scrollLeft > 0 ? -scrollLeft : 0),
-		// 'marginRight': (scrollLeft > 0 ? scrollLeft : 0)
-	});
-
 	if(doc_var.scrollTop() < nav_container.outerHeight() * 2){
 		nav_container.removeClass("fixed");
 	} else{
