@@ -10,24 +10,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/global.css" media="all"/>
-</head>
-<body class="{{#if pageId}}{{pageId}}{{/if}}{{#if isDoc}}documents_mode{{/if}}">
-    {{#if isMap}}
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIi5MeuuH2pL2M7AEl5Vq6TUBLjXKvbY"></script>
-    {{/if}}
 
     <script type="text/javascript" src="js/min/all.min.js"></script>
-
-    {{#if hasScript}}
-    <script type="text/javascript" src="js/min/{{pageId}}.min.js"></script>
-    {{/if}}
 
     {{#if isDoc}}
         <link rel="stylesheet" href="styles/prism.css">
         <script type="text/javascript" src="js/min/prism.min.js"></script>
-        <script type="text/javascript" src="js/documentation.js"></script>
     {{/if}}
 
+    {{#if hasScript}}
+    <script type="text/javascript" src="js/min/{{pageId}}.min.js"></script>
+    {{/if}}
+</head>
+<body class="{{#if pageId}}{{pageId}}{{/if}}{{#if isDoc}}documents_mode{{/if}}">
     {{{body}}}
 
     <!-- Start of Rocket.Chat Livechat Script -->
@@ -48,6 +43,11 @@
 
     <!-- Twitter -->
     <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+
+    <!-- Google Maps -->
+    {{#if isMap}}
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIi5MeuuH2pL2M7AEl5Vq6TUBLjXKvbY"></script>
+    {{/if}}
 
     <!-- Google Analytics -->
     <script type="text/javascript">
