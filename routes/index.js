@@ -2,7 +2,7 @@ module.exports = {
 	home : require('./home.js'),
 	download : require('./download.js'),
 	// mediakit : require('./mediakit.js'),
-	getstarted : require('./getstarted.js'),
+	get_started : require('./get_started.js'),
 	features : require('./features.js'),
 	about: require('./about.js'),
 	contact_us: require('./contact_us.js'),
