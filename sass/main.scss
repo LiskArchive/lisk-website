@@ -323,7 +323,6 @@ h1 {
 	right                   : 0;
 	left                    : 0;
 	padding-top             : inherit;
-	// height                  : 100vh;
 	background              : url(/i/hero3.jpg);
 	background-color        : #0B7296;
 	-webkit-background-size : cover;
@@ -332,17 +331,14 @@ h1 {
 	background-size         : cover;
 
 	.index_page & {
-		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/hero3.jpg);
 	}
 
 	.last_frame & {
-		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/hero3.jpg);
 	}
 
 	.blog_page & {
-		// background-image : url(../i/first_section.jpg);
 		background-image : url(/i/blog_post.jpg);
 	}
 
@@ -358,7 +354,7 @@ h1 {
 		bottom     : 0;
 		left       : 0;
 		right      : 0;
-		background : rgba(38, 50, 56, .3); // .7
+		background : rgba(38, 50, 56, .3);
 	}
 }
 
