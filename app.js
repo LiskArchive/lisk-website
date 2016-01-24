@@ -110,7 +110,7 @@ var hbs = exphbs.create({
 			return "http://downloads.lisk.io/lisk_chat.deb";
 		},
 		documentation: function () {
-			return "";
+			return "/documentation?i=README";
 		},
 		dappstore: function () {
 			return "https://store.lisk.io/";
