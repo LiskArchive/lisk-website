@@ -7,7 +7,6 @@ module.exports = function(grunt){
 			},
 			all_css : {
 				src : [
-					'bower_components/animate.css/animate.min.css',
 					'public/styles/global.css'
 				],
 				dest: 'public/styles/global.css'
