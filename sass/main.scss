@@ -343,9 +343,7 @@ h1 {
 	}
 
 	.mobile .index_page &,
-	.tablet .index_page & {
-		background-image : url(/i/30sec-hd.png);
-	}
+	.tablet .index_page & {}
 
 	&:before {
 		content    : '';
