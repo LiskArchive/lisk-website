@@ -71,13 +71,11 @@ $(function($){
 		stepSection.attr('data-step', nextSlide + 1);
 	});
 
-
 	$('.discoverBtn').on ('click', function () {
 		scrollDoc(browserWindow.height() - nav_container.height(), 800);
 
 		return false;
 	});
-
 
 	$('.stepBtn').on('click', function(){
 		var firedEl = $(this), ind = firedEl.index();
@@ -144,7 +142,7 @@ $(function($){
 		classPrefix: ''
 	});
 
-	//hljs.initHighlightingOnLoad();
+	// hljs.initHighlightingOnLoad();
 
 	$('.codeHighlight').each(function(i, block){
 		hljs.highlightBlock(block);
@@ -174,8 +172,8 @@ function scroll_f(){
 
 	var scrollLeft = doc_var.scrollLeft();
 	nav_container.css({
-		//'marginLeft' : (scrollLeft > 0 ? -scrollLeft : 0),
-		//'marginRight': (scrollLeft > 0 ? scrollLeft : 0)
+		// 'marginLeft' : (scrollLeft > 0 ? -scrollLeft : 0),
+		// 'marginRight': (scrollLeft > 0 ? scrollLeft : 0)
 	});
 
 	if(doc_var.scrollTop() < nav_container.outerHeight() * 2){
