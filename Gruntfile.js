@@ -37,6 +37,17 @@ module.exports = function(grunt){
 				}
 			}
 		},
+		cssmin: {
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'public/styles',
+					src: ['*.css', '!*.min.css'],
+					dest: 'public/styles',
+					ext: '.min.css'
+				}]
+			}
+		},
 		jshint : {
 			options: {
 				jshintrc: '.jshintrc'
@@ -80,9 +91,10 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('build', ['sass', 'concat', 'uglify']);
+	grunt.registerTask('build', ['sass', 'cssmin', 'concat', 'uglify']);
 	grunt.registerTask('default', ['watch']);
 };

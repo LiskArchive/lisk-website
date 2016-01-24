@@ -6,3 +6,4 @@ npm-debug.log
 public/js/all.js
 public/js/min/*.min.js
 public/styles/global.*
+public/styles/*.min.css
