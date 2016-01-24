@@ -15,7 +15,7 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	display                  : block;
 	overflow-x               : auto;
 	-webkit-text-size-adjust : none;
-	
+
 	.string,
 	.title,
 	.constant,
@@ -47,7 +47,7 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	.tp .variable {
 		color : #800;
 	}
-	
+
 	.smartquote,
 	.comment,
 	.annotation,
@@ -57,7 +57,7 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	.markdown .blockquote {
 		color : #888;
 	}
-	
+
 	.number,
 	.date,
 	.regexp,
@@ -75,7 +75,7 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	.markdown .link_url {
 		color : #080;
 	}
-	
+
 	.label,
 	.ruby .string,
 	.decorator,
@@ -106,7 +106,7 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	.phony {
 		color : #88f;
 	}
-	
+
 	.keyword,
 	.id,
 	.title,
@@ -129,17 +129,17 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 	.tp .io {
 		font-weight : bold;
 	}
-	
+
 	.asciidoc .emphasis,
 	.markdown .emphasis,
 	.tp .units {
 		font-style : italic;
 	}
-	
+
 	.nginx .built_in {
 		font-weight : normal;
 	}
-	
+
 	.coffeescript .javascript,
 	.javascript .xml,
 	.lasso .markup,

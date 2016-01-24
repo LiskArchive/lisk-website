@@ -365,7 +365,7 @@ $arrSize : 32px;
 	.fotorama__dot {
 		border-color : $color;
 	}
-	
+
 	.fotorama__active .fotorama__dot {
 		background-color : $color;
 	}
@@ -565,7 +565,7 @@ $arrSize : 32px;
 			opacity    : $opacity;
 		}
 	}
-	
+
 }
 
 @mixin appearance($value : button) {
@@ -619,7 +619,7 @@ $arrSize : 32px;
 	} @else if $content == 'center' {
 		-webkit-box-pack : center;
 	}
-	
+
 	@if $align-items == 'stretch' {
 		-webkit-box-align : stretch;
 	} @else if $align-items == 'flex-start' {
@@ -694,7 +694,7 @@ $arrSize : 32px;
 							-webkit-transition : -webkit-#{$property} $duration $easing $delay;
 							transition         : $property $duration $easing $delay;
 						}
-						
+
 					} @else {
 						@if $important != blank {
 							-webkit-transition : $property $duration $easing $delay !important;
@@ -703,9 +703,9 @@ $arrSize : 32px;
 							-webkit-transition : $property $duration $easing $delay;
 							transition         : $property $duration $easing $delay;
 						}
-						
+
 					}
-					
+
 				} @else {
 					@if $property == transform {
 						@if $important != blank {
@@ -715,7 +715,7 @@ $arrSize : 32px;
 							-webkit-transition : -webkit-#{$property} $duration $delay;
 							transition         : $property $duration $delay;
 						}
-						
+
 					} @else {
 						@if $important != blank {
 							-webkit-transition : $property $duration $delay !important;
@@ -724,10 +724,10 @@ $arrSize : 32px;
 							-webkit-transition : $property $duration $delay;
 							transition         : $property $duration $delay;
 						}
-						
+
 					}
 				}
-				
+
 			} @else {
 				@if $easing != blank {
 					@if $property == transform {
@@ -738,7 +738,7 @@ $arrSize : 32px;
 							-webkit-transition : -webkit-#{$property} $duration $easing;
 							transition         : $property $duration $easing;
 						}
-						
+
 					} @else {
 						@if $important != blank {
 							-webkit-transition : $property $duration $easing !important;
@@ -747,9 +747,9 @@ $arrSize : 32px;
 							-webkit-transition : $property $duration $easing;
 							transition         : $property $duration $easing;
 						}
-						
+
 					}
-					
+
 				} @else {
 					@if $property == transform {
 						@if $important != blank {
@@ -759,7 +759,7 @@ $arrSize : 32px;
 							-webkit-transition : -webkit-#{$property} $duration;
 							transition         : $property $duration;
 						}
-						
+
 					} @else {
 						@if $important != blank {
 							-webkit-transition : $property $duration !important;
@@ -768,7 +768,7 @@ $arrSize : 32px;
 							-webkit-transition : $property $duration;
 							transition         : $property $duration;
 						}
-						
+
 					}
 				}
 			}
@@ -1084,7 +1084,7 @@ $arrSize : 32px;
 			-ms-transform     : translate($x, $y);
 			transform         : translate($x, $y);
 		}
-		
+
 	}
 }
 
@@ -1132,11 +1132,11 @@ $arrSize : 32px;
 	@-webkit-keyframes $animation_name {
 		@content;
 	}
-	
+
 	@-moz-keyframes $animation_name {
 		@content;
 	}
-	
+
 	@keyframes $animation_name {
 		@content;
 	}
@@ -1224,7 +1224,7 @@ $arrSize : 32px;
 		//-webkit-transform: translate($x,$y);
 		transform         : translate($x, $y);
 		visibility        : visible;
-		
+
 		.safari & {
 			-webkit-transition : opacity 0.3s, -webkit-transform 0.3s ease-in-out;
 			transition         : opacity 0.3s, transform 0.3s ease-in-out;
@@ -1274,7 +1274,7 @@ $arrSize : 32px;
 		$d : 1 - (1 - $i/$n);
 		$value : '#{$value} , #{$i}px #{$i}px 0 ' +  transparentize($color, $d);
 	}
-	
+
 	@return unquote($value);
 }
 

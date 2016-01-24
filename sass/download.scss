@@ -41,7 +41,7 @@
 	margin    : 0 auto;
 	height    : 320px;
 	padding   : 42px 0 30px 10px;
-	
+
 	p {
 		line-height : 2.2;
 	}
@@ -53,23 +53,23 @@
 
 .download_info {
 	line-height : 1.5;
-	
+
 	p {
 		margin-bottom : 25px;
 	}
-	
+
 	ul {
 		padding-top   : 5px;
 		padding-left  : 35px;
 		margin-bottom : 65px;
 	}
-	
+
 	li {
 		position      : relative;
 		padding-left  : 15px;
 		margin-bottom : 6px;
 		line-height   : 1.9;
-		
+
 		&:before {
 			content  : '\2022';
 			position : absolute;
@@ -77,27 +77,27 @@
 			top      : 0;
 			color    : $color_blue_g;
 		}
-		
+
 		a {
 			color           : $color_blue_g;
 			text-decoration : none;
-			
+
 			&:hover {
 				text-decoration : underline;
 			}
 		}
 	}
-	
+
 }
 
 .download_os {
 	color     : $color_gray_g;
 	font-size : 24px;
-	
+
 	.fa {
 		margin-right : 20px;
 	}
-	
+
 }
 
 .dl_os_docker {
@@ -134,12 +134,12 @@
 
 .download_tips {
 	padding-bottom : 80px;
-	
+
 	p {
 		font-size     : 18px;
 		margin-bottom : 60px;
 	}
-	
+
 	+ .download_tips {
 		padding-top   : 117px;
 		margin-bottom : 40px;
@@ -148,9 +148,9 @@
 }
 
 .download_controls {
-	
+
 	.news_btn {
 		margin : 0 10px;
 	}
-	
+
 }

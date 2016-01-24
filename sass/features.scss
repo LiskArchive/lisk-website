@@ -4,40 +4,40 @@
 	margin         : 0 auto;
 	//text-align     : center;
 	padding-bottom : 70px;
-	
+
 	p {
 		line-height   : 1.9;
 		margin-bottom : 50px;
 	}
-	
+
 }
 
 .usability_block {
 	width          : 50%;
 	padding-bottom : 90px;
-	
+
 	&.fr {
 		padding-left : 10px;
 	}
-	
+
 	&.fl {
 		padding-right : 10px;
 	}
-	
+
 	.section_caption {
 		text-align    : left;
 		margin-bottom : 70px;
 	}
-	
+
 	.sub_caption {
 		margin-bottom : 30px;
 	}
-	
+
 	p {
 		margin-bottom : 40px;
 		line-height   : 1.9;
 	}
-	
+
 }
 
 .consensus_btn {
@@ -60,13 +60,13 @@
 	left       : 0;
 	margin-top : -15px;
 	max-width  : 48%;
-	
+
 	img {
 		display        : inline-block;
 		vertical-align : top;
 		max-width      : 100%;
 	}
-	
+
 }
 
 .feature_img_holder {
@@ -74,7 +74,7 @@
 	max-width  : 480px;
 	text-align : center;
 	margin-top : -10px;
-	
+
 	img {
 		display        : inline-block;
 		vertical-align : top;
@@ -90,7 +90,7 @@
 
 .api_holder {
 	margin-bottom : 60px;
-	
+
 	.code_window {
 		height        : 345px;
 		line-height   : 1.95;
@@ -99,5 +99,5 @@
 		border-radius : 3px;
 		//box-shadow    : 0 10px 18px rgba(29, 133, 225, .5);
 	}
-	
+
 }
