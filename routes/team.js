@@ -30,25 +30,25 @@ var partnerships = [
 		name: "Microsoft",
 		date: "Since February 2016",
 		web: "http://microsoft.com/",
-		logo: "about_2"
+		card: "microsoft"
 	},
 	{
 		name: "Ethereum",
 		date: "Since March 2016",
 		web: "http://ethereum.org/",
-		logo: "about_3"
+		card: "ethereum"
 	},
 	{
 		name: "Microsoft",
 		date: "Since February 2016",
 		web: "http://microsoft.com/",
-		logo: "about_2"
+		card: "microsoft"
 	},
 	{
 		name: "Ethereum",
 		date: "Since March 2016",
 		web: "http://ethereum.org/",
-		logo: "about_3"
+		card: "ethereum"
 	}
 ];
 
