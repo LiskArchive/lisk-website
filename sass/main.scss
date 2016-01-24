@@ -323,7 +323,7 @@ h1 {
 	right                   : 0;
 	left                    : 0;
 	padding-top             : inherit;
-	background              : url(/i/hero3.jpg);
+	background              : url(/i/hero.jpg);
 	background-color        : #0B7296;
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
@@ -331,11 +331,11 @@ h1 {
 	background-size         : cover;
 
 	.index_page & {
-		background-image : url(/i/hero3.jpg);
+		background-image : url(/i/hero.jpg);
 	}
 
 	.last_frame & {
-		background-image : url(/i/hero3.jpg);
+		background-image : url(/i/hero.jpg);
 	}
 
 	.blog_page & {
