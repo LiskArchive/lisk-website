@@ -13,7 +13,7 @@ $(function($){
 
 		];
 
-		var myIcon = new google.maps.MarkerImage('i/map_pin.png', new google.maps.Size(44, 44));
+		var myIcon = new google.maps.MarkerImage('i/countries/map_pin.png', new google.maps.Size(44, 44));
 
 		// Max
 		new google.maps.Marker({
