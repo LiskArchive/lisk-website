@@ -24,12 +24,4 @@ $(function($){
 		return false;
 	});
 
-	$("#investNowBtn").on('click', function () {
-		$('html, body').animate({
-			scrollTop: $("#investNow").offset().top - 70
-		}, 2000);
-
-		return false;
-	});
-
 });
