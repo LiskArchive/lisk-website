@@ -5,4 +5,4 @@ node_modules
 npm-debug.log
 public/js/all.js
 public/js/min/*.min.js
-public/styles/main_global.*
+public/styles/global.*

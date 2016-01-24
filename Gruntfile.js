@@ -8,9 +8,9 @@ module.exports = function(grunt){
 			all_css : {
 				src : [
 					'bower_components/animate.css/animate.min.css',
-					'public/styles/main_global.css'
+					'public/styles/global.css'
 				],
-				dest: 'public/styles/main_global.css'
+				dest: 'public/styles/global.css'
 			},
 			all_js   : {
 				src : [
@@ -49,7 +49,7 @@ module.exports = function(grunt){
 					style: 'expanded'
 				},
 				files  : {
-					'public/styles/main_global.css': 'sass/main_global.scss'
+					'public/styles/global.css': 'sass/global.scss'
 				}
 			}
 		},
