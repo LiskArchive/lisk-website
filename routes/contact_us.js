@@ -10,7 +10,7 @@ var transporter = nodemailer.createTransport({
 
 module.exports = function (app) {
 	app.get("/contact_us", function (req, res) {
-		return res.render("contact_us", {isMap: true, title: "Contact Us",  description: "If you need to contact the Lisk team for business inquiries or personal matters, here you can.", words: "lisk, crypti, contact, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain"});
+		return res.render("contact_us", {pageId: "contact_us", title: "Contact Us",  description: "If you need to contact the Lisk team for business inquiries or personal matters, here you can.", words: "lisk, crypti, contact, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: true, isMap: true});
 	});
 
 	app.post('/contact_us', function (req, res) {

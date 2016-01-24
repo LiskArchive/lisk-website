@@ -11,7 +11,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/main_global.css" media="all"/>
 </head>
-<body class="{{#if indexPageClass}}{{indexPageClass}}{{/if}}{{#if isDoc}}documents_mode{{/if}}">
+<body class="{{#if pageId}}{{pageId}}{{/if}}{{#if isDoc}}documents_mode{{/if}}">
     {{{body}}}
 
     <script type="text/javascript">
@@ -44,8 +44,8 @@
 
     <script type="text/javascript" src="js/min/all.min.js"></script>
 
-    {{#if indexPageClass}}
-        <script type="text/javascript" src="js/min/index_page.min.js"></script>
+    {{#if hasScript}}
+    <script type="text/javascript" src="js/min/{{pageId}}.min.js"></script>
     {{/if}}
 
     <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>

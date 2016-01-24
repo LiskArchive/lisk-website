@@ -18,21 +18,9 @@ module.exports = function(grunt){
 					'bower_components/slick.js/slick/slick.min.js',
 					'bower_components/highlightjs/highlight.pack.js',
 					'bower_components/devicejs/lib/device.min.js',
-					'public/js/script.js',
-					'public/js/map_init.js'
+					'public/js/global.js'
 				],
 				dest: 'public/js/all.js'
-			},
-			index_js   : {
-				src : [
-					'public/js/min/jquery.backgroundvideo.min.js',
-					'bower_components/raphael/raphael-min.js',
-					'public/js/min/g.raphael-min.js',
-					'public/js/popup.js',
-					'public/js/analytics.js',
-					'public/js/graph_init.js'
-				],
-				dest: 'public/js/index_page.js'
 			}
 		},
 		uglify: {
@@ -42,7 +30,11 @@ module.exports = function(grunt){
 			my_target: {
 				files: {
 					'public/js/min/all.min.js': ['public/js/all.js'],
-					'public/js/min/index_page.min.js': ['public/js/index_page.js']
+					'public/js/min/contact_us.min.js': ['public/js/contact_us.js'],
+					'public/js/min/home.min.js': ['public/js/home.js'],
+					'public/js/min/documentation.min.js': ['public/js/documentation.js'],
+					'public/js/min/downloads.min.js': ['public/js/downloads.js'],
+					'public/js/min/ico.min.js': ['public/js/ico.js'],
 				}
 			}
 		},

@@ -2,9 +2,6 @@ var html_var,
 		body_var,
 		doc_var,
 		global_window_Height,
-		reviewSlider,
-		stepSlider,
-		stepSection,
 		popupOrderItem,
 		controlPanelBtn,
 		popupBtn,
@@ -24,13 +21,11 @@ $(function($){
 	body_var = $('body');
 	doc_var = $(document);
 	nav_container = $(".header");
-	stepSection = $(".stepSection");
 	hero_block = $('.hero_block');
 	browserWindow = $(window);
 	global_window_Height = browserWindow.height();
 
 	if($('.scrollTo').length){
-
 		$('.scrollTo').on('click', function(){
 			var firedEl = $(this), target = $(firedEl.attr('href'));
 
@@ -40,48 +35,7 @@ $(function($){
 
 			return false;
 		});
-
 	}
-
-	reviewSlider = $('.reviewSlider').slick({
-		arrows       : false,
-		dots         : true,
-		autoplay     : false,
-		autoplaySpeed: 2000,
-		infinite     : false
-	});
-
-	stepSlider = $('.stepSlider').slick({
-		arrows       : false,
-		autoplay     : false,
-		autoplaySpeed: 2000,
-		infinite     : false
-	});
-
-	$('.dappSlider').slick({
-		prevArrow    : '.dapp_slider_holder .slider_prev',
-		nextArrow    : '.dapp_slider_holder .slider_next',
-		autoplay     : true,
-		arrows       : true,
-		autoplaySpeed: 20000,
-		infinite     : false
-	});
-
-	stepSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		stepSection.attr('data-step', nextSlide + 1);
-	});
-
-	$('.discoverBtn').on ('click', function () {
-		scrollDoc(browserWindow.height() - nav_container.height(), 800);
-
-		return false;
-	});
-
-	$('.stepBtn').on('click', function(){
-		var firedEl = $(this), ind = firedEl.index();
-		stepSlider.slick('slickGoTo', parseInt(ind));
-		return false;
-	});
 
 	$('.mobMenuBtn').on('click', function(){
 		body_var.toggleClass('open_menu');
@@ -100,52 +54,9 @@ $(function($){
 		return false;
 	});
 
-	$("#investBitcoinBtn").on('click', function () {
-		$('html, body').animate({
-			scrollTop: $("#investBitcoin").offset().top - 70
-		}, 2000);
-
-		return false;
-	});
-
-	$("#investCryptiBtn").on('click', function () {
-		$('html, body').animate({
-			scrollTop: $("#investCrypti").offset().top - 70
-		}, 2000);
-
-		return false;
-	});
-
-	$("#investEthereumBtn").on('click', function () {
-		$('html, body').animate({
-			scrollTop: $("#InvestEthereum").offset().top - 70
-		}, 2000);
-
-		return false;
-	});
-
-	$("#investNowBtn").on('click', function () {
-	$('html, body').animate({
-		scrollTop: $("#investNow").offset().top - 70
-	}, 2000);
-
-	return false;
-	});
-
 	$(".footer_menu_block").click(function (e) {
 		var menuItem = $(this);
 		menuItem.toggleClass("open_submenu");
-	});
-
-	hljs.configure({
-		tabReplace : '    ',
-		classPrefix: ''
-	});
-
-	// hljs.initHighlightingOnLoad();
-
-	$('.codeHighlight').each(function(i, block){
-		hljs.highlightBlock(block);
 	});
 
 	all_dialog_close();
@@ -169,7 +80,6 @@ function scrollDoc(pos, speed, callback){
 }
 
 function scroll_f(){
-
 	if(doc_var.scrollTop() < nav_container.outerHeight() * 2){
 		nav_container.removeClass("fixed");
 	} else{
@@ -185,11 +95,9 @@ function scroll_f(){
 	if(doc_var.scrollTop() <= nav_container.outerHeight()){
 		nav_container.removeClass("sticky_fixed");
 	}
-
 }
 
 function resize_f(){
-
 	$('.heightChecker').each(function(){
 		var firedEl = $(this);
 
@@ -202,7 +110,6 @@ function resize_f(){
 	});
 
 	body_var.toggleClass('collapsed_menu', browserWindow.width() < 1060);
-
 }
 
 function all_dialog_close(){

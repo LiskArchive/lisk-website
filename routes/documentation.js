@@ -124,19 +124,23 @@ module.exports = function (app) {
 				doc.content = marked(doc.content);
 
 				return res.render("documentation", {
+					pageId: "documentation",
 					title: doc.title,
 					description: "Lisk DApps Documentation",
 					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 					menu: menu,
+					hasScript: true,
 					isDoc: true,
 					doc: doc
 				});
 			} else {
 				return res.render("documentation", {
+					pageId: "documentation",
 					title: "Documentation - Not Found",
 					description: "Lisk DApps Documentation",
 					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 					menu: menu,
+					hasScript: true,
 					isDoc: true
 				});
 			}
