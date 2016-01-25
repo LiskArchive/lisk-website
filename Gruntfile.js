@@ -67,7 +67,7 @@ module.exports = function(grunt){
 		watch  : {
 			scripts: {
 				files  : ['public/js/*.js'],
-				tasks  : ['concat'],
+				tasks  : ['concat:all_js', 'uglify'],
 				options: {
 					spawn: false
 				}
@@ -81,7 +81,7 @@ module.exports = function(grunt){
 			},
 			styles   : {
 				files: ['sass/*.scss'],
-				tasks: ['sass'],
+				tasks: ['sass', 'concat:all_css', 'cssmin'],
 				options: {
 					spawn: false
 				}
