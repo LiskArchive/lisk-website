@@ -168,6 +168,11 @@
 
 	ul {
 		padding : 5px 0 35px 37px;
+		list-style: disc;
+	}
+
+	ol {
+		list-style: initial;
 	}
 
 	li {
@@ -176,7 +181,6 @@
 		margin-bottom : 11px;
 
 		&:before {
-			content  : '\2022';
 			position : absolute;
 			left     : 0;
 			top      : 0;
