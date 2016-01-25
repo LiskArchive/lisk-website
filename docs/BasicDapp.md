@@ -22,7 +22,7 @@ Listing the directory contents using the `ls` command, should yield:
 app.js  blockchain.db  build  config.json  dapps  genesisBlock.json  logs.log  nodejs  node_modules  package.json  public  sqlite
 ```
 
-If not, then please change directory to it. For example, when using vagrant: `cd /vagrant/0.5.1`
+If not, then please change directory to it. For example, when using vagrant: `cd /vagrant/0.1.0`
 
 Then enter the following command, to proceed with bootstrapping your dapp:
 
