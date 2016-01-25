@@ -1,4 +1,6 @@
-In this tutorial we show how easy it is to create a Crypti based Messaging dapp.
+# Creating a Messaging Dapp
+
+In this tutorial we show how easy it is to create a Lisk based Messaging dapp.
 
 We've already created a basic dapp. So let's develop it further into something a little more useful, while at the same time explaining step by step how exactly it is done.
 
@@ -8,13 +10,13 @@ First open a command prompt and change directory to our previously generated **d
 cd dapps/[dappid]/
 ```
 
-Replace **[dappid]** with your dapp's own unique identifier. Then issue the following command to create new contract using **crypti-cli**:
+Replace **[dappid]** with your dapp's own unique identifier. Then issue the following command to create new contract using **Lisk CLI**:
 
 ```sh
-crypti-cli contract -a
+lisk-cli contract -a
 ```
 
-Crypti-cli will ask you few questions e.g. contract name, so let's choose the name "Message".
+Lisk CLI will ask you a few questions e.g. contract name, so let's choose the name "Message".
 
 ```sh
 ? Contract file name (without .js) Message
@@ -123,7 +125,7 @@ Message.prototype.create = function (data, trs) {
 }
 ```
 
-Next, we set a transaction fee for each time a user sends a message, for example, 1 XCR:
+Next, we set a transaction fee for each time a user sends a message, for example, 1 LISK:
 
 ```js
 Message.prototype.calculateFee = function (trs) {
@@ -459,10 +461,10 @@ try {
 modules.blockchain.transactions.processUnconfirmedTransaction(transaction, cb);
 ```
 
-Great, now we need to fund our account using **crypti-cli** and then we can send an API request to send our first message!
+Great, now we need to fund our account using **Lisk CLI** and then we can send an API request to send our first message!
 
 ```sh
-crypti-cli dapps --deposit
+lisk-cli dapps --deposit
 ```
 
 It will ask for your dapps' secret, amount and unique identifier. Then just send the following API request to your dapp:
@@ -542,6 +544,6 @@ curl -XGET 'http://localhost:7040/api/dapps/[dappid]/api/messages/list?recipient
 
 Replacing **[dappid]** with your dapp's own unique identifier and **[recipientId]** with the recipient's address.
 
-This completes the backend of our Messaging dapp. The source code for this tutorial is available [here](https://github.com/crypti/MessagingDApp).
+This completes the backend of our Messaging dapp. The source code for this tutorial is available [here](https://github.com/lisk/lisk-messagingdapp).
 
 In the [next tutorial](UserInterface.md), we describe how to create a frontend user interface for our Messaging dapp.
