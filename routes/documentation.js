@@ -45,8 +45,8 @@ var menu = [
 				i: "UserInterface"
 			},
 			{
-				name: "Dapp Toolkit Introduction",
-				i: "DappToolkit"
+				name: "Dapp SDK Introduction",
+				i: "DappSDK"
 			},
 			{
 				name: "Sidechain Overview",
@@ -97,11 +97,11 @@ var docs = [
 	{
 		title: "User Interface",
 		i: "UserInterface",
-		next: "DappToolkit"
+		next: "DappSDK"
 	},
 	{
-		title: "Dapp Toolkit Introduction",
-		i: "DappToolkit",
+		title: "Dapp SDK Introduction",
+		i: "DappSDK",
 		next: "Sidechain"
 	},
 	{
