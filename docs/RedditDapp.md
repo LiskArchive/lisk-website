@@ -30,7 +30,7 @@ With the above fee structure, authors can earn lisk from each post they create, 
 
 The Post contract is a simple contract allowing users to create posts for a 0.1 lisk fee (10000000). Each post consists of a title (of up to 100 characters) and the text of the post (with up to 5000 characters).
 
-The source code for this contract can be found [here](https://github.com/LiskHQ/lisk-redditdapp/blob/master/modules/contracts/Post.js).
+The source code for this contract can be found [here](https://github.com/LiskHQ/lisk-reddit-dapp/blob/master/modules/contracts/Post.js).
 
 ## Comment Contract
 
@@ -91,7 +91,7 @@ The first of which is the transaction id that our **postId** refers to. The seco
 
 With the full implementation of this contract in place, we should now be able to an make an API call that will return comments for a given **postId**.
 
-The complete source code for this contract can be found [here](https://github.com/LiskHQ/lisk-redditdapp/blob/master/modules/contracts/Comment.js).
+The complete source code for this contract can be found [here](https://github.com/LiskHQ/lisk-reddit-dapp/blob/master/modules/contracts/Comment.js).
 
 ## Like Contract
 
@@ -172,6 +172,6 @@ Like.prototype.apply = function (trs, sender, cb, scope) {
 - The same logic, but instead affecting unconfirmed balances is defined as `applyUnconfirmed`.
 - The reverse of the above function is defined as `undo` and `undoUnconfirmed`.
 
-The complete source code for this contract can be found [here](https://github.com/LiskHQ/lisk-redditdapp/blob/master/modules/contracts/Like.js).
+The complete source code for this contract can be found [here](https://github.com/LiskHQ/lisk-reddit-dapp/blob/master/modules/contracts/Like.js).
 
-This completes our tutorial on how to handle multiple contracts within a dapp. The source code for this tutorial is available [here](https://github.com/LiskHQ/lisk-redditdapp).
+This completes our tutorial on how to handle multiple contracts within a dapp. The source code for this tutorial is available [here](https://github.com/LiskHQ/lisk-reddit-dapp).
