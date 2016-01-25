@@ -10,7 +10,7 @@ function getBTCUSD(cb) {
 	});
 }
 
-function getXCRBTC(cb) {
+function getLISKBTC(cb) {
 	bter.getTicker({CURR_A: 'xcr', CURR_B: 'btc'}, function (err, result) {
 		if (err || !result) {
 			cb(err || "Can't get avg");
@@ -20,8 +20,8 @@ function getXCRBTC(cb) {
 	});
 }
 
-function convertXCRTOUSD(xcr, btc, usd) {
-	return (xcr * btc * usd);
+function convertLISKTOUSD(lisk, btc, usd) {
+	return (lisk * btc * usd);
 }
 
 function getPrice(cb) {
@@ -30,19 +30,19 @@ function getPrice(cb) {
 			return cb(err || "Can't get price of btc/usd");
 		}
 
-		getXCRBTC(function (err, btcxcr) {
-			if (err || !btcxcr) {
-				return cb(err || "Can't get price of btc/xcr");
+		getLISKBTC(function (err, btclisk) {
+			if (err || !btclisk) {
+				return cb(err || "Can't get price of btc/lisk");
 			}
 
-			cb(null, convertXCRTOUSD(1, btcxcr, btcusd));
+			cb(null, convertLISKTOUSD(1, btclisk, btcusd));
 		});
 	});
 }
 
 module.exports = {
 	getBTCUSD: getBTCUSD,
-	getXCRBTC: getXCRBTC,
-	convertXCRTOUSD: convertXCRTOUSD,
+	getLISKBTC: getLISKBTC,
+	convertLISKTOUSD: convertLISKTOUSD,
 	getPrice: getPrice
 }

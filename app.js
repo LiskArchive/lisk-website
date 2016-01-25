@@ -1,14 +1,14 @@
 var express = require('express'),
-	exphbs  = require('express-handlebars'),
-	config  = require('./config.json'),
-	routes  = require('./routes'),
-	bter    = require('./bter.js'),
-	request = require('request'),
-	bodyParser = require('body-parser');
+    exphbs  = require('express-handlebars'),
+    config  = require('./config.json'),
+    routes  = require('./routes'),
+    bter    = require('./bter.js'),
+    request = require('request'),
+    bodyParser = require('body-parser');
 
 var price_usd = null,
-	price_btc = null,
-	market = null;
+    price_btc = null,
+    market = null;
 
 function getBtcUsd() {
 	bter.getPrice(function (err, result) {
@@ -27,7 +27,7 @@ function getBtcUsd() {
 }
 
 function getBtc() {
-	bter.getXCRBTC(function (err, result) {
+	bter.getLISKBTC(function (err, result) {
 		if (!err) {
 			price_btc = result;
 		} else {
@@ -146,7 +146,7 @@ request({
 	url: "http://coinmarketcap-nexuist.rhcloud.com/api/xcr",
 	json: true
 }, function (err, resp, body) {
-	if (err) {
+	if (err || !body.market_cap) {
 		return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
 	}
 
