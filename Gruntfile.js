@@ -1,19 +1,19 @@
 module.exports = function(grunt){
 
 	grunt.initConfig({
-		concat : {
+		concat: {
 			options: {
 				separator: ';'
 			},
-			styles : {
-				src : [
+			styles: {
+				src: [
 					'public/styles/prism.css',
 					'public/styles/global.css'
 				],
 				dest: 'public/styles/global.css'
 			},
-			scripts   : {
-				src : [
+			scripts: {
+				src: [
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
 					'bower_components/devicejs/lib/device.min.js',
@@ -49,30 +49,30 @@ module.exports = function(grunt){
 				}]
 			}
 		},
-		jshint : {
+		jshint: {
 			options: {
 				jshintrc: '.jshintrc'
 			}
 		},
-		sass : {
+		sass: {
 			styles: {
 				options: {
 					style: 'expanded'
 				},
-				files  : {
+				files: {
 					'public/styles/global.css': 'sass/global.scss'
 				}
 			}
 		},
-		watch  : {
+		watch: {
 			scripts: {
-				files  : ['public/js/*.js'],
-				tasks  : ['concat:all_js', 'uglify'],
+				files: ['public/js/*.js'],
+				tasks: ['concat:all_js', 'uglify'],
 				options: {
 					spawn: false
 				}
 			},
-			styles   : {
+			styles: {
 				files: ['sass/*.scss'],
 				tasks: ['sass', 'concat:all_css', 'cssmin'],
 				options: {
