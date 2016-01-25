@@ -72,13 +72,6 @@ module.exports = function(grunt){
 					spawn: false
 				}
 			},
-			templates: {
-				files  : ['jade/*.jade'],
-				tasks  : ['jade'],
-				options: {
-					spawn: false
-				}
-			},
 			styles   : {
 				files: ['sass/*.scss'],
 				tasks: ['sass', 'concat:all_css', 'cssmin'],
