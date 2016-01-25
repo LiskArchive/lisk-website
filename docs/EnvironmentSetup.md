@@ -18,19 +18,19 @@ Please ensure the below requirements are met before continuing.
 
   1. Install the Homebrew package manager.
 
-    ```bash
+    ```text
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
 
   2. Install **nodejs** (package also includes **npm**).
 
-    ```bash
+    ```text
     brew install homebrew/versions/node012
     ```
 
   3. Install **sqlite**, **git** and **wget**.
 
-    ```bash
+    ```text
     brew install sqlite git wget
     brew link sqlite --force
     ```
@@ -43,19 +43,19 @@ Open a command prompt and proceed with the following:
 
 1. Install **sqlite** and **git** plus some build essentials.
 
-  ```bash
+  ```text
   sudo apt-get install sqlite3 git build-essential curl wget unzip
   ```
 
 2. Add the NodeSource package repository to your system.
 
-  ```bash
+  ```text
   curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
   ```
 
 3. Install **nodejs** (package also includes **npm**).
 
-  ```bash
+  ```text
   sudo apt-get install -y nodejs
   ```
 
@@ -71,14 +71,14 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 
 2. Open a command prompt. Then make a directory to store your environment.
 
-  ```bash
+  ```text
   mkdir lisk
   cd lisk
   ```
 
 3. Initialize a new Ubuntu based virtual machine using vagrant:
 
-  ```bash
+  ```text
   vagrant init ubuntu/trusty64
   ```
 
@@ -97,7 +97,7 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 
 5. Boot up the virtual machine and let it install:
 
- ```bash
+ ```text
  vagrant up
  ```
 
@@ -105,7 +105,7 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 
 6. Verify the status of the virtual machine using the following command:
 
-  ```bash
+  ```text
   vagrant status
   ```
 
@@ -124,19 +124,19 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 
   1. Install **sqlite** and **git** plus some build essentials.
 
-    ```bash
+    ```text
     sudo apt-get install sqlite3 git build-essential curl wget unzip
     ```
 
   2. Add the NodeSource package repository to your system.
 
-    ```bash
+    ```text
     curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
     ```
 
   3. Install **nodejs** (package also includes **npm**).
 
-    ```bash
+    ```text
     sudo apt-get install -y nodejs
     ```
 
@@ -163,7 +163,7 @@ To start work on our dapp, we first need to install a **testnet** version of Lis
 
 On **Mac OS X** operating systems:
 
-```bash
+```text
 wget http://downloads.lisk.io/lisk/test/lisk-0.1.0-Darwin-x86_64.zip
 unzip lisk-0.1.0-Darwin-x86_64.zip
 cd lisk-0.1.0-Darwin-x86_64
@@ -174,7 +174,7 @@ On **Linux** operating systems (or vagrant):
 
 **TIP:** If using vagrant, it is a good idea to change to the shared: `/vagrant` directory as described above. This way, you can easily access your dapp's files from within the host operating system.
 
-```bash
+```text
 wget http://downloads.lisk.io/lisk/test/lisk-0.1.0-Linux-x86_64.zip
 unzip lisk-0.1.0-Linux-x86_64.zip
 cd lisk-0.1.0-Linux-x86_64
@@ -183,7 +183,7 @@ npm install --production
 
 Then launch Lisk and verify our base testnet is working correctly:
 
-```bash
+```text
 node app.js
 ```
 
@@ -193,19 +193,19 @@ If successful, Lisk will launch and connect to the base testnet network.
 
 Now let's install **Lisk CLI** and finally start work on our first dapp:
 
-```bash
+```text
 sudo npm install -g lisk-cli
 ```
 
 After installation completes, check that **Lisk CLI** is installed correctly:
 
-```bash
+```text
 lisked-cli -h
 ```
 
 If successful **Lisk CLI** should yield the following output:
 
-```bash
+```text
 Usage: lisk-cli [options] [command]
 
 Commands:
