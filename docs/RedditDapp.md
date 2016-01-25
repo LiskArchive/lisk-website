@@ -2,13 +2,13 @@
 
 In this tutorial, we give an overview on how to handle multiple contracts within a dapp and make relationships between them.
 
-We will therefore make a decentalized version of "Reddit" as an example. It won't be a full rendition of "Reddit" itself, but rather, a small part of its functionality, containing a message board with posts, comments and likes.
+We will therefore make a decentralized version of "Reddit" as an example. It won't be a full rendition of "Reddit" itself, but rather, a small part of its functionality, containing a message board with posts, comments and likes.
 
 Before proceeding, we strongly recommend reading our [Messaging Dapp Tutorial](/MessagingDapp.md), which gives a more thorough introduction on how contracts are put together.
 
 ## Contracts
 
-So, let's begin by outlining the structure of our "Reddit" dapp, consisiting of three contracts, each representing a user action:
+So, let's begin by outlining the structure of our "Reddit" dapp, consisting of three contracts, each representing a user action:
 
 * **Post.js** - A contract for managing posts.
 * **Comment.js** - A contract for managing comments.
