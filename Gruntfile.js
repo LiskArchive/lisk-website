@@ -1,5 +1,4 @@
 module.exports = function(grunt){
-G
 	grunt.initConfig({
 		concat: {
 			options: {
