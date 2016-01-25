@@ -1,3 +1,5 @@
+# Setting up an Environment
+
 Before we can start building our first Lisk dapp, we must first setup our development environment.
 
 Please ensure the below requirements are met before continuing.
