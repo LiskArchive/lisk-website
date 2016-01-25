@@ -7,6 +7,7 @@ module.exports = function(grunt){
 			},
 			all_css : {
 				src : [
+					'public/styles/prism.css',
 					'public/styles/global.css'
 				],
 				dest: 'public/styles/global.css'
@@ -15,8 +16,8 @@ module.exports = function(grunt){
 				src : [
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
-					'bower_components/highlightjs/highlight.pack.js',
 					'bower_components/devicejs/lib/device.min.js',
+					'public/js/prism.js',
 					'public/js/global.js'
 				],
 				dest: 'public/js/all.js'
@@ -33,7 +34,6 @@ module.exports = function(grunt){
 					'public/js/min/home.min.js': ['public/js/home.js'],
 					'public/js/min/documentation.min.js': ['public/js/documentation.js'],
 					'public/js/min/downloads.min.js': ['public/js/downloads.js'],
-					'public/js/min/features.min.js': ['public/js/features.js'],
 					'public/js/min/ico.min.js': ['public/js/ico.js'],
 				}
 			}

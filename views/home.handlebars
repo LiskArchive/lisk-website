@@ -56,69 +56,7 @@
                                 <p>All applications can be built from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, all dapps are running in their own sidechain to ensure that Lisk itself is safe. In the future all dapps are run in the Lisk VM to ensure they are safe to run on any node. Learn how to code dapps in our documentation section.</p><a href="/documentation?i=DecentralizedApplications" class="btn_v2 fw_600 wide_btn white_btn">How to Code</a>
                             </div>
                         </div>
-                        <div class="step_code_block">
-                            <div class="code_window">
-                                <div class="code_window_btns"></div>
-                                <div class="code_lines">
-                                    <div class="code_line_index">1</div>
-                                    <div class="code_line_index">2</div>
-                                    <div class="code_line_index">3</div>
-                                    <div class="code_line_index">4</div>
-                                    <div class="code_line_index">5</div>
-                                    <div class="code_line_index">6</div>
-                                    <div class="code_line_index">7</div>
-                                    <div class="code_line_index">8</div>
-                                    <div class="code_line_index">9</div>
-                                    <div class="code_line_index">10</div>
-                                    <div class="code_line_index">11</div>
-                                    <div class="code_line_index">12</div>
-                                    <div class="code_line_index">13</div>
-                                    <div class="code_line_index">14</div>
-                                    <div class="code_line_index">15</div>
-                                    <div class="code_line_index">16</div>
-                                    <div class="code_line_index">17</div>
-                                    <div class="code_line_index">18</div>
-                                    <div class="code_line_index">19</div>
-                                    <div class="code_line_index">20</div>
-                                    <div class="code_line_index">21</div>
-                                    <div class="code_line_index">22</div>
-                                    <div class="code_line_index">23</div>
-                                    <div class="code_line_index">24</div>
-                                    <div class="code_line_index">25</div>
-                                    <div class="code_line_index">26</div>
-                                    <div class="code_line_index">27</div>
-                                    <div class="code_line_index">28</div>
-                                    <div class="code_line_index">29</div>
-                                    <div class="code_line_index">30</div>
-                                </div>
-                                <div class="code_container">
-                                  <pre><code class="codeHighlight">// Decentralized Application ============
-
-var sandbox = process.binding('sandbox');
-
-sandbox.sendMessage({
-    call: "dapps#receive",
-    args: {body: "Hello Lisk!"}
-});
-
-sandbox.onMessage(function (msg, cb) {
-    console.log("receive message from lisk", msg.body);
-    cb();
-});
-
-// lisk ======================
-
-var sandbox = new Sandbox("index.js", dappId, function (msg, cb) {
-    console.log("receive message from dapp " + dappId, msg.body);
-    cb();
-}, true);
-
-sandbox.sendMessage({body: "Hello dapp!"});
-
-sandbox.run();</code></pre>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="step_code_block">{{> sandbox }}</div>
                     </div>
                 </div>
             </div>

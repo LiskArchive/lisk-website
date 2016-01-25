@@ -1,0 +1,32 @@
+<div class="code_window">
+    <div class="code_window_btns"></div>
+    <div class="code_container">
+
+<pre class="line-numbers"><code class="language-javascript">// Decentralized Application ============
+
+var sandbox = process.binding('sandbox');
+
+sandbox.sendMessage({
+    call: "dapps#receive",
+    args: {body: "Hello Lisk!"}
+});
+
+sandbox.onMessage(function (msg, cb) {
+    console.log("receive message from lisk", msg.body);
+    cb();
+});
+
+// lisk ======================
+
+var sandbox = new Sandbox("index.js", dappId, function (msg, cb) {
+    console.log("receive message from dapp " + dappId, msg.body);
+    cb();
+}, true);
+
+sandbox.sendMessage({body: "Hello dapp!"});
+
+sandbox.run();
+</code></pre>
+
+    </div>
+</div>

@@ -207,9 +207,9 @@
 	padding-left : 10px;
 
 	.code_window {
-		height        : 422px;
+		height        : 425px;
 		margin-right  : -2px;
-		line-height   : 1.95;
+		line-height   : 18px;
 		border-radius : 3px 0 0 0;
 		box-shadow    : 0 10px 18px rgba(30, 30, 30, .5);
 	}
@@ -261,21 +261,8 @@
 	}
 }
 
-.code_lines {
-	position     : absolute;
-	top          : 37px;
-	left         : 0;
-	width        : 51px;
-	padding      : 15px 12px 0 0;
-	text-align   : right;
-	font-size    : 12px;
-	color        : #78909c;
-	border-right : 1px solid #bfbfbf;
-	background   : #fafafa;
-}
-
 .code_container {
-	padding   : 50px 0 0 95px;
+	padding   : 30px 0 0 0;
 	font-size : 12px;
 }
 
