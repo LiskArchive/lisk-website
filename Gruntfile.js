@@ -5,14 +5,14 @@ module.exports = function(grunt){
 			options: {
 				separator: ';'
 			},
-			all_css : {
+			styles : {
 				src : [
 					'public/styles/prism.css',
 					'public/styles/global.css'
 				],
 				dest: 'public/styles/global.css'
 			},
-			all_js   : {
+			scripts   : {
 				src : [
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
@@ -27,7 +27,7 @@ module.exports = function(grunt){
 			options: {
 				mangle: false
 			},
-			my_target: {
+			scripts: {
 				files: {
 					'public/js/min/all.min.js': ['public/js/all.js'],
 					'public/js/min/contact_us.min.js': ['public/js/contact_us.js'],
@@ -39,7 +39,7 @@ module.exports = function(grunt){
 			}
 		},
 		cssmin: {
-			target: {
+			styles: {
 				files: [{
 					expand: true,
 					cwd: 'public/styles',
@@ -55,7 +55,7 @@ module.exports = function(grunt){
 			}
 		},
 		sass : {
-			dist: {
+			styles: {
 				options: {
 					style: 'expanded'
 				},
