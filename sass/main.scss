@@ -43,13 +43,10 @@ h1 {
 	overflow  : hidden;
 	min-width : 320px;
 
-	//	min-height  : 100%;
-
 	&.h_screen {
 
-		$height: 100; //set your height in vh
+		$height: 100; // Set your height in vh
 		$heightPercent: $height/100;
-		// padding-top: #{$height}vh;
 		padding-top: 580px;
 
 		@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
@@ -89,7 +86,6 @@ h1 {
 .base {
 	position       : relative;
 	padding-bottom : 570px;
-	// min-height     : 2000px;
 
 	.documents_mode & {
 		padding-bottom : 100px;
@@ -199,16 +195,13 @@ h1 {
 		background : $gray;
 	}
 
-	&.step_section {
-		// min-height : 540px;
-	}
+	&.step_section {}
 }
 
 .section_caption {
 	font-size     : 36px;
 	font-family   : $RobotoMedium;
 	margin-bottom : 25px;
-	// text-align : center;
 }
 
 .block_caption {
@@ -236,7 +229,6 @@ h1 {
 	&.fixed {
 		@include transform_translate(0, -100%);
 		@include transition_all(padding .5s, transform .5s);
-		//position   : fixed;
 		background : $madison;
 		opacity: 0.93;
     	filter: alpha(opacity=93); /* For IE8 and earlier */
@@ -251,17 +243,12 @@ h1 {
 			min-width : 285px;
 		}
 
-		.login_btn {
-			// background : #fff;
-			// color      : #838c93;
-		}
+		.login_btn {}
 	}
 
 	&.sticky {
 		@include transform_translate(0, 0);
 		position : fixed;
-		// background-position : 50% 100%;
-		// box-shadow          : 0 2px 3px rgba(0, 0, 0, .5);
 	}
 
 	&.sticky_fixed {
@@ -274,7 +261,6 @@ h1 {
 	float           : left;
 	text-decoration : none;
 	letter-spacing  : -.2px;
-	// text-transform  : uppercase;
 	color           : #fff;
 
 	span {
@@ -391,8 +377,6 @@ h1 {
 
 .main_menu {
 	padding-bottom : 2px;
-	// float         : right;
-	// padding-right : 18px;
 
 	.collapsed_menu & {
 		display    : none;
@@ -401,8 +385,6 @@ h1 {
 		top        : 100%;
 		right      : 0;
 		left       : 0;
-		// max-height : 70vh;
-		// overflow-y : auto;
 	}
 
 	.open_menu.collapsed_menu & {
@@ -460,10 +442,7 @@ h1 {
 		color   : #838c93;
 		padding : 20px;
 
-		&:before {
-			// right : 0;
-			// left  : 0;
-		}
+		&:before {}
 
 		&.active,
 		&:not(.active):hover {
@@ -490,14 +469,12 @@ h1 {
 
 		&.active {
 			cursor : default;
-			// color  : #fff !important;
 		}
 	}
 
 }
 
 .user_menu {
-	// @include transition_all(color .3s);
 	padding-left : 10px;
 	min-width    : 275px;
 	color        : #fff;

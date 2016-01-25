@@ -601,15 +601,6 @@
 			border-width : 0 2px 2px 0;
 		}
 	}
-	//	.fotorama__fullscreen-icon:hover & {
-	//
-	//			&:before {
-	//				@include transform_translate((-$fullscreen_icon_hover_w), $fullscreen_icon_hover_w);
-	//			}
-	//			&:after {
-	//				@include transform_translate($fullscreen_icon_hover_w, $fullscreen_icon_hover_w);
-	//			}
-	//		}
 
 	%slider_arrows {
 		position      : absolute;
@@ -617,7 +608,6 @@
 		height        : $fotorama_slider_a_w;
 		cursor        : pointer;
 		background    : transparentize(#fff, .15);
-		//		@include vert_grad_full(#fff 0%, #fff 50%, #000 50%, #000 100%);
 		top           : 50%;
 		border-radius : 50%;
 		@include transform_translate(0, -50%, false, false, true);

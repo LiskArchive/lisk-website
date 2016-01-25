@@ -1,8 +1,6 @@
 .get_started_block {
-  //padding-top : 115px;
   max-width      : 780px;
   margin         : 0 auto;
-  //text-align     : center;
   padding-bottom : 40px;
 
   p {
@@ -43,16 +41,6 @@
 
 .get_started_unit {
   position: relative;
-
-  //&:before {
-  //	content    : '';
-  //	position   : absolute;
-  //	top        : 0;
-  //	bottom     : 0;
-  //	left       : 60px;
-  //	width      : 2px;
-  //	background : #cad1d7;
-  //}
 
   &:last-child {
     .get_started_step_description {

@@ -165,7 +165,6 @@ $calendar_booked_icon_color : #7fa9d3;
 
 $calendar_booked_2_color : #fe797c;
 $calendar_booked_past_color : #fcaeaf;
-//#ef6e61
 $calendar_available_color : #fff;
 
 $calendar_past_day_color : #f5fcff;
@@ -235,13 +234,11 @@ $new_search_step_1 : $new_search_panel_w1 + 32px;
 $new_search_step_2 : 1600px;
 $new_search_step_3 : 1500px;
 $new_search_step_3_1 : 1250px;
-//$new_search_step_4:1150px;
 $new_search_step_4 : 1022px;
 $new_search_step_5 : 959px;
 $new_search_step_6 : 768px;
 
 $search_side_filter_block_w : 322px;
-//$search_side_block_w:calc((100% - 840px)/2);
 $search_side_block_w : calc(100% - 880px - 322px);
 $search_side_block_foto_w : calc(100% - 1022px - 322px);
 $search_panel_block_w : 136px;
@@ -478,11 +475,6 @@ $arrSize : 32px;
 	}
 }
 
-//use example
-//@include respond-to(small_s) { width: 100% ;}
-//@include respond-to(medium_s) { width: 125px; }
-//@include respond-to(wide_s) { float: none; }
-
 @mixin respond-to($media) {
 	@if $media == small_s {
 		@media only screen and (max-width : $small) {
@@ -528,9 +520,9 @@ $arrSize : 32px;
 }
 
 @mixin mobile() {
-	@media (-webkit-min-device-pixel-ratio : 2), // Webkit-based browsers */
-	(min--moz-device-pixel-ratio : 2), // Older Firefox browsers (prior to Firefox 16) */
-	(min-resolution : 2dppx), // The standard way */
+	@media (-webkit-min-device-pixel-ratio : 2), // Webkit-based browsers
+	(min--moz-device-pixel-ratio : 2),           // Older Firefox browsers (prior to Firefox 16)
+	(min-resolution : 2dppx),                    // The standard way
 	(min-resolution : 192dpi),
 	(max-device-width : 965px) {
 		@content;
@@ -659,32 +651,6 @@ $arrSize : 32px;
 			transition          : $property !important;
 		} @else {
 			@if $delay != blank {
-				//				@if $easing != blank{
-				//					@if $important != blank{
-				//						-webkit-transition: $property $duration $easing $delay !important;
-				//						-moz-transition: $property $duration $easing $delay !important;
-				//						-o-transition: $property $duration $easing $delay !important;
-				//						transition: $property $duration $easing $delay !important;
-				//					} @else {
-				//						-webkit-transition: $property $duration $easing $delay;
-				//						-moz-transition: $property $duration $easing $delay;
-				//						-o-transition: $property $duration $easing $delay;
-				//						transition: $property $duration $easing $delay;
-				//					}
-				//				} @else {
-				//					@if $important != blank{
-				//						-webkit-transition: $property $duration $delay !important;
-				//						-moz-transition: $property $duration $delay !important;
-				//						-o-transition: $property $duration $delay !important;
-				//						transition: $property $duration $delay !important;
-				//					} @else {
-				//						-webkit-transition: $property $duration $delay;
-				//						-moz-transition: $property $duration $delay;
-				//						-o-transition: $property $duration $delay;
-				//						transition: $property $duration $delay;
-				//					}
-				//
-				//				}
 				@if $easing != blank {
 					@if $property == transform {
 						@if $important != blank {
@@ -869,22 +835,18 @@ $arrSize : 32px;
 }
 
 @mixin vert_grad_full($grad...) {
-	//	background-image: -webkit-linear-gradient(bottom, $grad);
 	background-image : linear-gradient(to top, $grad);
 }
 
 @mixin vert_grad_full_top($grad...) {
-	//	background-image: -webkit-linear-gradient(top, $grad);
 	background-image : linear-gradient(to bottom, $grad);
 }
 
 @mixin hor_grad_full($grad...) {
-	//	background-image: -webkit-linear-gradient(right, $grad);
 	background-image : linear-gradient(to left, $grad);
 }
 
 @mixin hor_grad_full_left($grad...) {
-	//	background-image: -webkit-linear-gradient(left, $grad);
 	background-image : linear-gradient(to right, $grad);
 }
 
@@ -894,13 +856,11 @@ $arrSize : 32px;
 }
 
 @mixin vert_grad_no_check($color_one : #000, $color_two : #fff) {
-	//	background-image: -webkit-linear-gradient(top, $color_one 0%, $color_two 100%);
 	background-image : linear-gradient(to bottom, $color_one 0%, $color_two 100%);
 }
 
 @mixin vert_grad_50_50($color_one : #000, $color_two : #fff, $color_three : #000, $color_four : #fff) {
 	@if $all == true {
-		//		background-image: -webkit-linear-gradient(bottom, $color_one 0%, $color_two 49%, $color_three 50%, $color_four 100%);
 		background-image : linear-gradient(to top, $color_one 0%, $color_two 49%, $color_three 50%, $color_four 100%);
 	} @else {
 		background-color : $color_one;
@@ -1089,7 +1049,6 @@ $arrSize : 32px;
 }
 
 @mixin transform_translate($x : 0, $y : 0, $imp : false, $check : false, $d3 : false) {
-	//-webkit-transform: translate3d($x,$y,0);
 	@if $check == false {
 		@if $ie8 == false {
 			@include transform_translate_sub($x, $y, $imp, $d3);
@@ -1205,7 +1164,6 @@ $arrSize : 32px;
 		-webkit-transition : opacity $duration, visibility $duration, -webkit-transform $duration $easing;
 		transition         : opacity $duration, visibility $duration, transform $duration $easing;
 		-webkit-transform  : translate3d($x, $y, 0);
-		//-webkit-transform: translate($x,$y);
 		transform          : translate($x, $y);
 		visibility         : hidden;
 	}
@@ -1221,7 +1179,6 @@ $arrSize : 32px;
 	@include all_ie9_check {
 		opacity           : 1;
 		-webkit-transform : translate3d($x, $y, 0);
-		//-webkit-transform: translate($x,$y);
 		transform         : translate($x, $y);
 		visibility        : visible;
 
@@ -1260,7 +1217,6 @@ $arrSize : 32px;
 		@if $ie8 == true {
 			border-top : 1px solid #e3e3e3;
 		} @else {
-			//@include box-shadow(0 -1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 #fefefe);
 			box-shadow : 0 -1px 0 rgba(0, 0, 0, 0.11), inset 0 1px 0 #fefefe;
 			@include vert_grad(#fafafa, #fff);
 		}
@@ -1343,7 +1299,5 @@ $arrSize : 32px;
 	background-size     : ($dashlength + $spacelength) $borderwidth, $borderwidth ($dashlength + $spacelength), ($dashlength + $spacelength) $borderwidth, $borderwidth ($dashlength + $spacelength);
 	background-repeat   : repeat-x, repeat-y, repeat-x, repeat-y;
 }
-
-//@import "develop/fonts";
 
 @import "extends";

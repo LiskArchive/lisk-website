@@ -11,7 +11,6 @@
 	.menu_link {
 		padding   : 20px;
 		font-size : 20px;
-		//color     : #838c93;
 
 		&:before {
 			left  : 10px;
@@ -171,12 +170,8 @@
 
 	.menu_link {
 		color   : #838c93;
-		//padding : 20px;
 
-		&:before {
-			//right : 0;
-			//left  : 0;
-		}
+		&:before {}
 
 		&.active,
 		&:not(.active):hover {
@@ -350,7 +345,7 @@
 	}
 }
 
-//   get started
+// get started
 
 .mobile,
 .tablet.portrait {
@@ -418,7 +413,6 @@
 		margin-top : 25px;
 		max-width  : 100%;
 		position   : relative;
-		//text-align : center;
 	}
 
 	.usability_block {
