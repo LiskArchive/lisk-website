@@ -18,7 +18,7 @@ Once we have created our GitHub repository, we can proceed to make a new unique 
 
 Listing the directory contents using the `ls` command, should yield:
 
-```
+```text
 app.js  blockchain.db  build  config.json  dapps  genesisBlock.json  logs.log  nodejs  node_modules  package.json  public  sqlite
 ```
 
@@ -26,13 +26,13 @@ If not, then please change directory to it. For example, when using vagrant: `cd
 
 Then enter the following command, to proceed with bootstrapping your dapp:
 
-```sh
+```text
 lisk-cli dapps -a
 ```
 
 This command will ask you a few important questions:
 
-```sh
+```text
 ? Existing blockchain.db file will be replaced, are you sure?
 ? Enter secret of your testnet account
 ? Update existing genesis block? (or create a new one)
@@ -83,7 +83,7 @@ Answering **yes** will set your dapp to automatically launch upon starting Lisks
 
 Below is an example of how to create a test dapp using **Lisk CLI** with the corresponding output:
 
-```sh
+```text
 ? Existing blockchain.db file will be replaced, are you sure? Yes
 ? Enter secret of your testnet account ******
 ? Update current genesis block? (or create a new one) No
@@ -105,7 +105,7 @@ Upon successful completion, the **Lisk CLI** will return the dapp's unique id, i
 
 If you answered **Yes** to autolaunch the dapp, then you can launch it by starting Lisks, using the following command:
 
-```sh
+```text
 node app.js
 ```
 
