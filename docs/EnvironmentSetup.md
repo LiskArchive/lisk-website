@@ -1,4 +1,4 @@
-Before we can start building our first Crypti dapp, we must first setup our development environment.
+Before we can start building our first Lisk dapp, we must first setup our development environment.
 
 Please ensure the below requirements are met before continuing.
 
@@ -33,7 +33,7 @@ Please ensure the below requirements are met before continuing.
     brew link sqlite --force
     ```
 
-**One important note**: Crypti's VM (Virtual Machine) is only sandboxed on Linux operating systems. **Mac OS X** can be used for development purposes, **but in production you will need to use Linux based master nodes**.
+**One important note**: Lisk's VM (Virtual Machine) is only sandboxed on Linux operating systems. **Mac OS X** can be used for development purposes, **but in production you will need to use Linux based master nodes**.
 
 ## Ubuntu Linux
 
@@ -70,8 +70,8 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 2. Open a command prompt. Then make a directory to store your environment.
 
   ```sh
-  mkdir crypti
-  cd crypti
+  mkdir lisk
+  cd lisk
   ```
 
 3. Initialize a new Ubuntu based virtual machine using vagrant:
@@ -140,7 +140,7 @@ Currently we only support development on Mac OS X and Linux operating systems. I
 
 9. Your virtual machine environment should now be ready.
 
-By default, Vagrant synchronizes your project directory between the local machine and client VM. For example, the contents of ```C:\Users\User\crypti``` are accessible as ```/vagrant``` on the client VM and vice versa.
+By default, Vagrant synchronizes your project directory between the local machine and client VM. For example, the contents of ```C:\Users\User\lisk``` are accessible as ```/vagrant``` on the client VM and vice versa.
 
 For further information about using vagrant, please read the [official vagrant documentation](https://docs.vagrantup.com/v2/).
 
@@ -155,16 +155,16 @@ To verify you have them installed, or generate a new keypair. Please read the ap
 * [Generating SSH keys on Mac OS X](https://help.github.com/articles/generating-ssh-keys/#platform-mac)
 * [Generating SSH keys on Linux](https://help.github.com/articles/generating-ssh-keys/#platform-linux)
 
-## Crypti Testnet
+## Lisk Testnet
 
-To start work on our dapp, we first need to install a **testnet** version of Crypti. This can be done by running the following commands:
+To start work on our dapp, we first need to install a **testnet** version of Lisk. This can be done by running the following commands:
 
 On **Mac OS X** operating systems:
 
 ```sh
-wget http://downloads.crypti.me/crypti-node/development/macos-0.5.1.zip
-unzip macos-0.5.1.zip
-cd 0.5.1
+wget http://downloads.lisk.io/lisk/test/lisk-0.1.0-Darwin-x86_64.zip
+unzip lisk-0.1.0-Darwin-x86_64.zip
+cd lisk-0.1.0-Darwin-x86_64
 npm install --production
 ```
 
@@ -173,38 +173,38 @@ On **Linux** operating systems (or vagrant):
 **TIP:** If using vagrant, it is a good idea to change to the shared: `/vagrant` directory as described above. This way, you can easily access your dapp's files from within the host operating system.
 
 ```sh
-wget http://downloads.crypti.me/crypti-node/development/linux-0.5.1.zip
-unzip linux-0.5.1.zip
-cd 0.5.1
+wget http://downloads.lisk.io/lisk/test/lisk-0.1.0-Linux-x86_64.zip
+unzip lisk-0.1.0-Linux-x86_64.zip
+cd lisk-0.1.0-Linux-x86_64
 npm install --production
 ```
 
-Then launch Crypti and verify our base testnet is working correctly:
+Then launch Lisk and verify our base testnet is working correctly:
 
 ```sh
 node app.js
 ```
 
-If successful, Crypti will launch and connect to the base testnet network.
+If successful, Lisk will launch and connect to the base testnet network.
 
-## Crypti-cli
+## Lisk CLI
 
-Now let's install **crypti-cli** and finally start work on our first dapp:
-
-```sh
-sudo npm install -g crypti-cli
-```
-
-After installation completes, check that **crypti-cli** is installed correctly:
+Now let's install **Lisk CLI** and finally start work on our first dapp:
 
 ```sh
-crypti-cli -h
+sudo npm install -g lisk-cli
 ```
 
-If successful **crypti-cli** should yield the following output:
+After installation completes, check that **Lisk CLI** is installed correctly:
+
+```sh
+lisked-cli -h
+```
+
+If successful **Lisk CLI** should yield the following output:
 
 ```
-Usage: crypti-cli [options] [command]
+Usage: lisk-cli [options] [command]
 
 Commands:
 
