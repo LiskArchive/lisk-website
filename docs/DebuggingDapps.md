@@ -6,14 +6,14 @@ Requirements:
 
 **Important:** If you have installed the Lisk Sandbox module before (see **node_modules/lisk-sandbox**). Please check the version, it must be greater than or equal to 1.0.3. If you have an older version of Lisk sandbox, please run the following commands:
 
-```sh
+```text
 rm -rf node_modules/lisk-sandbox
 npm install lisk-sandbox
 ```
 
 Debugging is enabled by launching Lisk with the **DEBUG** environment variable assgined with a value of **1**, for example:
 
-```sh
+```text
 DEBUG=1 node app.js
 ```
 
@@ -21,18 +21,18 @@ DEBUG=1 node app.js
 
 Install [node-inspector](https://github.com/node-inspector/node-inspector), a debugger interface for Node.js applications:
 
-```sh
+```text
 npm install -g node-inspector
 ```
 
 Launch Lisk:
 
-```sh
+```text
 DEBUG=1 node app.js
 ```
 
 Launch node-inspector:
-```sh
+```text
 node-inspector
 ```
 
@@ -40,7 +40,7 @@ node-inspector
 
 Click on:
 
-```
+```text
 Run -> Edit Configurations -> Nodejs Remote Debug
 ```
 
@@ -48,7 +48,7 @@ Add a [new debugging configuration](http://www.jetbrains.com/webstorm/help/run-d
 
 Launch Lisk:
 
-```sh
+```text
 DEBUG=1 node app.js
 ```
 
