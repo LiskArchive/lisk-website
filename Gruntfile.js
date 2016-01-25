@@ -96,6 +96,6 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('build', ['sass', 'cssmin', 'concat', 'uglify']);
+	grunt.registerTask('build', ['sass', 'concat', 'cssmin', 'uglify']);
 	grunt.registerTask('default', ['watch']);
 };
