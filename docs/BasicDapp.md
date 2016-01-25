@@ -109,6 +109,6 @@ If you answered **Yes** to autolaunch the dapp, then you can launch it by starti
 node app.js
 ```
 
-Once Lisks has loaded, your dapp should have launched. To verify this, simply open your browser with the following link: [http://localhost:7040/dapps/[dappid]/](http://localhost:7040/dapps/[dappid]/), replacing **[dappid]** with your dapp's own unique identifier.
+Once Lisks has loaded, your dapp should have launched. To verify this, simply open your browser with the following link: [http://localhost:7000/dapps/[dappid]/](http://localhost:7000/dapps/[dappid]/), replacing **[dappid]** with your dapp's own unique identifier.
 
 All done! In the [next tutorial](MessagingDapp.md), we describe how to make a new Messaging Dapp using Lisks's Dapp SDK.

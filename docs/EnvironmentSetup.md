@@ -87,7 +87,7 @@ Currently we only support development on Mac OS X and Linux operating systems. I
   ```ruby
   Vagrant.configure(2) do |config|
     config.vm.box = "ubuntu/trusty64"
-    config.vm.network "forwarded_port", guest: 7040, host: 7040
+    config.vm.network "forwarded_port", guest: 7000, host: 7000
 
     config.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
