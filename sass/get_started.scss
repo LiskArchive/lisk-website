@@ -111,16 +111,16 @@
   font: 16px $RobotoMedium;
 }
 
-.xcr_list {
+.lisk_list {
   @extend %global_flex_block_row_nowrap_space_between_center;
 }
 
-.xcr_list {
+.lisk_list {
   display: block;
   text-align: center;
 }
 
-.xcr_item {
+.lisk_item {
   margin-bottom: 38px;
   display: inline-block;
   vertical-align: top;
@@ -128,7 +128,7 @@
   margin-right: 20px;
 }
 
-.xcr_link {
+.lisk_link {
   display: block;
   text-decoration: none;
   .logo_poloniex {
