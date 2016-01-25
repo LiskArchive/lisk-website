@@ -6,19 +6,19 @@ We've already created a basic dapp. So let's develop it further into something a
 
 First open a command prompt and change directory to our previously generated **dapps** folder:
 
-```sh
+```text
 cd dapps/[dappid]/
 ```
 
 Replace **[dappid]** with your dapp's own unique identifier. Then issue the following command to create new contract using **Lisk CLI**:
 
-```sh
+```text
 lisk-cli contract -a
 ```
 
 Lisk CLI will ask you a few questions e.g. contract name, so let's choose the name "Message".
 
-```sh
+```text
 ? Contract file name (without .js) Message
 New contract created: ./contracts/Message.js
 Updating contract list
@@ -463,13 +463,13 @@ modules.blockchain.transactions.processUnconfirmedTransaction(transaction, cb);
 
 Great, now we need to fund our account using **Lisk CLI** and then we can send an API request to send our first message!
 
-```sh
+```text
 lisk-cli dapps --deposit
 ```
 
 It will ask for your dapps' secret, amount and unique identifier. Then just send the following API request to your dapp:
 
-```sh
+```text
 curl -XPUT -H "Content-type: application/json" -d '{
 "recipientId": "58191895912485C",
 "message": "Hello, world!",
@@ -538,7 +538,7 @@ Here we run a SQL query to get a list of messages from the blockchain, using the
 
 To get a list of messages, send the following API request to your dapp:
 
-```sh
+```text
 curl -XGET 'http://localhost:7040/api/dapps/[dappid]/api/messages/list?recipientId=58191895912485C'
 ```
 
