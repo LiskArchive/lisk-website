@@ -11,7 +11,8 @@ marked.setOptions({
 	pedantic: false,
 	sanitize: true,
 	smartLists: true,
-	smartypants: false
+	smartypants: false,
+	langPrefix: 'language-'
 });
 
 var menu = [
