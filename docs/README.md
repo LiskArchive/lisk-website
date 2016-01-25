@@ -111,7 +111,7 @@ A detailed reference of this API can be found in our [Lisk Dapps API Documentati
 
 The Lisk Foundation is ready and waiting to answer your questions.
 
-Please feel free to join our chat at: [Lisk.Chat](https://chat.lisk.io), where you will find us ready and waiting to answer any questions you may need answered as quickly as possible.
+Please feel free to join our chat at: [Lisk.Chat](https://lisk.chat), where you will find us ready and waiting to answer any questions you may need answered as quickly as possible.
 
 Thank you for making Lisk your decentralized application platform of choice.
 
