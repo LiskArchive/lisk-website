@@ -1,5 +1,5 @@
 module.exports = function(grunt){
-
+G
 	grunt.initConfig({
 		concat: {
 			options: {
@@ -67,14 +67,14 @@ module.exports = function(grunt){
 		watch: {
 			scripts: {
 				files: ['public/js/*.js'],
-				tasks: ['concat:all_js', 'uglify'],
+				tasks: ['concat:scripts', 'uglify'],
 				options: {
 					spawn: false
 				}
 			},
 			styles: {
 				files: ['sass/*.scss'],
-				tasks: ['sass', 'concat:all_css', 'cssmin'],
+				tasks: ['sass', 'concat:styles', 'cssmin'],
 				options: {
 					spawn: false
 				}
