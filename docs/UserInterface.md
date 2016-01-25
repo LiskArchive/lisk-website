@@ -1,30 +1,32 @@
+# Adding a User Interface
+
 In this tutorial we will briefly describe how to add a user interface to your dapp.
 
 Within the root folder of your dapp is a **public** folder where the user interface (UI) of your dapp is located.
 
-Crypti's dapp platform supports [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application), where all necessary code - HTML, CSS and JavaScript, is retrieved as a single page load and then changed dynamically in-place from there on.
+Lisk's dapp platform supports [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application), where all necessary code - HTML, CSS and JavaScript, is retrieved as a single page load and then changed dynamically in-place from there on.
 
-Some of the better known frameworks for developing such applications, supported by the Crypti platform, are:
+Some of the better known frameworks for developing such applications, supported by the Lisk platform, are:
 
 * [AngularJS](https://angularjs.org/)
-* [Ember.js](http://emberjs.com/)
 * [React.js](https://facebook.github.io/react/)
+* [Ember.js](http://emberjs.com/)
 
 As a result, when it comes to adding a user interface to your dapp, developers have a broad range of options.
 
-Your choice of framework is often dependent on various factors, including an individual's personal taste and the given application requirements. Rather than provide a full tutorial, we will give an overview on how to integrate the Crypti API within any given framework.
+Your choice of framework is often dependent on various factors, including an individual's personal taste and the given application requirements. Rather than provide a full tutorial, we will give an overview on how to integrate the Lisk API within any given framework.
 
 ## How to Start
 
 Simply add an **index.html** file to the **public** folder located within the root folder of your dapp.
 
-Then, assuming Crypti is launched, along with the backend portion of your dapp:
+Then, assuming Lisk is launched, along with the backend portion of your dapp:
 
 Open the following URL: [http://localhost:7040/dapps/[dappid]/](http://localhost:7040/dapps/<dappid>/) replacing **[dapp]** with your dapp's unique identifier.
 
 This will open the **index.html** file we added to the **public** folder. This can include the HTML, CSS and JavaScript code, which serves as the user interface to your dapp.
 
-Interacting with your dapp's API is then merely a case of pulling and pushing data back and forth between the frontend (UI) and your dapp's backend code running on the Crypti node's sandboxed virtual machine (VM).
+Interacting with your dapp's API is then merely a case of pulling and pushing data back and forth between the frontend (UI) and your dapp's backend code running on the Lisk node's sandboxed virtual machine (VM).
 
 If you are not familiar with developing Single-Page Applications, we strongly suggest you check out the following resources as valuable starting points:
 
