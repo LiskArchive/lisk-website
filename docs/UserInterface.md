@@ -22,7 +22,7 @@ Simply add an **index.html** file to the **public** folder located within the ro
 
 Then, assuming Lisk is launched, along with the backend portion of your dapp:
 
-Open the following URL: [http://localhost:7040/dapps/[dappid]/](http://localhost:7040/dapps/<dappid>/) replacing **[dapp]** with your dapp's unique identifier.
+Open the following URL: [http://localhost:7000/dapps/[dappid]/](http://localhost:7000/dapps/<dappid>/) replacing **[dapp]** with your dapp's unique identifier.
 
 This will open the **index.html** file we added to the **public** folder. This can include the HTML, CSS and JavaScript code, which serves as the user interface to your dapp.
 
@@ -49,7 +49,7 @@ Given a URL containing our dapp's **[dappid]**, how do we detect it within the U
 
 When constructing the URL to a given dapp's UI, it is done by using the following URL format:
 
-**http://localhost:7040/dapps/[dappid]/**
+**http://localhost:7000/dapps/[dappid]/**
 
 So, in order to extract the **[dappid]** from this URL, for example, when using the [AngularJS](http://angularjs.org) framework, we would write a simple function to pull the identifier from the URL using Angular's `$location` service:
 
