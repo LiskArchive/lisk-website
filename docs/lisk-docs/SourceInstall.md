@@ -6,21 +6,21 @@ This tutorial describes how to install the Lisk from source on a Ubuntu based ma
 
 ## 1. Install Essentials
 
-```
+```text
 sudo apt-get update
 sudo apt-get install curl build-essential python wget unzip
 ```
 
 ## 2. Install SQLite3
 
-```
+```text
 curl -sL https://downloads.lisk.io/scripts/setup_sqlite3 | sudo -E bash -
 sudo apt-get install -y sqlite3
 ```
 
 After it installs, check version of sqlite3:
 
-```
+```text
 sqlite3 -version
 ```
 
@@ -28,14 +28,14 @@ SQLite3 should have the following version number: `3.8.2`
 
 ## 3. Install Node.js
 
-```
+```text
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
 After it installs, check version of Node.js/npm:
 
-```
+```text
 node -v
 npm -v
 ```
@@ -47,25 +47,25 @@ npm -v
 
 Download the Lisk archive:
 
-```
+```text
 wget https://downloads.lisk.io/lisk/main/0.1.0.zip
 ```
 
 Unzip the archive:
 
-```
+```text
 unzip 0.1.0.zip
 ```
 
 Change directory:
 
-```
+```text
 cd 0.1.0
 ```
 
 Install node modules:
 
-```
+```text
 npm install --production
 ```
 
@@ -75,19 +75,19 @@ This is a specialized version of Node.js used to execute dapps within a virtual 
 
 Download the Lisk Node archive:
 
-```
+```text
 wget https://downloads.lisk.io/lisk-node.zip
 ```
 
 Unzip the archive:
 
-```
+```text
 unzip lisk-node.zip
 ```
 
 Check version of Node.js:
 
-```
+```text
 nodejs/node -v
 ```
 
@@ -97,13 +97,13 @@ nodejs/node -v
 
 Download the blockchain archive:
 
-```
+```text
 wget https://downloads.lisk.io/blockchain.db.zip
 ```
 
 Unzip the archive:
 
-```
+```text
 unzip blockchain.db.zip
 ```
 
@@ -111,13 +111,13 @@ unzip blockchain.db.zip
 
 Install forever, a Node.js process manager:
 
-```
+```text
 sudo npm install -g forever
 ```
 
 Next synchronize your machine's clock:
 
-```
+```text
 sudo service ntp stop
 sudo ntpdate pool.ntp.org
 sudo service ntp start
@@ -127,13 +127,13 @@ sudo service ntp start
 
 Start Lisk:
 
-```
+```text
 forever start app.js
 ```
 
 The Lisk process, logs, and etc can be found with the command:
 
-```
+```text
 forever list
 ```
 
@@ -153,19 +153,19 @@ If your node is running on a remote machine, or if you want to keep forging pers
 
 Stop the running Lisk node:
 
-```
+```text
 forever stop app.js
 ```
 
 Open config.json:
 
-```
+```text
 nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "forging": {
   "secret" : [""]
 }
@@ -173,7 +173,7 @@ Arrow down until you find the following section:
 
 Set the secret parameter to your account secret phrase.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
@@ -181,7 +181,7 @@ Set the secret parameter to your account secret phrase.
 
 (Optional) In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the web client.
 
-```
+```text
 "access": {
   "whiteList": ["127.0.0.1"] <- Replace with your IP which you will use to access your node
 }
@@ -189,7 +189,7 @@ Set the secret parameter to your account secret phrase.
 
 To set 2 accounts to forge on a single node, enter both account passphrases like below.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegate passphrases
   "access": {
@@ -202,7 +202,7 @@ After you have typed in your passphrase. Hit: `Ctrl+ X` Then: `Y`
 
 Start Lisk:
 
-```
+```text
 forever start app.js
 ```
 
@@ -214,19 +214,19 @@ Then, open the Lisk web client and wait for the blockchain to load. Once the blo
 
 Stop the running Lisk node:
 
-```
+```text
 forever stop app.js
 ```
 
 Open config.json:
 
-```
+```text
 nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "ssl": {
   "enabled": false,         < Change FROM false TO true
   "options": {
@@ -242,13 +242,13 @@ After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
 **NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Lisk with admin rights:
 
-```
+```text
 sudo forever start app.js
 ```
 
 If the port is above 1023, you can start Lisk normally:
 
-```
+```text
 forever start app.js
 ```
 
@@ -260,13 +260,13 @@ To have Lisk automatically start each time your machine boots:
 
 1. Install forever-service, a Node.js service manager:
 
-  ```
+  ```text
   sudo npm install forever-service -g
   ```
 
 2. Change to your Lisk folder and run:
 
-  ```
+  ```text
   forever-service install lisk
   ```
 
