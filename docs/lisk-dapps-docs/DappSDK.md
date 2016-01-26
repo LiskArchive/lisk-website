@@ -129,7 +129,7 @@ This file contains important details about your dapp's genesis block. This file 
 
 This file contains your dapp's SQL database schema definition.
 
-For more information on defining custom blockchains, please read our [sidechain](Sidechain.md) tutorial.
+For more information on defining custom blockchains, please read our [sidechain](/documentation?i=lisk-dapps-docs/Sidechain) tutorial.
 
 ### Modules
 

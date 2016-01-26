@@ -546,4 +546,4 @@ Replacing **[dappid]** with your dapp's own unique identifier and **[recipientId
 
 This completes the backend of our Messaging dapp. The source code for this tutorial is available [here](https://github.com/lisk/lisk-messagingdapp).
 
-In the [next tutorial](UserInterface.md), we describe how to create a frontend user interface for our Messaging dapp.
+In the [next tutorial](/documentation?i=lisk-dapps-docs/UserInterface), we describe how to create a frontend user interface for our Messaging dapp.

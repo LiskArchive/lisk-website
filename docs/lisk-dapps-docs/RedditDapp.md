@@ -4,7 +4,7 @@ In this tutorial, we give an overview on how to handle multiple contracts within
 
 We will therefore make a decentralized version of "Reddit" as an example. It won't be a full rendition of "Reddit" itself, but rather, a small part of its functionality, containing a message board with posts, comments and likes.
 
-Before proceeding, we strongly recommend reading our [Messaging Dapp Tutorial](/MessagingDapp.md), which gives a more thorough introduction on how contracts are put together.
+Before proceeding, we strongly recommend reading our [Messaging Dapp Tutorial](/documentation?i=lisk-dapps-docs/MessagingDapp), which gives a more thorough introduction on how contracts are put together.
 
 ## Contracts
 

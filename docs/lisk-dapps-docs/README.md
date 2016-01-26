@@ -47,14 +47,14 @@ If you are just starting out, then before progressing any further. We strongly s
 
 For more information on how to proceed with developing your first Lisk based dapp. Please read the following tutorials:
 
-* [Setting up an Environment](EnvironmentSetup.md)
-* [Creating a Basic Dapp](BasicDapp.md)
-* [Creating a Messaging Dapp](MessagingDapp.md)
-* [Adding a User Interface](UserInterface.md)
-* [Introducing the Dapp SDK](DappSDK.md)
-* [Creating a Custom Sidechain](Sidechain.md)
-* [Creating a Reddit Dapp](RedditDapp.md)
-* [Debugging Dapps](DebuggingDapps.md)
+* [Setting up an Environment](/documentation?i=lisk-dapps-docs/EnvironmentSetup)
+* [Creating a Basic Dapp](/documentation?i=lisk-dapps-docs/BasicDapp)
+* [Creating a Messaging Dapp](/documentation?i=lisk-dapps-docs/MessagingDapp)
+* [Adding a User Interface](/documentation?i=lisk-dapps-docs/UserInterface)
+* [Introducing the Dapp SDK](/documentation?i=lisk-dapps-docs/DappSDK)
+* [Creating a Custom Sidechain](/documentation?i=lisk-dapps-docs/Sidechain)
+* [Creating a Reddit Dapp](/documentation?i=lisk-dapps-docs/RedditDapp)
+* [Debugging Dapps](/documentation?i=lisk-dapps-docs/DebuggingDapps)
 
 ## Sandboxing
 
