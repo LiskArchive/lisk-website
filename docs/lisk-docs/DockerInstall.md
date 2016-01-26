@@ -26,7 +26,7 @@ Log onto your Ubuntu based server and enter the following commands:
 
 **NOTE:** The following is applicable to: **Ubuntu 14.04 (LTS) - x86_64**.
 
-```
+```text
 curl -sL https://downloads.lisk.io/scripts/setup_docker | sudo -E bash -
 sudo apt-get install -y docker-engine
 ```
@@ -37,13 +37,13 @@ To install and run the latest version of Lisk - Delegate and Developer Edition, 
 
 Download the latest docker image:
 
-```
+```text
 docker pull lisk/node
 ```
 
 Install the docker image (executed only once per installation):
 
-```
+```text
 docker run -d --restart=always -p 0.0.0.0:8000:8000 lisk/node
 ```
 
@@ -63,37 +63,37 @@ To update to the latest version of Lisk - Delegate and Developer Edition, simply
 
 Get the docker container id:
 
-```
+```text
 docker ps -a
 ```
 
 Stop the docker container (replace **container_id** with your own id):
 
-```
+```text
 docker stop container_id
 ```
 
 Remove the old container (replace **container_id** with your own id):
 
-```
+```text
 docker rm container_id
 ```
 
 Download the latest docker image:
 
-```
+```text
 docker pull lisk/node
 ```
 
 Install the docker image (executed only once per installation):
 
-```
+```text
 docker run -d --restart=always -p 0.0.0.0:8000:8000 lisk/node
 ```
 
 Remove any dangling images:
 
-```
+```text
 docker rmi $(docker images -q --filter "dangling=true")
 ```
 
@@ -105,25 +105,25 @@ To enable forging for one or more delegates, simply follow the below instruction
 
 Get the docker container id:
 
-```
+```text
 docker ps -a
 ```
 
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
-```
+```text
 docker exec -it container_id bash
 ```
 
 Open config.json:
 
-```
+```text
 export TERM=xterm; nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "forging": {
   "secret" : [""]
 }
@@ -131,7 +131,7 @@ Arrow down until you find the following section:
 
 Set the secret parameter to your account secret phrase.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
@@ -139,7 +139,7 @@ Set the secret parameter to your account secret phrase.
 
 (Optional) In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the web client.
 
-```
+```text
 "access": {
   "whiteList": ["127.0.0.1"] <- Replace with the IP which you will use to access your node
 }
@@ -147,7 +147,7 @@ Set the secret parameter to your account secret phrase.
 
 To set 2 accounts to forge on a single node, enter both account passphrases like below.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegate passphrases
   "access": {
@@ -160,13 +160,13 @@ After you have typed in your passphrase. Hit: `Ctrl+ X` Then: `Y`
 
 Exit the docker container:
 
-```
+```text
 exit
 ```
 
 Restart the docker container (replace **container_id** with your own id):
 
-```
+```text
 docker restart container_id
 ```
 
@@ -178,25 +178,25 @@ Then, open the Lisk web client and wait for the blockchain to load. Once the blo
 
 Get the docker container id:
 
-```
+```text
 docker ps -a
 ```
 
 Open a bash prompt on the docker container (replace **container_id** with your own id):
 
-```
+```text
 docker exec -it container_id bash
 ```
 
 Open config.json:
 
-```
+```text
 export TERM=xterm; nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "ssl": {
   "enabled": false,         < Change FROM false TO true
   "options": {
@@ -212,25 +212,25 @@ After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
 Exit the docker container:
 
-```
+```text
 exit
 ```
 
 Stop the docker container (replace **container_id** with your own id):
 
-```
+```text
 docker stop container_id
 ```
 
 Commit a new docker image (replace **container_id** with your own id):
 
-```
+```text
 docker commit container_id secure_node
 ```
 
 Run the new docker image:
 
-```
+```text
 docker run -d --restart=always -p 0.0.0.0:8000:8000 0.0.0.0:443:443 secure_node
 ```
 
@@ -242,31 +242,31 @@ Listed below, are the available commands, which can be used to manage your docke
 
 To see a list of running docker containers:
 
-```
+```text
 docker ps -a
 ```
 
 To access a bash prompt on a docker container:
 
-```
+```text
 docker exec -it container_id bash
 ```
 
 To monitor the status of a docker container:
 
-```
+```text
 docker stats container_id
 ```
 
 To monitor the log file of a docker container:
 
-```
+```text
 docker logs --tail=500 -f container_id
 ```
 
 To stop/restart/start a docker container:
 
-```
+```text
 docker stop container_id
 docker restart container_id
 docker start container_id
@@ -274,7 +274,7 @@ docker start container_id
 
 To view a full list of available commands:
 
-```
+```text
 docker --help
 ```
 
@@ -284,7 +284,7 @@ For further information on how to install or use Docker, please read the officia
 
 If you encounter the following error when running `docker` commands:
 
-```
+```text
 cannot enable tty mode on non tty input
 ```
 
@@ -294,7 +294,7 @@ Then please try running each command prefixed with `winpty`. For example: `winpt
 
 If you encounter the following error when running `docker` commands:
 
-```
+```text
 Cannot connect to the Docker daemon. Is the docker daemon running on this host?
 ```
 
@@ -308,7 +308,7 @@ If you encounter an error while downloading the docker image, using the `docker 
 
 Please use the following alternative download method:
 
-```
+```text
 curl -o lisk-docker.tar.gz https://downloads.lisk.io/lisk-docker.tar.gz
 zcat lisk-docker.tar.gz | docker load
 ```
