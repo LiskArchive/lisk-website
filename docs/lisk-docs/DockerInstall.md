@@ -33,7 +33,7 @@ sudo apt-get install -y docker-engine
 
 ## 2. Install Lisk
 
-To install and run the latest version of Lisk - Delegate and Developer Edition, simply run the following commands:
+To install and run the latest version of Lisk, simply run the following commands:
 
 Download the latest docker image:
 
