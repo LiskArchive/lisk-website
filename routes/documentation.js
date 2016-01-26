@@ -17,6 +17,24 @@ marked.setOptions({
 
 var menu = [
 	{
+		name: "Welcome to Lisk",
+		url: "/documentation?i=lisk-docs/README",
+		subitems: [
+			{
+				name: "Installing Lisk (using Binaries)",
+				i: "lisk-docs/BinaryInstall"
+			},
+			{
+				name: "Installing Lisk (using Docker)",
+				i: "lisk-docs/DockerInstall"
+			},
+			{
+				name: "Installing Lisk (from Source)",
+				i: "lisk-docs/SourceInstall"
+			}
+		]
+	},
+	{
 		name: "Developing Dapps",
 		url: "/documentation?i=lisk-dapps-docs/README",
 		subitems: [
@@ -66,6 +84,26 @@ var menu = [
 
 var docs = [
 	{
+		title: "Welcome to Lisk",
+		i: "lisk-docs/README",
+		next: "lisk-docs/BinaryInstall"
+	},
+	{
+		title: "Installing Lisk (using Binaries)",
+		i: "lisk-docs/BinaryInstall",
+		next: "lisk-docs/DockerInstall"
+	},
+	{
+		title: "Installing Lisk (using Docker)",
+		i: "lisk-docs/DockerInstall",
+		next: "lisk-docs/SourceInstall"
+	},
+	{
+		title: "Installing Lisk (from Source)",
+		i: "lisk-docs/SourceInstall",
+		next: "lisk-dapps-docs/README"
+	},
+	{
 		title: "Developing Dapps",
 		i: "lisk-dapps-docs/README",
 		next: "lisk-dapps-docs/EnvironmentSetup"
@@ -111,10 +149,9 @@ var docs = [
 	}
 ]
 
-
 module.exports = function (app) {
 	app.get("/documentation", function (req, res) {
-		var i = req.query.i || "lisk-dapps-docs/README";
+		var i = req.query.i || "lisk-docs/README";
 
 		function finish(doc) {
 			if (doc) {
