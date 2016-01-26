@@ -28,6 +28,13 @@ The official Lisk website.
   bower install
   ```
 
+4. Install git submodules:
+
+  ```
+  git submodule init
+  git submodule update
+  ```
+
 ## Launch
 
 1. Compile SaSS and JavaScript:
