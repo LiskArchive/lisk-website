@@ -1,6 +1,6 @@
 # Lisk Documentation
 
-Welcome to the Lisk documentation. Please note this documentation is aimed specifically at Delegates and Developers. To simply install the Lisk client on your desktop, please check the [Install](https://lisk.io/install) page on the Lisk website.
+Welcome to the Lisk documentation. Please note this documentation is aimed specifically at Delegates and Developers. To simply install the Lisk client on your desktop, please check the [Download](https://lisk.io/download) page on the Lisk website.
 
 ## About Lisk
 
