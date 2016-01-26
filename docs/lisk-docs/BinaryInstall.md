@@ -17,7 +17,7 @@ The following operating systems and architectures are supported:
 
 If you are unsure which platform to choose from, open a terminal and run the following command:
 
-```
+```text
 uname -sm
 ```
 
@@ -33,19 +33,19 @@ Follow the relevant download instructions for your selected platform as listed b
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-Linux-x86_64.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-Linux-x86_64.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-Linux-x86_64
   ```
 
@@ -55,19 +55,19 @@ Follow the relevant download instructions for your selected platform as listed b
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-Linux-i686.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-Linux-i686.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-Linux-i686
   ```
 
@@ -79,19 +79,19 @@ Tested devices: [Raspberry Pi 1 Model B+](https://www.raspberrypi.org/products/m
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-Linux-armv6l.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-Linux-armv6l.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-Linux-armv6l
   ```
 
@@ -103,19 +103,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-Linux-armv7l.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-Linux-armv7l.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-Linux-armv7l
   ```
 
@@ -125,19 +125,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-Darwin-x86_64.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-Darwin-x86_64.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-Darwin-x86_64
   ```
 
@@ -147,19 +147,19 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 
 1. Download the archive:
 
-  ```
+  ```text
   wget https://downloads.lisk.io/lisk/main/lisk-0.1.0-FreeBSD-amd64.zip
   ```
 
 2. Unzip the archive:
 
-  ```
+  ```text
   unzip lisk-0.1.0-FreeBSD-amd64.zip
   ```
 
 3. Change directory:
 
-  ```
+  ```text
   cd lisk-0.1.0-FreeBSD-amd64
   ```
 
@@ -169,7 +169,7 @@ Tested devices: [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/ra
 
 To start lisk, simply run the following command from within the current directory:
 
-```
+```text
 bash lisk.sh autostart
 ```
 
@@ -187,19 +187,19 @@ If your node is running on a remote machine, or if you want to keep forging pers
 
 Stop the running Lisk node:
 
-```
+```text
 bash lisk.sh stop
 ```
 
 Open config.json:
 
-```
+```text
 nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "forging": {
   "secret" : [""]
 }
@@ -207,7 +207,7 @@ Arrow down until you find the following section:
 
 Set the secret parameter to your account secret phrase.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase"] <- Replace with your delegate passphrase
 }
@@ -215,7 +215,7 @@ Set the secret parameter to your account secret phrase.
 
 (Optional) In the forging section you will also see an access property, this is used to allow only your IP address to enable forging through the web client.
 
-```
+```text
 "access": {
   "whiteList": ["127.0.0.1"] <- Replace with the IP which you will use to access your node
 }
@@ -223,7 +223,7 @@ Set the secret parameter to your account secret phrase.
 
 To set 2 accounts to forge on a single node, enter both account passphrases like below.
 
-```
+```text
 "forging": {
   "secret" : ["YourDelegatePassphrase1","YourDelegatePassphrase2"] <- Replace with your delegate passphrases
   "access": {
@@ -236,7 +236,7 @@ After you have typed in your passphrase. Hit: `Ctrl+ X` Then: `Y`
 
 Start Lisk:
 
-```
+```text
 bash lisk.sh start
 ```
 
@@ -248,19 +248,19 @@ Then, open the Lisk web client and wait for the blockchain to load. Once the blo
 
 Stop the running Lisk node:
 
-```
+```text
 bash lisk.sh stop
 ```
 
 Open config.json:
 
-```
+```text
 nano config.json
 ```
 
 Arrow down until you find the following section:
 
-```
+```text
 "ssl": {
   "enabled": false,         < Change FROM false TO true
   "options": {
@@ -276,13 +276,13 @@ After you are done, save changes and exit. Hit: `Ctrl+ X` Then: `Y`
 
 **NOTE:** If SSL Port configured above (ssl > options > port) is within well known ports range (below 1024), you must start Lisk with admin rights:
 
-```
+```text
 sudo bash lisk.sh start
 ```
 
 If the port is above 1023, you can start Lisk normally:
 
-```
+```text
 bash lisk.sh start
 ```
 
@@ -294,19 +294,19 @@ Listed below, are the available commands which can be used to manage your Lisk n
 
 To check the status of lisk:
 
-```
+```text
 bash lisk.sh status
 ```
 
 To monitor the log file of lisk:
 
-```
+```text
 bash lisk.sh logs
 ```
 
 To stop/restart/start lisk:
 
-```
+```text
 bash lisk.sh stop
 bash lisk.sh start
 bash lisk.sh restart
@@ -314,12 +314,12 @@ bash lisk.sh restart
 
 To automatically start lisk when booting the machine:
 
-```
+```text
 bash lisk.sh autostart
 ```
 
 To replace the blockchain with a new snapshot:
 
-```
+```text
 bash lisk.sh rebuild
 ```
