@@ -17,44 +17,40 @@ marked.setOptions({
 
 var menu = [
 	{
-		name: "Welcome",
-		url: "/documentation?i=README"
-	},
-	{
-		name: "Decentralized Applications",
-		url: "#",
+		name: "Developing Dapps",
+		url: "/documentation?i=lisk-dapps-docs/README",
 		subitems: [
 			{
-				name: "Environment Setup",
-				i: "EnvironmentSetup"
+				name: "Setting up an Environment",
+				i: "lisk-dapps-docs/EnvironmentSetup",
 			},
 			{
 				name: "Creating a Basic Dapp",
-				i: "BasicDapp"
+				i: "lisk-dapps-docs/BasicDapp",
 			},
 			{
 				name: "Creating a Messaging Dapp",
-				i: "MessagingDapp"
+				i: "lisk-dapps-docs/MessagingDapp",
 			},
 			{
 				name: "Creating a Reddit Dapp",
-				i: "RedditDapp"
+				i: "lisk-dapps-docs/RedditDapp",
 			},
 			{
-				name: "User Interface",
-				i: "UserInterface"
+				name: "Adding a User Interface",
+				i: "lisk-dapps-docs/UserInterface",
 			},
 			{
-				name: "Dapp SDK Introduction",
-				i: "DappSDK"
+				name: "Introducing the Dapp SDK",
+				i: "lisk-dapps-docs/DappSDK",
 			},
 			{
-				name: "Sidechain Overview",
-				i: "Sidechain"
+				name: "Creating a Custom Sidechain",
+				i: "lisk-dapps-docs/Sidechain",
 			},
 			{
 				name: "Debugging Dapps",
-				i: "DebuggingDapps"
+				i: "lisk-dapps-docs/DebuggingDapps"
 			}
 		]
 	},
@@ -70,55 +66,55 @@ var menu = [
 
 var docs = [
 	{
-		title: "Welcome!",
-		i: "README",
-		next: "EnvironmentSetup"
+		title: "Developing Dapps",
+		i: "lisk-dapps-docs/README",
+		next: "lisk-dapps-docs/EnvironmentSetup"
 	},
 	{
-		title: "Environment Setup",
-		i: "EnvironmentSetup",
-		next: "BasicDapp"
+		title: "Setting up an Environment",
+		i: "lisk-dapps-docs/EnvironmentSetup",
+		next: "lisk-dapps-docs/BasicDapp"
 	},
 	{
 		title: "Creating a Basic Dapp",
-		i: "BasicDapp",
-		next: "MessagingDapp"
+		i: "lisk-dapps-docs/BasicDapp",
+		next: "lisk-dapps-docs/MessagingDapp"
 	},
 	{
 		title: "Creating a Messaging Dapp",
-		i: "MessagingDapp",
-		next: "RedditDapp"
+		i: "lisk-dapps-docs/MessagingDapp",
+		next: "lisk-dapps-docs/RedditDapp"
 	},
 	{
 		title: "Creating a Reddit Dapp",
-		i: "RedditDapp",
-		next: "UserInterface"
+		i: "lisk-dapps-docs/RedditDapp",
+		next: "lisk-dapps-docs/UserInterface"
 	},
 	{
-		title: "User Interface",
-		i: "UserInterface",
-		next: "DappSDK"
+		title: "Adding a User Interface",
+		i: "lisk-dapps-docs/UserInterface",
+		next: "lisk-dapps-docs/DappSDK"
 	},
 	{
-		title: "Dapp SDK Introduction",
-		i: "DappSDK",
-		next: "Sidechain"
+		title: "Introducing the Dapp SDK",
+		i: "lisk-dapps-docs/DappSDK",
+		next: "lisk-dapps-docs/Sidechain"
 	},
 	{
-		title: "Sidechain Overview",
-		i: "Sidechain",
-		next: "DebuggingDapps"
+		title: "Creating a Custom Sidechain",
+		i: "lisk-dapps-docs/Sidechain",
+		next: "lisk-dapps-docs/DebuggingDapps"
 	},
 	{
 		title: "Debugging Dapps",
-		i: "DebuggingDapps"
+		i: "lisk-dapps-docs/DebuggingDapps"
 	}
 ]
 
 
 module.exports = function (app) {
 	app.get("/documentation", function (req, res) {
-		var i = req.query.i || "welcome";
+		var i = req.query.i || "lisk-dapps-docs/README";
 
 		function finish(doc) {
 			if (doc) {
@@ -163,7 +159,7 @@ module.exports = function (app) {
 				}
 			}
 
-			fs.readFile(path.join('./', 'docs', doc.i + ".md"), 'utf8', function (err, data) {
+			fs.readFile(path.join('./', 'docs', '/' + doc.i + '.md'), 'utf8', function (err, data) {
 				if (err) {
 					console.log(err);
 					finish();
