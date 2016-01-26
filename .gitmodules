@@ -1,0 +1,6 @@
+[submodule "docs/lisk-docs"]
+	path = docs/lisk-docs
+	url = git@github.com:LiskHQ/lisk-docs.git
+[submodule "docs/lisk-dapps-docs"]
+	path = docs/lisk-dapps-docs
+	url = git@github.com:LiskHQ/lisk-dapps-docs.git
