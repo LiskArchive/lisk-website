@@ -10,9 +10,9 @@ For more information please read our [white paper](https://github.com/LiskHQ/lis
 
 ## Node Installation
 
-* [Installing Lisk (from Binaries)](BinaryInstall.md)
-* [Installing Lisk (using Docker)](DockerInstall.md)
-* [Installing Lisk (from Source)](SourceInstall.md)
+* [Installing Lisk (from Binaries)](/documentation?i=lisk-docs/BinaryInstall)
+* [Installing Lisk (using Docker)](/documentation?i=lisk-docs/DockerInstall)
+* [Installing Lisk (from Source)](/documentation?i=lisk-docs/SourceInstall)
 
 ## Node API
 
