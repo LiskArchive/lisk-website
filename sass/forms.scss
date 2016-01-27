@@ -162,67 +162,67 @@
 
 }
 
-.curious_btn,
-%curious_btn {
+.blue_btn,
+%blue_btn {
 	@include transition_all(background-color .3s);
 	color      : #fff;
-	background : $curious;
+	background : $blue;
 	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
 
 	&:hover {
-		background : darken($curious, 7%);
+		background : darken($blue, 7%);
 	}
 
 	&:active {
-		background : darken($curious, 14%);
+		background : darken($blue, 14%);
 	}
 }
 
-.tahiti_btn,
-%madison_btn {
+.orange_btn,
+%orange_btn {
 	@include transition_all(background-color .3s);
 	color      : #fff;
-	background : $tahiti;
+	background : $orange;
 	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
 
 	&:hover {
-		background : darken($tahiti, 7%);
+		background : darken($orange, 7%);
 	}
 
 	&:active {
-		background : darken($tahiti, 14%);
+		background : darken($orange, 14%);
 	}
 }
 
-.rebecca_btn,
-%madison_btn {
+.purple_btn,
+%purple_btn {
 	@include transition_all(background-color .3s);
 	color      : #fff;
-	background : $rebecca;
+	background : $purple;
 	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
 
 	&:hover {
-		background : darken($rebecca, 7%);
+		background : darken($purple, 7%);
 	}
 
 	&:active {
-		background : darken($rebecca, 14%);
+		background : darken($purple, 14%);
 	}
 }
 
-.madison_btn,
-%madison_btn {
+.brown_btn,
+%brown_btn {
 	@include transition_all(background-color .3s);
 	color      : #fff;
-	background : $madison;
+	background : $brown;
 	box-shadow : 0 2px 3px rgba(0, 0, 0, .2);
 
 	&:hover {
-		background : darken($madison, 7%);
+		background : darken($brown, 7%);
 	}
 
 	&:active {
-		background : darken($madison, 14%);
+		background : darken($brown, 14%);
 	}
 }
 
