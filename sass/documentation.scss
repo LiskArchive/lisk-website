@@ -4,7 +4,7 @@
 	right       : 0;
 	left        : 0;
 	padding-top : inherit;
-	background  : $curious;
+	background  : $brown;
 }
 
 .logo_text {
@@ -33,12 +33,12 @@
 .aside_link {
 	display         : block;
 	text-decoration : none;
-	color           : $madison;
+	color           : $gray1;
 	padding         : 0 10px 0 25px;
 	@include transition_all(color .3s, background-color .3s);
 
 	&:hover {
-		color : $tahiti;
+		color : $orange;
 	}
 
 	.menu_open > & {
@@ -162,7 +162,7 @@
 	h2, h3, h4, h5 {
 		margin : 1em 0 1em;
 		font   : 24px $RobotoMedium;
-		color  : $curious;
+		color  : $blue;
 	}
 
 	> p {
@@ -211,10 +211,10 @@
 	a {
 		@include transition_all(color .3s);
 		text-decoration : none;
-		color : $curious;
+		color : $blue;
 
 		&:hover {
-			color: $tahiti;
+			color: $orange;
 		}
 	}
 
