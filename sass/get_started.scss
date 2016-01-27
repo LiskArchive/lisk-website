@@ -82,19 +82,19 @@
     border: 3px solid;
   }
 
-  &.step_curious {
-    background: $pickled;
+  &.step_blue {
+    background: $brown;
 
     &:before {
-      border-color: $madison;
+      border-color: $brown;
     }
   }
 
   &.step_last {
-    background : $tahiti;
+    background : $orange;
 
     &:before {
-      border-color: $pickled;
+      border-color: $brown;
     }
   }
 
