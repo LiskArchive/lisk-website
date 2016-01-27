@@ -162,7 +162,7 @@ h1 {
 	text-decoration : none;
 
 	&:hover {
-		color : $tahiti;
+		color : $orange;
 	}
 }
 
@@ -188,7 +188,7 @@ h1 {
 	}
 
 	&.black_section {
-		background : $ebony;
+		background : $gray1;
 	}
 
 	&.gray_section {
@@ -229,9 +229,8 @@ h1 {
 	&.fixed {
 		@include transform_translate(0, -100%);
 		@include transition_all(padding .5s, transform .5s);
-		background : $madison;
-		opacity: 0.93;
-    	filter: alpha(opacity=93); /* For IE8 and earlier */
+		background : $brown;
+
 		padding    : 8px 0 12px;
 
 		.main_menu_holder {
@@ -239,7 +238,7 @@ h1 {
 		}
 
 		.user_menu {
-			color     : #838c93;
+			color     : $white;
 			min-width : 285px;
 		}
 
@@ -368,7 +367,7 @@ h1 {
 	font-size       : 40px;
 	margin-left     : 10px;
 	text-decoration : none;
-	color           : #fff;
+	color           : $white;
 
 	.collapsed_menu & {
 		display : block;
@@ -417,7 +416,7 @@ h1 {
 		position   : absolute;
 		top        : 100%;
 		margin-top : 25px;
-		background : $tahiti;
+		background : $orange;
 		height     : 3px;
 		right      : 24px;
 		left       : 24px;
@@ -439,7 +438,7 @@ h1 {
 	}
 
 	.collapsed_menu & {
-		color   : #838c93;
+		color   : $brown;
 		padding : 20px;
 
 		&:before {}
@@ -460,7 +459,7 @@ h1 {
 	.fixed & {
 		padding   : 0 16px;
 		font-size : 16px;
-		color     : #838c93;
+		color     : $white;
 
 		&:before {
 			left  : 16px;
@@ -520,7 +519,7 @@ $rectWidth : 1180px;
 	left       : 0;
 	min-height : 570px;
 	color      : $color_gray_g;
-	background : $ebony;
+	background : $brown1;
 
 	&:before {
 		position   : absolute;
@@ -529,7 +528,7 @@ $rectWidth : 1180px;
 		left       : 0;
 		height     : 470px;
 		content    : '';
-		background : $madison;
+		background : $brown;
 	}
 
 	.documents_mode & {
@@ -570,10 +569,10 @@ $rectWidth : 1180px;
 
 	.gl_link {
 		font-family : $RobotoCondensedRegular;
-		color       : #cfd8dc;
+		color       : $text_brown1;
 
 		&:hover {
-			color : $tahiti;
+			color : $orange;
 		}
 	}
 }
@@ -587,7 +586,7 @@ $rectWidth : 1180px;
 
 .copyright {
 	text-align : center;
-	color      : $color_gray_g;
+	color      : $white;
 	@include flex(0 60%);
 }
 
@@ -604,7 +603,7 @@ $rectWidth : 1180px;
 }
 
 .text_blue {
-	color : $curious;
+	color : $blue;
 }
 
 .text_green {
@@ -657,7 +656,7 @@ $rectWidth : 1180px;
 
 .fa {
 	&.fa-blue {
-		color : $curious;
+		color : $blue;
 	}
 }
 
@@ -665,7 +664,7 @@ a.fa {
 	@include transition_all(color .3s);
 
 	&:hover {
-		color : $tahiti;
+		color : $orange;
 	}
 }
 
