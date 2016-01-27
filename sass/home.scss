@@ -99,11 +99,11 @@
 
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $cascade;
+				border-bottom-color : $gray1;
 			}
 
 			.material-icons {
-				color : $cascade;
+				color : $gray1;
 			}
 		}
 	}
@@ -115,11 +115,11 @@
 
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $curious;
+				border-bottom-color : $blue;
 			}
 
 			.material-icons {
-				color : $curious;
+				color : $blue;
 			}
 		}
 	}
@@ -131,11 +131,11 @@
 
 			&:before {
 				bottom              : 0;
-				border-bottom-color : $rebecca;
+				border-bottom-color : $purple;
 			}
 
 			.material-icons {
-				color : $rebecca;
+				color : $purple;
 			}
 		}
 	}
@@ -153,15 +153,15 @@
 	z-index  : 1;
 
 	.stepSection[data-step='1'] + & {
-		background : $cascade;
+		background : $gray1;
 	}
 
 	.stepSection[data-step='2'] + & {
-		background : $curious;
+		background : $blue;
 	}
 
 	.stepSection[data-step='3'] + & {
-		background : $rebecca;
+		background : $purple;
 	}
 }
 
@@ -477,7 +477,7 @@
 	margin-left     : 90px;
 
 	&:hover {
-		color : $tahiti;
+		color : $orange;
 	}
 
 	&:first-child {
