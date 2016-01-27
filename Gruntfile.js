@@ -72,7 +72,7 @@ module.exports = function(grunt){
 				}
 			},
 			styles: {
-				files: ['sass/*.scss'],
+				files: ['sass/*.scss', 'sass/includes/*.scss'],
 				tasks: ['sass', 'concat:styles', 'cssmin'],
 				options: {
 					spawn: false
