@@ -169,7 +169,7 @@
 	}
 
 	.menu_link {
-		color   : #838c93;
+		color   : $white;
 
 		&:before {}
 
@@ -185,7 +185,7 @@
 	.main_menu {
 		display    : none;
 		position   : absolute;
-		background : #fff;
+		background : $white;
 		top        : 100%;
 		right      : 0;
 		left       : 0;
