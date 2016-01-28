@@ -305,7 +305,7 @@
 		top          : -35px;
 		left         : 42px;
 		content      : '';
-		border-top   : 10px solid #515a60;
+		border-top   : 10px solid $text_brown;
 		border-right : 10px solid transparent;
 		border-left  : 10px solid transparent;
 	}
@@ -317,7 +317,7 @@
 		width       : 2px;
 		height      : 70px;
 		content     : '';
-		border-left : 2px dashed #445965;
+		border-left : 2px dashed $text_brown;
 		@include transform_rotate(-10);
 	}
 }
