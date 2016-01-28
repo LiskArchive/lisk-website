@@ -27,28 +27,28 @@ var members = [
 
 var partnerships = [
 	{
-		name: "Microsoft",
+		name: "abc",
 		date: "Since February 2016",
-		web: "http://microsoft.com/",
-		card: "microsoft"
+		web: "http://abc.com/",
+		card: "abc"
 	},
 	{
-		name: "Ethereum",
+		name: "abc",
 		date: "Since March 2016",
-		web: "http://ethereum.org/",
-		card: "ethereum"
+		web: "http://abc.org/",
+		card: "abc"
 	},
 	{
-		name: "Microsoft",
+		name: "abc",
 		date: "Since February 2016",
-		web: "http://microsoft.com/",
-		card: "microsoft"
+		web: "http://abc.com/",
+		card: "abc"
 	},
 	{
-		name: "Ethereum",
+		name: "abc",
 		date: "Since March 2016",
-		web: "http://ethereum.org/",
-		card: "ethereum"
+		web: "http://abc.org/",
+		card: "abc"
 	}
 ];
 
@@ -59,29 +59,8 @@ var correspondents = [
 		linked: "https://www.linkedin.com/profile/view?id=215859616&locale=en_US",
 		twitter: "http://twitter.com/MaxKordek",
 		country: "Germany",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=553440",
-		pm: "mailto:max@crypti.me"
-	},
-	{
-		name: "Luiz Chen",
-		lang: "china",
-		country: "China",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=306645",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=306645"
-	},
-	{
-		name: "Ben Azkhabar",
-		lang: "france",
-		country: "France",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=412425",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=412425"
-	},
-	{
-		name: "Ben Azkhabar",
-		lang: "italy",
-		country: "Italy",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=412425",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=412425"
+		btt: "https://bitcointalk.org/index.php?action=profile;u=",
+		pm: "mailto:max@lisk.io"
 	}
 ];
 
