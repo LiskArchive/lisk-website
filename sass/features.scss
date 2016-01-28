@@ -55,9 +55,9 @@
 .section_middle_img {
 	@extend %vert_centr;
 	position   : absolute;
-	left       : 0;
+	left       : 55px;
 	margin-top : -15px;
-	max-width  : 48%;
+	max-width  : 42%;
 
 	img {
 		display        : inline-block;
