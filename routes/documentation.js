@@ -155,14 +155,16 @@ var docs = [
 	},
 	{
 		title: "Debugging Dapps",
-		i: "lisk-dapps-docs/DebuggingDapps"
+		i: "lisk-dapps-docs/DebuggingDapps",
+		next: "lisk-whitepaper/README"
 	},
 	{
 		title: "Whitepaper",
-		i: "lisk-whitepaper/README"
+		i: "lisk-whitepaper/README",
+		next: "lisk-whitepaper/LiskWhitepaper"
 	},
 	{
-		title: "Whitepaper",
+		title: "Whitepaper (English)",
 		i: "lisk-whitepaper/LiskWhitepaper"
 	}
 ]
