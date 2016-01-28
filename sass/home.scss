@@ -244,8 +244,10 @@
 	&:after,
 	&:before {
 		position      : absolute;
-		top           : 0;
-		left          : 100%;
+		top           : -1px;
+		//top 		  : 0;
+		left 		  : 13px;
+		//left          : 100%;
 		width         : 12px;
 		height        : 12px;
 		content       : '';
