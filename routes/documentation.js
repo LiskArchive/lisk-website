@@ -74,7 +74,13 @@ var menu = [
 	},
 	{
 		name: "Whitepaper",
-		url: "/documentation?i=lisk-whitepaper/README"
+		url: "/documentation?i=lisk-whitepaper/README",
+		subitems: [
+			{
+				name: "English Version",
+				i: "lisk-whitepaper/LiskWhitepaper"
+			}
+		]
 	},
 	{
 		name: "Lisk Dapps API",
@@ -154,6 +160,10 @@ var docs = [
 	{
 		title: "Whitepaper",
 		i: "lisk-whitepaper/README"
+	},
+	{
+		title: "Whitepaper",
+		i: "lisk-whitepaper/LiskWhitepaper"
 	}
 ]
 
