@@ -1,19 +1,10 @@
 var html_var,
 		body_var,
 		doc_var,
-		global_window_Height,
-		popupOrderItem,
-		controlPanelBtn,
-		popupBtn,
-		hero_block,
 		nav_container,
-		browserWindow,
-		$completed_orders_form,
-		$send_confirmation,
-		$send_to_client,
-		$cart_orders_form,
-		$postpone_orders_form,
-		$contacts_form;
+		hero_block;
+
+var browserWindow, global_window_Height;
 
 $(function($){
 
@@ -22,6 +13,7 @@ $(function($){
 	doc_var = $(document);
 	nav_container = $(".header");
 	hero_block = $('.hero_block');
+
 	browserWindow = $(window);
 	global_window_Height = browserWindow.height();
 
