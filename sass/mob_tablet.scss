@@ -452,6 +452,18 @@
 	}
 }
 
+.team {
+	@include respond-to-max(640px) {
+		.team_slide_img {
+			text-align: center;
+		}
+
+		.team_slide_img img {
+			max-width: 280px;
+		}
+	}
+}
+
 .mobile,
 .tablet.portrait {
 
