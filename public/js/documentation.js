@@ -11,9 +11,7 @@ $(function($){
 
 	$('.menuToggleBtn').on('click', function(){
 		menuHolder.find('.active').removeClass('active');
-
 		$(this).closest('.aside_m_item').toggleClass('menu_open active');
-
 		return false;
 	});
 
