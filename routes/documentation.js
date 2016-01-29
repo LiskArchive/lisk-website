@@ -174,29 +174,24 @@ module.exports = function (app) {
 		var i = req.query.i || "lisk-docs/README";
 
 		function finish(doc) {
+			var result = {
+				pageId: "documentation",
+				description: "Lisk DApps Documentation",
+				words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
+				menu: menu,
+				hasScript: true,
+				isDoc: true,
+				doc: doc
+			}
+
 			if (doc) {
 				doc.content = marked(doc.content);
 
-				return res.render("documentation", {
-					pageId: "documentation",
-					title: doc.title,
-					description: "Lisk DApps Documentation",
-					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
-					menu: menu,
-					hasScript: true,
-					isDoc: true,
-					doc: doc
-				});
+				result.title = doc.title;
+				return res.render("documentation", result);
 			} else {
-				return res.render("documentation", {
-					pageId: "documentation",
-					title: "Documentation - Not Found",
-					description: "Lisk DApps Documentation",
-					words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
-					menu: menu,
-					hasScript: true,
-					isDoc: true
-				});
+				result.title = "Documentation - Not Found",
+				return res.render("documentation", result);
 			}
 		}
 
