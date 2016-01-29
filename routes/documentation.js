@@ -190,7 +190,7 @@ module.exports = function (app) {
 				result.title = doc.title;
 				return res.render("documentation", result);
 			} else {
-				result.title = "Documentation - Not Found",
+				result.title = "Documentation - Not Found";
 				return res.render("documentation", result);
 			}
 		}
