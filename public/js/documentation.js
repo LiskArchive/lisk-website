@@ -1,10 +1,5 @@
 var menuHolder;
 
-var syntax = {
-	"sh": "bash",
-	"js": "javascript"
-}
-
 $(function($){
 
 	menuHolder = $('.menuHolder');
@@ -19,4 +14,5 @@ $(function($){
 		body_var.toggleClass('open_aside');
 		return false;
 	});
+
 });
