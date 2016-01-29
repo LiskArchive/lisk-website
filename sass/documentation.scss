@@ -1,3 +1,11 @@
+.documents_mode {
+	.footer {
+		&:before {
+			height : 100px;
+		}
+	}
+}
+
 .doc_hero_block {
 	position    : absolute;
 	top         : 0;
