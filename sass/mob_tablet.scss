@@ -706,3 +706,19 @@
 		}
 	}
 }
+
+.documents_mode {
+
+	@include respond-to-max(1000px) {
+		.footer {
+			.logo_holder {
+				.logo_footer {
+					margin-left: 0;
+				}
+			}
+			.copyright {
+				margin-bottom: 60px;
+			}
+		}
+	}
+}
