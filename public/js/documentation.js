@@ -14,7 +14,7 @@ $(function($){
 
 		$(this).closest('.aside_m_item').toggleClass('menu_open active');
 
-		//return false;
+		return false;
 	});
 
 	$('.asideHoverBtn').on('click', function(){
