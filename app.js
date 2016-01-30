@@ -101,13 +101,13 @@ var hbs = exphbs.create({
 			return "";
 		},
 		liskchat_windows: function () {
-			return "http://downloads.lisk.io/lisk_chat.exe";
+			return "http://downloads.lisk.chat/rocketchat.exe";
 		},
 		liskchat_macos: function () {
-			return "http://downloads.lisk.io/lisk_chat.dmg";
+			return "http://downloads.lisk.chat/rocketchat.dmg";
 		},
 		liskchat_linux: function () {
-			return "http://downloads.lisk.io/lisk_chat.deb";
+			return "http://downloads.lisk.chat/rocketchat_amd64.deb";
 		},
 		documentation: function () {
 			return "/documentation?i=lisk-docs/README";
