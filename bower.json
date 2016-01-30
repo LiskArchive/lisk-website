@@ -25,6 +25,7 @@
   "dependencies": {
     "jquery": "=1.12.0",
     "slick.js": "=1.5.5",
-    "devicejs": "=0.2.7"
+    "devicejs": "=0.2.7",
+    "jquery.countdown": "=2.1.0"
   }
 }

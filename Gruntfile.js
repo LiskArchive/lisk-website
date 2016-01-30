@@ -14,6 +14,7 @@ module.exports = function(grunt){
 			scripts: {
 				src: [
 					'bower_components/jquery/dist/jquery.min.js',
+					'bower_components/jquery.countdown/dist/jquery.countdown.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
 					'bower_components/devicejs/lib/device.min.js',
 					'public/js/prism.js',
