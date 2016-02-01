@@ -1,7 +1,7 @@
 module.exports = {
 	home : require('./home.js'),
 	download : require('./download.js'),
-	// mediakit : require('./mediakit.js'),
+	mediakit : require('./mediakit.js'),
 	get_started : require('./get_started.js'),
 	features : require('./features.js'),
 	team: require('./team.js'),
