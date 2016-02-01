@@ -117,6 +117,9 @@ var hbs = exphbs.create({
 		},
 		login: function () {
 			return "https://login.lisk.io/";
+		},
+		mediakit: function() {
+			return "https://drive.google.com/file/d/0B7DjyOJhmpJkaU55VWRyeFhQYms/view?usp=sharing";
 		}
 	}
 });
