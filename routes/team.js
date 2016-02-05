@@ -59,8 +59,15 @@ var correspondents = [
 		linked: "https://www.linkedin.com/profile/view?id=215859616&locale=en_US",
 		twitter: "http://twitter.com/MaxKordek",
 		country: "Germany",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=",
+		btt: "https://bitcointalk.org/index.php?action=profile;u=718244",
 		pm: "mailto:max@lisk.io"
+	},
+	{
+		name: "Luiz Chen",
+		lang: "china",
+		country: "China",
+		btt: "https://bitcointalk.org/index.php?action=profile;u=306645",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=306645"
 	}
 ];
 
