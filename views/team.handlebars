@@ -39,20 +39,21 @@
             </div>
         </div>
         <div class="section white_section">
-            <!--<div class="section_inner">
+            <div class="section_inner">
                 <div class="section_content clearfix">
-                    <div class="section_caption text_gray text_center">Our great Advisors</div>
-                    <ul class="team_list">
-                        {{#each members}}
-                        <li class="team_unit">
+                    <div class="section_caption text_gray text_center">Our great Advisers</div>
+                    <ul class="team_list text_center">
+                        {{#each adviser}}
+                        <li class="team_unit text_center">
                             <figure class="employee_card">
-                                <div class="team_photo"><img src="i/members/{{advisor}}.jpeg" alt="{{advisor}}"></div>
+                                <div class="team_photo"><img src="i/members/{{img}}.jpeg" alt="{{name}}"></div>
                                 <figcaption class="employee_block">
                                     <div class="employee_info">
                                         <div class="employee_name">{{name}}</div>
-                                        <div class="employee_post">{{post}}</div>
+                                        <div class="employee_post"><strong>{{company}}</strong></div>
+                                        <div class="employee_post"><br>{{description}}</div>
                                     </div>
-                                    <div class="employee_contacts">{{#if linked}}<a href="{{linked}}" class="employee_contact_link fa fa-linkedin"></a>{{/if}}{{#if twitter}}<a href="{{twitter}}" class="employee_contact_link fa fa-twitter"></a>{{/if}}{{#if btt}}<a href="{{btt}}" class="employee_contact_link fa fa-bitcoin"></a>{{/if}}</div>
+                                    <div class="employee_contacts">{{#if linked}}<a href="{{linked}}" target="_blank" class="employee_contact_link fa fa-linkedin"></a>{{/if}}{{#if twitter}}<a href="{{twitter}}" target="_blank" class="employee_contact_link fa fa-twitter"></a>{{/if}}{{#if btt}}<a href="{{btt}}" target="_blank" class="employee_contact_link fa fa-bitcoin"></a>{{/if}}</div>
                                 </figcaption>
                             </figure>
                         </li>
@@ -61,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="section gray_section">-->
+        <div class="section gray_section">
             <div class="section_inner">
                 <div class="section_content text_block">
                     <div class="about_block fz_18">
@@ -97,34 +98,11 @@
                     <div class="about_block">
                         <div class="section_caption text_gray">From Crypti to Lisk</div>
                         <p>In June 16th, 2014 it all began with Crypti and the Crypti Foundation. A founding team of 5 members set themselves the goal to develop a great cryptocurrency platform for decentralized applications and sidechains, they collected 750 BTC in their ICO and developed the platform for over one year. Max and Olivier were early members of the team and foundation. At the turn of the year 2016 ideologies were drifting apart and we decided to make our own platform called Lisk. It is being developed in a complete open source and public manner, and in collaboration with the Lisk community.</p>
-                        <p class="text_center text_center_mob btns_v1"><a href="https://crypti.me/" class="btn_v2 wide_btn gray_btn" target="_blank">Crypti Website</a></p>
+                        <p class="text_center_mob btns_v1"><a href="https://crypti.me/" class="btn_v2 wide_btn gray_btn" target="_blank">Crypti Website</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--<div class="section gray_section">
-            <div class="section_inner">
-                <div class="section_content clearfix">
-                    <div class="section_caption text_gray text_center">Partnerships</div>
-                    <ul class="team_list">
-                        {{#each partnerships}}
-                        <li class="team_unit">
-                            <figure class="employee_card">
-                                <div class="team_photo" ><img src="i/partners/{{card}}.png" alt="{{name}}"></div>
-                                <figcaption class="employee_block">
-                                    <div class="employee_info">
-                                        <div class="employee_name">{{name}}</div>
-                                        <div class="employee_post">{{date}}</div>
-                                    </div>
-                                    <div class="employee_contacts"><a href="{{web}}" class="employee_contact_link fa fa-link"></a></div>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-        </div>-->
         {{> footer }}
     </div>
     <div class="hero_block text_center">
