@@ -11,11 +11,13 @@
 
 .team_list {
 	@extend %clearfix;
-	margin : 0 0 100px -20px;
+	margin     : 0 0 100px -20px;
+	text-align : center;
 }
 
 .team_unit {
-	float         : left;
+	float         : none;
+	display       : inline-block;
 	width         : 25%;
 	margin-bottom : 20px;
 	padding-left  : 20px;
@@ -58,6 +60,7 @@
 		display   : block;
 		max-width : 100%;
 		border-radius: 28px;
+		margin    : 0 auto;
 	}
 }
 
