@@ -1,6 +1,6 @@
 {
   "name": "lisk-website",
-  "description": "The official Lisk website.",
+  "description": "Official Lisk website",
   "main": "app.js",
   "authors": [
     "Max Kordek <max@lisk.io>",

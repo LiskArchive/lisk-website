@@ -1,7 +1,7 @@
 {
   "name": "lisk-website",
   "version": "1.0.0",
-  "description": "The official Lisk website",
+  "description": "Official Lisk website",
   "repository": {
     "type": "git",
     "url": "https://github.com/LiskHQ/lisk-website.git"
