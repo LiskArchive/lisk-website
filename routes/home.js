@@ -1,9 +1,9 @@
 var partnerships = [
 	{
-		name: "..",
-		img: "..",
-		url: "https://"
-	},
+		name: "ShapeShift",
+		img: "shapeshift",
+		url: "https://shapeshift.io/"
+	}
 ];
 
 
