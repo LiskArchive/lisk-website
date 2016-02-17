@@ -30,9 +30,18 @@ var correspondents = [
 		name: "Rendra Permana",
 		lang: "indonesia",
 		country: "Indonesia",
+		linked: "https://www.linkedin.com/in/rendra-dian-permna-18b641b4",
 		twitter: "https://twitter.com/rendravolt",
 		btt: "https://bitcointalk.org/index.php?action=profile;u=384646",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=384646"
+	},
+	{
+		name: "JM N. Erestain",
+		lang: "filipino",
+		country: "Philippines",
+		twitter: "https://twitter.com/officialemerge",
+		btt: "https://bitcointalk.org/index.php?action=profile;u=521242",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=521242"
 	}
 ];
 
