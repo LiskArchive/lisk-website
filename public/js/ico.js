@@ -18,7 +18,15 @@ $(function($){
 
 	$("#investEthereumBtn").on('click', function () {
 		$('html, body').animate({
-			scrollTop: $("#InvestEthereum").offset().top - 70
+			scrollTop: $("#investEthereum").offset().top - 70
+		}, 2000);
+
+		return false;
+	});
+
+	$("#investAltcoinsBtn").on('click', function () {
+		$('html, body').animate({
+			scrollTop: $("#investAltcoins").offset().top - 70
 		}, 2000);
 
 		return false;
