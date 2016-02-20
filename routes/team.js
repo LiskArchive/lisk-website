@@ -3,9 +3,16 @@ var adviser = [
 		name: "Boris Povod",
 		img : "boris_povod",
 		company: "Crypti",
-		description: "Lead Developer",
+		description: "Blockchain Expert",
 		linked: "https://www.linkedin.com/in/boris-povod-361a1b79/en",
 		twitter: "https://twitter.com/CryptiTeam"
+	},
+	{
+		name: "Axel Hellinger",
+		img : "hellinger",
+		company: "Kanzlei Hellinger",
+		description: "Lawyer",
+		linked: "https://de.linkedin.com/in/ahellinger"
 	}
 ];
 
