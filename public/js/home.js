@@ -2,6 +2,31 @@ var stepSection,
     stepSlider;
 
 $(function($) {
+	var getICOCounters = function () {
+		$.getJSON("http://localhost:3000/exchanges.json")
+			.done(function(json) {
+				console.log(json);
+
+				var totalBTC = (parseFloat(json.bitcoin) + parseFloat(json.shapeshift)).toFixed(0),
+						totalXCR = (parseFloat(json.crypti) / 100000).toFixed(0),
+						totalPRT = (parseFloat(json.participants));
+
+				$('#btc-counter').text(totalBTC + ' BTC');
+				$('#xcr-counter').text(totalXCR + 'M XCR');
+				$('#participants-counter').text(totalPRT);
+			})
+			.fail(function(jqxhr, textStatus, error) {
+				console.error('Failed to retrieve ICO counters');
+
+				$('#btc-counter').text('~ BTC');
+				$('#xcr-counter').text('~ XCR');
+				$('#participants-counter').text('~');
+		});
+	}
+
+	getICOCounters();
+	setInterval(getICOCounters, 60000);
+
 	$("#investNowBtn").on('click', function() {
 		$('html, body').animate({
 			scrollTop: $("#investNow").offset().top - 70
