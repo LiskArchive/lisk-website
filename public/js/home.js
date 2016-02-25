@@ -2,17 +2,29 @@ var stepSection,
     stepSlider;
 
 $(function($) {
+	var addCommas = function(nStr) {
+		nStr += '';
+		x = nStr.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? '.' + x[1] : '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+		  x1 = x1.replace(rgx, '$1' + ',' + '$2');
+		}
+		return x1 + x2;
+	}
+
 	var getICOCounters = function () {
-		$.getJSON("http://localhost:3000/exchanges.json")
+		$.getJSON("https://ico.lisk.io/exchanges.json")
 			.done(function(json) {
 				console.log(json);
 
 				var totalBTC = (parseFloat(json.bitcoin) + parseFloat(json.shapeshift)).toFixed(0),
-						totalXCR = (parseFloat(json.crypti) / 100000).toFixed(0),
+						totalXCR = addCommas(parseFloat(json.crypti.toFixed(0))),
 						totalPRT = (parseFloat(json.participants));
 
 				$('#btc-counter').text(totalBTC + ' BTC');
-				$('#xcr-counter').text(totalXCR + 'M XCR');
+				$('#xcr-counter').text(totalXCR + ' XCR');
 				$('#participants-counter').text(totalPRT);
 			})
 			.fail(function(jqxhr, textStatus, error) {
