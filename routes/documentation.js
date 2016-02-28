@@ -84,11 +84,11 @@ var menu = [
 	},
 	{
 		name: "Lisk Dapps API",
-		url: "http://dapps-api.lisk.io"
+		url: "#!"
 	},
 	{
 		name: "Lisk API",
-		url: "http://api.lisk.io"
+		url: "#!"
 	}
 ];
 
