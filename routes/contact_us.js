@@ -39,7 +39,7 @@ module.exports = function (app) {
 
 		var mailOptions = {
 			from: 'Lisk Business <business@lisk.io>', // sender address
-			replyTo: email,                           // reply to user
+			replyTo: name + ' <' + email + '>',       // reply to user
 			to: 'business@lisk.io',                   // list of receivers
 			subject: 'Contact Message From Lisk.io',  // subject line
 			text: message
