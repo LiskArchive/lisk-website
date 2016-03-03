@@ -4,7 +4,7 @@
   "main": "app.js",
   "authors": [
     "Max Kordek <max@lisk.io>",
-    "Olivier Beddows <olivier@lisk.io>"
+    "Oliver Beddows <oliver@lisk.io>"
   ],
   "homepage": "https://github.com/LiskHQ/lisk-website",
   "moduleType": [
