@@ -68,7 +68,7 @@
                     <div class="about_block fz_18">
                         <div class="section_caption text_gray">Country Ambassadors</div>
                         <div class="text_block">
-                            <p>Lisk is building up a team of country based ambassador to help spread the word about the power of the Lisk network. These roles typically include translations of relevant content, community organization, and the creation of small meetup groups. If you love Lisk and would like to be an ambassador for Lisk in your Country, please send a message to Max Kordek.</p>
+                            <p>Lisk is building up a team of <a href="https://blog.lisk.io/lisk-country-ambassadors-initiative-6fccbcabcb15" class="gl_link text_blue" target="_blank">country based ambassadors</a> to help spread the word about the power of the Lisk network. These roles typically include translations of relevant content, community organization, and the creation of small meetup groups. If you love Lisk and would like to be an ambassador for Lisk in your Country, please send a message to Max Kordek. Please note that the country ambassadors are often not the Bitcointalk thread starters, please don't confuse them.</p>
                         </div>
                         <div class="country_correspondents">
                             {{#each correspondents}}
@@ -79,9 +79,9 @@
                                         <div class="country_corr_name">{{name}}</div>
                                         <div class="country_corr_info">
                                             <div class="fl">
-                                                <div class="country_corr_share">{{#if linked}}<a href="{{linked}}" class="corr_share_link fa fa-linkedin" target="_blank"></a>{{/if}}{{#if twitter}}<a href="{{twitter}}" class="corr_share_link fa fa-twitter" target="_blank"></a>{{/if}}{{#if btt}}<a href="{{btt}}" class="corr_share_link fa fa-bitcoin" target="_blank"></a>{{/if}}</div>
+                                                <div class="country_corr_share">{{#if btt}}<a href="{{btt}}" class="corr_share_link fa fa-bitcoin" target="_blank"></a>{{/if}}{{#if facebook}}<a href="{{facebook}}" class="corr_share_link fa fa-facebook" target="_blank"></a>{{/if}}{{#if twitter}}<a href="{{twitter}}" class="corr_share_link fa fa-twitter" target="_blank"></a>{{/if}}</div>
                                             </div>
-                                            {{#if pm}}<div class="fr"><a href="{{pm}}" class="corr_share_link fa fa-envelope fa-blue" target="_blank"></a></div>{{/if}}
+                                            {{#if pm}}<div class="fr">{{#if linked}}<a href="{{linked}}" class="corr_share_link fa fa-linkedin" target="_blank"></a>{{/if}}<a href="{{pm}}" class="corr_share_link fa fa-envelope fa-blue" target="_blank"></a></div>{{/if}}
                                         </div>
                                     </li>
                                 </ul>
