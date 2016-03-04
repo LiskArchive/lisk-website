@@ -20,36 +20,60 @@ var correspondents = [
 	{
 		name: "Max Kordek",
 		lang: "germany",
-		linked: "https://www.linkedin.com/profile/view?id=215859616&locale=en_US",
-		twitter: "http://twitter.com/MaxKordek",
 		country: "Germany",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=718244",
+		btt: "https://bitcointalk.org/index.php?topic=1348884",
+		linked: "https://www.linkedin.com/in/maxkordek?locale=en_US",
 		pm: "mailto:max@lisk.io"
 	},
 	{
 		name: "Luiz Chen",
 		lang: "china",
 		country: "China",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=306645",
+		btt: "https://bitcointalk.org/index.php?topic=1350375",
+		qq: "377193016",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=306645"
 	},
 	{
 		name: "Rendra Permana",
 		lang: "indonesia",
 		country: "Indonesia",
+		btt: "https://bitcointalk.org/index.php?topic=1357381",
+		twitter: "https://twitter.com/Lisk_Indonesia",
+		facebook: "https://www.facebook.com/Lisk-Indonesia-182561438776664/",
 		linked: "https://www.linkedin.com/in/rendra-dian-permna-18b641b4",
-		twitter: "https://twitter.com/rendravolt",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=384646",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=384646"
 	},
 	{
 		name: "JM N. Erestain",
 		lang: "filipino",
 		country: "Philippines",
-		twitter: "https://twitter.com/officialemerge",
-		btt: "https://bitcointalk.org/index.php?action=profile;u=521242",
+		btt: "https://bitcointalk.org/index.php?topic=1360016",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=521242"
-	}
+	},
+	{
+		name: "Nick F.",
+		lang: "netherlands",
+		country: "The Netherlands",
+		btt: "https://bitcointalk.org/index.php?topic=1368751",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
+	},
+	{
+		name: "Joel Fernández",
+		lang: "puertorico",
+		country: "Puerto Rico",
+		btt: "https://bitcointalk.org/index.php?topic=1347362",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
+		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
+	},
+	{
+		name: "Petros Anagnostou",
+		lang: "greece",
+		country: "Greece",
+		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
+		btt: "https://bitcointalk.org/index.php?topic=1370696",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
+		linked: "https://www.linkedin.com/in/petrosanagnostou"
+	},
 ];
 
 module.exports = function (app) {
