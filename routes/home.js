@@ -3,6 +3,11 @@ var partnerships = [
 		name: "ShapeShift",
 		img: "shapeshift",
 		url: "https://shapeshift.io/"
+	},
+	{
+		name: "Chain of Things",
+		img: "chainofthings",
+		url: "http://chainofthings.com/"
 	}
 ];
 
