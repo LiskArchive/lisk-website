@@ -40,7 +40,7 @@ var correspondents = [
 		btt: "https://bitcointalk.org/index.php?topic=1357381",
 		twitter: "https://twitter.com/Lisk_Indonesia",
 		facebook: "https://www.facebook.com/Lisk-Indonesia-182561438776664/",
-		linked: "https://www.linkedin.com/in/rendra-dian-permna-18b641b4",
+		linked: "https://www.linkedin.com/in/rendra-permana-18b641b4",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=384646"
 	},
 	{
