@@ -70,6 +70,7 @@ var correspondents = [
 		lang: "greece",
 		country: "Greece",
 		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
+		twitter: "https://twitter.com/LiskGreece",
 		btt: "https://bitcointalk.org/index.php?topic=1370696",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
 		linked: "https://www.linkedin.com/in/petrosanagnostou"
