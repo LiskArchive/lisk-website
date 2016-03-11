@@ -73,6 +73,16 @@ var menu = [
 		]
 	},
 	{
+		name: "Handbooks",
+		url: "/documentation?i=lisk-handbooks/README",
+		subitems: [
+			{
+				name: "Delegates & Forging",
+				i: "lisk-handbooks/DelegateHandbook"
+			}
+		]
+	},
+	{
 		name: "Whitepaper",
 		url: "/documentation?i=lisk-whitepaper/README",
 		subitems: [
@@ -83,12 +93,8 @@ var menu = [
 		]
 	},
 	{
-		name: "Lisk Dapps API",
-		url: "#!"
-	},
-	{
 		name: "Lisk API",
-		url: "#!"
+		url: "/documentation?i=lisk-docs/APIReference"
 	}
 ];
 
@@ -156,6 +162,16 @@ var docs = [
 	{
 		title: "Debugging Dapps",
 		i: "lisk-dapps-docs/DebuggingDapps",
+		next: "lisk-handbooks/README"
+	},
+	{
+		title: "Handbooks",
+		i: "lisk-handbooks/README",
+		next: "lisk-handbooks/DelegateHandbook"
+	},
+		{
+		title: "Delegates & Forging",
+		i: "lisk-handbooks/DelegateHandbook",
 		next: "lisk-whitepaper/README"
 	},
 	{
@@ -166,6 +182,10 @@ var docs = [
 	{
 		title: "Whitepaper (English)",
 		i: "lisk-whitepaper/LiskWhitepaper"
+	},
+	{
+		title: "Lisk API",
+		i: "lisk-docs/APIReference"
 	}
 ]
 
