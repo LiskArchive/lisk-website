@@ -731,4 +731,10 @@
 			}
 		}
 	}
+
+	@include respond-to-min(1550px) {
+		.aside_hover_btn {
+			display: none;
+		}
+	}
 }
