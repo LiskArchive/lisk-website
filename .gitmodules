@@ -7,3 +7,6 @@
 [submodule "docs/lisk-whitepaper"]
 	path = docs/lisk-whitepaper
 	url = git@github.com:LiskHQ/lisk-whitepaper.git
+[submodule "docs/lisk-handbooks"]
+	path = docs/lisk-handbooks
+	url = git@github.com:LiskHQ/lisk-handbooks.git
