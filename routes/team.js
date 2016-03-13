@@ -18,20 +18,45 @@ var adviser = [
 
 var correspondents = [
 	{
-		name: "Max Kordek",
-		lang: "germany",
-		country: "Germany",
-		btt: "https://bitcointalk.org/index.php?topic=1348884",
-		linked: "https://www.linkedin.com/in/maxkordek?locale=en_US",
-		pm: "mailto:max@lisk.io"
-	},
-	{
 		name: "Luiz Chen",
 		lang: "china",
 		country: "China",
 		btt: "https://bitcointalk.org/index.php?topic=1350375",
 		qq: "377193016",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=306645"
+	},
+	{
+		name: "Daniel B.",
+		lang: "germany",
+		country: "Germany",
+		twitter: "https://twitter.com/Lisk_DE",
+		btt: "https://bitcointalk.org/index.php?topic=1348884",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=174939"
+	},
+	{
+		name: "Nick Friedrich",
+		lang: "netherlands",
+		country: "Netherlands",
+		btt: "https://bitcointalk.org/index.php?topic=1368751",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
+	},
+	{
+		name: "Petros Anagnostou",
+		lang: "greece",
+		country: "Greece",
+		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
+		twitter: "https://twitter.com/LiskGreece",
+		btt: "https://bitcointalk.org/index.php?topic=1370696",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
+		linked: "https://www.linkedin.com/in/petrosanagnostou"
+	},
+	{
+		name: "Joel Fernández",
+		lang: "puertorico",
+		country: "Puerto Rico",
+		btt: "https://bitcointalk.org/index.php?topic=1347362",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
+		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
 	},
 	{
 		name: "Rendra Permana",
@@ -49,32 +74,7 @@ var correspondents = [
 		country: "Philippines",
 		btt: "https://bitcointalk.org/index.php?topic=1360016",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=521242"
-	},
-	{
-		name: "Nick F.",
-		lang: "netherlands",
-		country: "The Netherlands",
-		btt: "https://bitcointalk.org/index.php?topic=1368751",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
-	},
-	{
-		name: "Joel Fernández",
-		lang: "puertorico",
-		country: "Puerto Rico",
-		btt: "https://bitcointalk.org/index.php?topic=1347362",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
-		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
-	},
-	{
-		name: "Petros Anagnostou",
-		lang: "greece",
-		country: "Greece",
-		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
-		twitter: "https://twitter.com/LiskGreece",
-		btt: "https://bitcointalk.org/index.php?topic=1370696",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
-		linked: "https://www.linkedin.com/in/petrosanagnostou"
-	},
+	}
 ];
 
 module.exports = function (app) {
