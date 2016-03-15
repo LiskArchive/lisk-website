@@ -8,6 +8,11 @@ var partnerships = [
 		name: "Chain of Things",
 		img: "chainofthings",
 		url: "http://chainofthings.com/"
+	},
+	{
+		name: "Microsoft",
+		img: "microsoft",
+		url: "https://microsoft.com/"
 	}
 ];
 
