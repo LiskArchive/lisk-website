@@ -41,21 +41,6 @@
 <body class="{{#if pageId}}{{pageId}} {{/if}}{{#if isDoc}}documents_mode{{/if}}">
     {{{body}}}
 
-    <!-- Start of Rocket.Chat Livechat Script -->
-    <script type="text/javascript">
-    $(window).ready(function() {
-        (function(w, d, s, f, u) {
-            w[f] = w[f] || [];
-            w[f].push(u);
-            var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-            j.async = true;
-            j.src = 'https://lisk.chat/packages/rocketchat_livechat/assets/rocket-livechat.js';
-            h.parentNode.insertBefore(j, h);
-        })(window, document, 'script', 'initRocket', 'https://lisk.chat/livechat');
-    });
-    </script>
-    <!-- End of Rocket.Chat Livechat Script -->
-
     <!-- Twitter -->
     <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
 
