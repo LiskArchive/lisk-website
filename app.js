@@ -86,7 +86,7 @@ var hbs = exphbs.create({
 			return "";
 		},
 		version : function () {
-			return "v0.1.0";
+			return "v0.1.x";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
@@ -95,10 +95,10 @@ var hbs = exphbs.create({
 			return "https://www.npmjs.com/package/lisk-cli";
 		},
 		lisksdk : function () {
-			return "";
+			return "https://github.com/LiskHQ/lisk-sdk";
 		},
 		sourcecode : function () {
-			return "";
+			return "https://github.com/LiskHQ/lisk";
 		},
 		liskchat_windows: function () {
 			return "http://downloads.lisk.chat/rocketchat.exe";
