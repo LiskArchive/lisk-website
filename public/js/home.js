@@ -46,6 +46,14 @@ $(function($) {
 
 		return false;
 	});
+	
+	$("#readMoreBtn").on('click', function() {
+		$('html, body').animate({
+			scrollTop: $("#readMore").offset().top - 70
+		}, 2000);
+
+		return false;
+	});
 
 	stepSection = $(".stepSection");
 
