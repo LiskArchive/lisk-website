@@ -102,6 +102,20 @@
                 </div>
             </div>
         </div>
+        <div class="section gray_section">
+            <div class="section_inner">
+                <div class="section_content clearfix ">
+                    <div class="partners_block">
+                        <div class="section_caption text_center text_gray">Lisk Dapps</div>
+                        <ul class="dapps_list">
+                            {{#each dapps}}
+                            <li class="dapps_item"><iframe class="youtube_dapp" src="{{url}}" frameborder="0" allowfullscreen></iframe></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="section white_section">
             <div class="section_content text_block">
                 <div class="dapp_slider_holder">
@@ -109,21 +123,21 @@
                     <div class="slider_next material-icons">chevron_right</div>
                     <div class="dapp_slider dappSlider">
                       <div class="dapp_slide">
-                          <div class="deploy_dapps_info">
+                          <div class="lisk_info">
                               <div class="section_caption text_gray">Internet of Things</div>
                               <p class="text_center">Our decentralized applications and custom blockchains (sidechains) are the best way to empower your IoT gadget or network. Thanks to our Multi-Platform support Lisk is the ideal dapp and sidechain network for you!</p>
                           </div>
                           <div class="dapp_slide_img"><img src="/i/home/internet_of_things.png" alt="Internet of Things"/></div>
                       </div>
                       <div class="dapp_slide">
-                          <div class="deploy_dapps_info">
+                          <div class="lisk_info">
                               <div class="section_caption text_gray">Blockchain as a Service</div>
                               <p class="text_center">You can power up a VPS on Azure, AWS, Google Cloud, Digital Ocean or Vultr and use Lisk as the Blockchain as a Service (BaaS) platform of your choice. Additionally you can use your Raspberry Pi to build a custom BaaS cluster from your home.</p>
                           </div>
                           <div class="dapp_slide_img"><img src="/i/home/blockchain_as_a_service.png" alt="Blockchain as a Service"/></div>
                       </div>
                       <div class="dapp_slide">
-                          <div class="deploy_dapps_info">
+                          <div class="lisk_info">
                               <div class="section_caption text_gray">Multi-Platform Support</div>
                               <p class="text_center">Lisk is a truly versatile platform. It runs on high performance VPS or on inexpensive, low-end ARM devices like a Raspberry Pi or Odroid. You can execute our client on Windows, Mac OS and Linux. Lisk is open source that means other platforms can be supported easily.</p>
                           </div>
