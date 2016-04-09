@@ -49,9 +49,32 @@
 	}
 }
 
+.lisk_info {
+	margin    : 0 auto;
+	max-width : 750px;
+}
+
+.dapps_list {
+	margin     : 0 0 50px -20px;
+	text-align : center;
+	@extend %global_flex_block_row_wrap_center;
+}
+
+.dapps_item {
+	display        : inline-block;
+	vertical-align : top;
+	margin         : 25px 0 25px 20px;
+}
+
+.youtube_dapp {
+	width: 336px;
+	height: 189px;
+	overflow: auto;
+}
+
 .deploy_dapps_info {
 	margin    : 0 auto;
-	max-width : 490px;
+	max-width : 100%;
 }
 
 .deploy_steps {
