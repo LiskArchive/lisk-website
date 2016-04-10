@@ -41,6 +41,14 @@ var correspondents = [
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
 	},
 	{
+		name: "Samuel Heinrichs",
+		lang: "brazil",
+		country: "Brazil",
+		facebook: "https://www.facebook.com/groups/liskbr/",
+		btt: "https://bitcointalk.org/index.php?topic=1348132",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=821447"
+	},
+	{
 		name: "Petros Anagnostou",
 		lang: "greece",
 		country: "Greece",
