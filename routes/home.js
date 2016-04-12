@@ -12,9 +12,9 @@ var dapps = [
 
 var partnerships = [
 	{
-		name: "ShapeShift",
-		img: "shapeshift",
-		url: "https://shapeshift.io/"
+		name: "Microsoft",
+		img: "microsoft",
+		url: "https://microsoft.com/"
 	},
 	{
 		name: "Chain of Things",
@@ -22,9 +22,9 @@ var partnerships = [
 		url: "http://chainofthings.com/"
 	},
 	{
-		name: "Microsoft",
-		img: "microsoft",
-		url: "https://microsoft.com/"
+		name: "Transform PR",
+		img: "transformpr",
+		url: "http://transform.pr/"
 	}
 ];
 
