@@ -30,6 +30,7 @@ var correspondents = [
 		lang: "germany",
 		country: "Germany",
 		twitter: "https://twitter.com/Lisk_DE",
+		facebook: "https://www.facebook.com/LiskDE",
 		btt: "https://bitcointalk.org/index.php?topic=1348884",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=174939"
 	},
