@@ -1,12 +1,28 @@
 var dapps = [
 	{
-		url: "https://www.youtube.com/embed/T6e7lttEFsM?rel=0&amp;showinfo=0"
+		url: "https://www.youtube.com/watch?v=T6e7lttEFsM",
+		image: "dust.png",
+		description: "Concept: Decentralized Trust on Lisk"
 	},
 	{
-		url: "https://www.youtube.com/embed/t0T_Ko8f39o?rel=0&amp;showinfo=0"
+		url: "https://www.youtube.com/watch?v=Djcaoba1MLg",
+		image: "discovr.png",
+		description: "Concept: Social network for artists"
 	},
 	{
-		url: "https://www.youtube.com/embed/I6emtbHgiVA?rel=0&amp;showinfo=0"
+		url: "https://www.youtube.com/watch?v=I6emtbHgiVA",
+		image: "marketplace.png",
+		description: "Prototype: OpenBazaar on Lisk"
+	},
+	{
+		url: "https://www.youtube.com/watch?v=t0T_Ko8f39o",
+		image: "blockdata.png",
+		description: "Prototype: Your Smart Home on Lisk"
+	},
+	{
+		url: "",
+		image: "newdapp.png",
+		description: "You developed a dapp?"
 	}
 ];
 
