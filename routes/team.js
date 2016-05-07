@@ -87,8 +87,23 @@ var correspondents = [
 	}
 ];
 
+var conferences = [
+	{
+		name: "Global Blockchain Summit",
+		country: "china",
+		website: "http://www.global-blockchain-summit.com",
+		date: "22nd - 24th June 2016"
+	},
+	{
+		name: "Euroforum: Blockchain an einem Tag",
+		country: "germany",
+		website: "http://www.euroforum.de/blockchain/",
+		date: "19th September 2016"
+	}
+];
+
 module.exports = function (app) {
 	app.get("/team", function (req, res) {
-		return res.render("team", {pageId: "team", title: "Team", correspondents: correspondents, adviser : adviser, description: "Take a look at the team which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, crypti, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
+		return res.render("team", {pageId: "team", title: "Team", conferences: conferences, correspondents: correspondents, adviser : adviser, description: "Take a look at the team which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, crypti, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
 	});
 }
