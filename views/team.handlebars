@@ -26,6 +26,8 @@
                                 <p>Max is a futurist and thoroughbred entrepreneur who is interested in disruptive technologies. Having a rich experience in the blockchain industry and seeing the potential of decentralized applications, he co-founded Lisk. A decentralized application and sidechain platform for JavaScript developers which caused a stir when it collected 14000 BTC in its crowd fund early 2016.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="team_slider teamSlider">
                         <div class="team_slide">
                             <div class="team_slide_img"><img src="i/members/oliver_beddows.jpeg"></div>
                             <div class="team_slide_info">
@@ -34,6 +36,8 @@
                                 <p>Oliver is a full stack developer with over 15 years experience in developing web based e-commerce applications. He joined Crypti (Lisk's predecessor) in early 2015 as a tools developer, and went on to build tools such as the CryptiChain Blockchain Explorer and CryptiKit, a node deployment and management tool. He is a husband, father, amateur time-trialist, open-source advocate, and works tirelessly to build a better future for Lisk everyday.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="team_slider teamSlider">
                         <div class="team_slide">
                             <div class="team_slide_img"><img src="i/members/joel_fernandez.jpeg"></div>
                             <div class="team_slide_info">
@@ -101,6 +105,33 @@
             </div>
         </div>
         <div class="section white_section">
+            <div class="section_inner">
+                <div class="section_content text_block">
+                    <div class="about_block fz_18">
+                        <div class="section_caption text_gray">Conference Attendance</div>
+                        <div class="conferences">
+                            <div class="country_corr_block">
+                                <ul class="country_correspondents_list">
+                            {{#each conferences}}
+                                    <li class="conference_att">
+                                        <div class="country_corr_name">{{name}}</div>
+                                        <div class="country_corr_info">
+                                            <div class="fl">
+                                                <div class="conference_date">{{#if date}}{{date}}{{/if}}</div>
+                                            </div>
+                                            <div class="fr">{{#if website}}<a href="{{website}}" class="corr_share_link fa fa-globe" target="_blank"></a>{{/if}} <img src="i/countries/flags/flag_{{country}}.png" alt="{{country}}" class="conference_flag"></div>
+                                        </div>
+                                    </li>
+                               
+                            {{/each}}
+                             </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section gray_section">
             <div class="section_inner">
                 <div class="section_content text_block">
                     <div class="about_block">
