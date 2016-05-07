@@ -108,7 +108,7 @@
 
 .team_slider {
 	@extend %clearfix;
-	padding    : 80px 0 30px;
+	padding    : 80px 0 0px;
 	margin     : 0 auto;
 	overflow   : hidden;
 	max-width  : 980px;
@@ -118,7 +118,7 @@
 .team_slide {
 	@extend %global_flex_block_row_nowrap_space_between_stretch;
 	float      : left;
-	min-height : 380px;
+	min-height : 260px;
 
 	p {
 		line-height : 1.5;
@@ -180,6 +180,10 @@
 	padding-top : 40px;
 }
 
+.conferences {
+	padding-top : 0px;
+}
+
 .country_correspondents_list {
 	padding : 25px 0 65px;
 }
@@ -218,6 +222,19 @@
 
 }
 
+.conference_att {
+	@extend %global_flex_block_row_nowrap_space_between_center;
+	height       : 65px;
+	position     : relative;
+	padding-left : 28px;
+	padding-right: 28px;
+
+	&:hover {
+		box-shadow : 0 0 9px rgba(0, 0, 0, .3);
+	}
+
+}
+
 .country_corr_name {
 	@include flex(0 44%);
 	font-size : 18px;
@@ -232,6 +249,15 @@
 
 .country_corr_share {
 	margin-left : -30px;
+}
+
+.conference_date {
+	margin-left : 20px;
+}
+
+.conference_flag {
+	position: relative;
+	top: 4px;
 }
 
 .corr_share_link {
