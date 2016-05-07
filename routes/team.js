@@ -89,6 +89,12 @@ var correspondents = [
 
 var conferences = [
 	{
+		name: "BlueYard: Decentralized & Encrypted",
+		country: "germany",
+		website: "https://medium.com/@BlueYard/join-the-people-working-on-upgrading-the-internet-decentralized-encrypted-7ff2b6ac1f8#.a9poen7uk",
+		date: "1st June 2016"
+	},
+	{
 		name: "Global Blockchain Summit",
 		country: "china",
 		website: "http://www.global-blockchain-summit.com",
