@@ -2,8 +2,8 @@ $(function($){
 
 	function initialize_map(){
 		var mapOptions = {
-			center: {lat: 51.2609, lng: 3.2221},
-			zoom  : 6,
+			center: {lat: 34, lng: -32},
+			zoom  : 3,
 			scrollwheel: false
 		};
 		var map = new google.maps.Map(document.getElementById('g_map'),
@@ -25,6 +25,13 @@ $(function($){
 		// Olivier
 		new google.maps.Marker({
 			position: new google.maps.LatLng(52.6966, -1.7729),
+			map: map,
+			icon: myIcon
+		});
+
+		// Joel
+		new google.maps.Marker({
+			position: new google.maps.LatLng(18.0115635, -66.6139584),
 			map: map,
 			icon: myIcon
 		});
