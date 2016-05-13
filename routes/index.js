@@ -7,7 +7,6 @@ module.exports = {
 	team: require('./team.js'),
 	contact_us: require('./contact_us.js'),
 	documentation: require('./documentation.js'),
-	faq: require('./faq.js'),
 	ico: require('./ico.js'),
 	careers: require('./careers.js'),
 	whitepaper: require('./whitepaper.js'),
