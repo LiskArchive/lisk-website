@@ -10,5 +10,6 @@ module.exports = {
 	faq: require('./faq.js'),
 	ico: require('./ico.js'),
 	careers: require('./careers.js'),
+	whitepaper: require('./whitepaper.js'),
 	missing: require('./missing.js')
 }
