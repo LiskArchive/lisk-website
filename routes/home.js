@@ -12,7 +12,7 @@ var dapps = [
 	{
 		url: "https://www.youtube.com/watch?v=I6emtbHgiVA",
 		image: "marketplace.png",
-		description: "Prototype: OpenBazaar on Lisk"
+		description: "Prototype: A Decentralized Shop on Lisk"
 	},
 	{
 		url: "https://www.youtube.com/watch?v=t0T_Ko8f39o",
@@ -20,7 +20,7 @@ var dapps = [
 		description: "Prototype: Your Smart Home on Lisk"
 	},
 	{
-		url: "",
+		url: "mailto:business@lisk.io",
 		image: "newdapp.png",
 		description: "You developed a dapp?"
 	}
