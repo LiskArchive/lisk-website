@@ -1,5 +1,10 @@
 var dapps = [
 	{
+		url: "https://www.youtube.com/watch?v=ZK1ogQ6L_Ko",
+		image: "criterion.png",
+		description: "Concept: Proof of Existence"
+	},
+	{
 		url: "https://www.youtube.com/watch?v=T6e7lttEFsM",
 		image: "dust.png",
 		description: "Concept: Decentralized Trust on Lisk"
