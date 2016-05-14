@@ -422,6 +422,18 @@
 		margin-right : 50px;
 	}
 
+	.conference_info {
+		@include flex(0 25%);
+	}
+
+	.conference_name {
+		width: 100%;
+	}
+
+	.conference_date {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width : $mob_width) {
@@ -432,6 +444,18 @@
 
 	.team_unit {
 		width : 100%;
+	}
+
+	.conference_info {
+		@include flex(0 25%);
+	}
+
+	.conference_name {
+		width: 100%;
+	}
+
+	.conference_date {
+		display: none;
 	}
 
 }
