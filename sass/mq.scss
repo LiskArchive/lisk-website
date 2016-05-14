@@ -379,6 +379,29 @@
 
 }
 
+// whitepaper
+
+@media only screen and (max-width : $tab_width - 200) {
+
+	.whitepaper_text {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width : $mob_width) {
+
+	.whitepaper_text {
+		margin-bottom: 20px;
+	}
+
+	.whitepaper_image {
+		width: 320px;
+	}
+
+}
+
+
+
 // features
 
 @media only screen and (max-width : $tab_width - 200) {
