@@ -247,12 +247,23 @@
 	@include flex(0 56%);
 }
 
+.conference_info {
+	@extend %clearfix;
+	@include flex(0 56%);
+}
+
 .country_corr_share {
 	margin-left : -30px;
 }
 
+.conference_name {
+	font-size : 18px;
+	position  : relative;
+	color     : #626b7a;
+}
+
 .conference_date {
-	margin-left : 20px;
+	margin-left : 30px;
 }
 
 .conference_flag {
@@ -263,6 +274,14 @@
 .corr_share_link {
 	display         : inline-block;
 	margin          : 0 30px;
+	text-decoration : none;
+	font-size       : 18px;
+	color           : $color_gray_g;
+}
+
+.conference_share_link {
+	display         : inline-block;
+	margin          : 0 10px 0 0;
 	text-decoration : none;
 	font-size       : 18px;
 	color           : $color_gray_g;
