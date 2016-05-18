@@ -1,4 +1,4 @@
-var dapps = [
+var apps = [
 	{
 		url: "https://www.youtube.com/watch?v=ZK1ogQ6L_Ko",
 		image: "criterion.png",
@@ -12,7 +12,7 @@ var dapps = [
 	{
 		url: "https://www.youtube.com/watch?v=Djcaoba1MLg",
 		image: "discovr.png",
-		description: "Concept: Social network for artists"
+		description: "Concept: A Social Network for Artists"
 	},
 	{
 		url: "https://www.youtube.com/watch?v=I6emtbHgiVA",
@@ -27,7 +27,7 @@ var dapps = [
 	{
 		url: "mailto:business@lisk.io",
 		image: "newdapp.png",
-		description: "You developed a dapp?"
+		description: "You developed an app?"
 	}
 ];
 
@@ -52,6 +52,6 @@ var partnerships = [
 
 module.exports = function (app) {
 	app.get("/", function (req, res) {
-		res.render('home', {pageId: "home", title: "Decentralized Application Platform", partnerships: partnerships, dapps: dapps, description: "Develop and publish decentralized applications with your own side chains on the open-source Lisk Platform.", words: "lisk, crypti, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain, sia", hasScript: true});
+		res.render('home', {pageId: "home", title: "Blockchain Application Platform", partnerships: partnerships, apps: apps, description: "Develop and publish blockchain applications with your own sidechains on the open-source Lisk Platform.", words: "lisk, crypti, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain, sia", hasScript: true});
 	});
 }
