@@ -86,7 +86,7 @@ var hbs = exphbs.create({
 			return "";
 		},
 		version : function () {
-			return "v0.1.x";
+			return "v0.3.0";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
