@@ -122,7 +122,7 @@ var hbs = exphbs.create({
 			return "https://drive.google.com/file/d/0B7DjyOJhmpJkaU55VWRyeFhQYms/view?usp=sharing";
 		},
 		whitepaper: function() {
-			return "/documentation?i=lisk-whitepaper/README";
+			return "/whitepaper";
 		}
 	}
 });
