@@ -35,7 +35,7 @@ var menu = [
 		]
 	},
 	{
-		name: "Developing Dapps",
+		name: "Developing Blockchain Apps",
 		url: "/documentation?i=lisk-dapps-docs/README",
 		subitems: [
 			{
@@ -43,32 +43,32 @@ var menu = [
 				i: "lisk-dapps-docs/EnvironmentSetup",
 			},
 			{
-				name: "Creating a Basic Dapp",
-				i: "lisk-dapps-docs/BasicDapp",
+				name: "Creating a Basic App",
+				i: "lisk-dapps-docs/BasicApp",
 			},
 			{
-				name: "Creating a Messaging Dapp",
-				i: "lisk-dapps-docs/MessagingDapp",
+				name: "Creating a Messaging App",
+				i: "lisk-dapps-docs/MessagingApp",
 			},
 			{
-				name: "Creating a Reddit Dapp",
-				i: "lisk-dapps-docs/RedditDapp",
+				name: "Creating a Reddit App",
+				i: "lisk-dapps-docs/RedditApp",
 			},
 			{
 				name: "Adding a User Interface",
 				i: "lisk-dapps-docs/UserInterface",
 			},
 			{
-				name: "Introducing the Dapp SDK",
-				i: "lisk-dapps-docs/DappSDK",
+				name: "Introducing the App SDK",
+				i: "lisk-dapps-docs/AppSDK",
 			},
 			{
 				name: "Creating a Custom Sidechain",
 				i: "lisk-dapps-docs/Sidechain",
 			},
 			{
-				name: "Debugging Dapps",
-				i: "lisk-dapps-docs/DebuggingDapps"
+				name: "Debugging Apps",
+				i: "lisk-dapps-docs/DebuggingApps"
 			}
 		]
 	},
@@ -120,48 +120,48 @@ var docs = [
 		next: "lisk-dapps-docs/README"
 	},
 	{
-		title: "Developing Dapps",
+		title: "Developing Apps",
 		i: "lisk-dapps-docs/README",
 		next: "lisk-dapps-docs/EnvironmentSetup"
 	},
 	{
 		title: "Setting up an Environment",
 		i: "lisk-dapps-docs/EnvironmentSetup",
-		next: "lisk-dapps-docs/BasicDapp"
+		next: "lisk-dapps-docs/BasicApp"
 	},
 	{
-		title: "Creating a Basic Dapp",
-		i: "lisk-dapps-docs/BasicDapp",
-		next: "lisk-dapps-docs/MessagingDapp"
+		title: "Creating a Basic App",
+		i: "lisk-dapps-docs/BasicApp",
+		next: "lisk-dapps-docs/MessagingApp"
 	},
 	{
-		title: "Creating a Messaging Dapp",
-		i: "lisk-dapps-docs/MessagingDapp",
-		next: "lisk-dapps-docs/RedditDapp"
+		title: "Creating a Messaging App",
+		i: "lisk-dapps-docs/MessagingApp",
+		next: "lisk-dapps-docs/RedditApp"
 	},
 	{
-		title: "Creating a Reddit Dapp",
-		i: "lisk-dapps-docs/RedditDapp",
+		title: "Creating a Reddit App",
+		i: "lisk-dapps-docs/RedditApp",
 		next: "lisk-dapps-docs/UserInterface"
 	},
 	{
 		title: "Adding a User Interface",
 		i: "lisk-dapps-docs/UserInterface",
-		next: "lisk-dapps-docs/DappSDK"
+		next: "lisk-dapps-docs/AppSDK"
 	},
 	{
-		title: "Introducing the Dapp SDK",
-		i: "lisk-dapps-docs/DappSDK",
+		title: "Introducing the App SDK",
+		i: "lisk-dapps-docs/AppSDK",
 		next: "lisk-dapps-docs/Sidechain"
 	},
 	{
 		title: "Creating a Custom Sidechain",
 		i: "lisk-dapps-docs/Sidechain",
-		next: "lisk-dapps-docs/DebuggingDapps"
+		next: "lisk-dapps-docs/DebuggingApps"
 	},
 	{
-		title: "Debugging Dapps",
-		i: "lisk-dapps-docs/DebuggingDapps",
+		title: "Debugging Apps",
+		i: "lisk-dapps-docs/DebuggingApps",
 		next: "lisk-handbooks/README"
 	},
 	{
@@ -196,7 +196,7 @@ module.exports = function (app) {
 		function finish(doc) {
 			var result = {
 				pageId: "documentation",
-				description: "Lisk DApps Documentation",
+				description: "Lisk Apps Documentation",
 				words: "lisk, crypti, documentation, doc, docs, guides, tutorial, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain",
 				menu: menu,
 				hasScript: true,
