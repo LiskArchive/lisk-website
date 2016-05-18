@@ -19,9 +19,9 @@ var jobs = [
 	},
 	{
 		img: "dapp",
-		position : "3x Dapp Developer - Part Time",
+		position : "3x Blockchain App Developer - Part Time",
 		skills: "JavaScript · HTML · CSS · Angular 1.0",
-		description: "You are a student and want to proof your JavaScript skills or a junior developer who needs a job? We are actively looking for dapp developers, who are helping us to develop unique and useful dapps. You need to know JavaScript, HTML and CSS. As a front end framework you need to know Angular 1.0."
+		description: "You are a student and want to proof your JavaScript skills or a junior developer who needs a job? We are actively looking for app developers, who are helping us to develop unique and useful blockchain apps. You need to know JavaScript, HTML and CSS. As a front end framework you need to know Angular 1.0."
 	}
 ];
 
