@@ -1,9 +1,9 @@
 var jobs = [
 	{
 		img: "backend",
-		position : "Back End Developer - Full Time",
+		position : "2x Back End Developer - Full Time",
 		skills: "JavaScript · Node.JS · PostgreSQL",
-		description: "Do you have a passion for coding, cryptography, and algorithms? We are actively looking for a back end developer who can efficiently optimising and improving existing codebases. You should also be able to implement new features from scratch with a great quality."
+		description: "Do you have a passion for coding, cryptography, and algorithms? We are actively looking for two back end developers who can efficiently optimise and improve our existing codebase. You should also be able to implement new features from scratch with great quality."
 	},
 	{
 		img: "frontend",
@@ -15,7 +15,7 @@ var jobs = [
 		img: "designer",
 		position : "Designer - Full Time",
 		skills: "Photoshop · Illustrator · Vector",
-		description: "We are actively looking for an awesome designer with a great eye for beautiful and simplistic designs. Your tasks would be to design infographics, illustrations, icons, logos, UI/UX designs, banners, and more. If you are interested, feel free to send us your portfolio!"
+		description: "We are actively looking for an awesome designer with a great eye for beautiful and simplistic designs. Your tasks would be to design infographics, illustrations, icons, logos, UI/UX, banners, and more. If you are interested, feel free to send us your portfolio!"
 	},
 	{
 		img: "dapp",
