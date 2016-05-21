@@ -42,6 +42,39 @@ var correspondents = [
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
 	},
 	{
+		name: "Joel Fernández",
+		lang: "puertorico",
+		country: "Puerto Rico",
+		btt: "https://bitcointalk.org/index.php?topic=1347362",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
+		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
+	},
+	{
+		name: "Kostyantyn Ahafontsev",
+		lang: "ukraine",
+		country: "Ukraine",
+		twitter: "https://twitter.com/liskukraine",
+		btt: "https://forum.lisk.io/viewforum.php?f=33"
+	},
+	{
+		name: "Stefan Neagu",
+		lang: "romania",
+		country: "Romania",
+		twitter: "https://twitter.com/liskromania",
+		facebook: "https://www.facebook.com/LiskRomania/",
+		btt: "https://bitcointalk.org/index.php?topic=1434407",
+		linked: "https://ro.linkedin.com/in/stenea"
+	},
+	{
+		name: "Denis Smirnov",
+		lang: "russia",
+		country: "Russia",
+		facebook: "https://www.facebook.com/lisk.russia/",
+		btt: "https://bitcointalk.org/index.php?topic=1346837",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=534708",
+		linked: "https://ru.linkedin.com/in/densmirnov"
+	},
+	{
 		name: "Samuel Heinrichs",
 		lang: "brazil",
 		country: "Brazil",
@@ -49,24 +82,6 @@ var correspondents = [
 		btt: "https://bitcointalk.org/index.php?topic=1348132",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=821447",
 		linked: "https://www.linkedin.com/in/samuel-heinrichs-243891a0"
-	},
-	{
-		name: "Petros Anagnostou",
-		lang: "greece",
-		country: "Greece",
-		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
-		twitter: "https://twitter.com/LiskGreece",
-		btt: "https://bitcointalk.org/index.php?topic=1370696",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
-		linked: "https://www.linkedin.com/in/petrosanagnostou"
-	},
-	{
-		name: "Joel Fernández",
-		lang: "puertorico",
-		country: "Puerto Rico",
-		btt: "https://bitcointalk.org/index.php?topic=1347362",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
-		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
 	},
 	{
 		name: "Rendra Permana",
@@ -77,6 +92,16 @@ var correspondents = [
 		facebook: "https://www.facebook.com/Lisk-Indonesia-182561438776664/",
 		linked: "https://www.linkedin.com/in/rendra-permana-18b641b4",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=384646"
+	},
+	{
+		name: "Petros Anagnostou",
+		lang: "greece",
+		country: "Greece",
+		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
+		twitter: "https://twitter.com/LiskGreece",
+		btt: "https://bitcointalk.org/index.php?topic=1370696",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
+		linked: "https://www.linkedin.com/in/petrosanagnostou"
 	},
 	{
 		name: "JM N. Erestain",
