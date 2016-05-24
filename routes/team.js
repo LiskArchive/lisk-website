@@ -51,6 +51,14 @@ var correspondents = [
 		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
 	},
 	{
+		name: "Samuel Heinrichs",
+		lang: "brazil",
+		country: "Brazil",
+		facebook: "https://www.facebook.com/groups/liskbr/",
+		btt: "https://bitcointalk.org/index.php?topic=1348132",
+		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=821447"
+	},
+	{
 		name: "Kostyantyn Ahafontsev",
 		lang: "ukraine",
 		country: "Ukraine",
