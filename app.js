@@ -68,22 +68,22 @@ var hbs = exphbs.create({
 			return "";
 		},
 		macos : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		windows : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
 		},
 		linux : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		docker : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
 		},
 		armv6 : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		armv7 : function () {
-			return "";
+			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		version : function () {
 			return "v0.3.0";
