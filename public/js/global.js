@@ -61,10 +61,10 @@ $(function($){
 		resize_f();
 	});
 
-	// ICO countdown
+	// Launch countdown
 	if ($('#countdown').length) {
-		$('#countdown').countdown("2016/02/22", function(event) {
-			$(this).html(event.strftime('%-D day%!D, %-H hour%!H, %M minute%!M, %S second%!S'));
+		$('#countdown').countdown("2016/05/24 20:00", function(event) {
+			$(this).html(event.strftime('%-H hour%!H, %M minute%!M, %S second%!S'));
 		});
 	}
 });
