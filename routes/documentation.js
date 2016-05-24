@@ -21,6 +21,14 @@ var menu = [
 		url: "/documentation?i=lisk-docs/README",
 		subitems: [
 			{
+				name: "Preparing your system for Lisk",
+				i: "lisk-docs/PrereqSetup"
+			},
+			{
+				name: "Preparing your system for upgrade",
+				i: "lisk-docs/UpgradeSteps"
+			},
+			{
 				name: "Installing Lisk (using Binaries)",
 				i: "lisk-docs/BinaryInstall"
 			},
@@ -92,6 +100,16 @@ var docs = [
 	{
 		title: "Welcome to Lisk",
 		i: "lisk-docs/README"
+	},
+	{
+		title: "Preparing your system for Lisk",
+		i: "lisk-docs/PrereqSetup",
+		next: "lisk-docs/BinaryInstall"
+	},
+	{
+		title: "Preparing your system for upgrade",
+		i: "lisk-docs/UpgradeSteps",
+		next: "lisk-docs/BinaryInstall"
 	},
 	{
 		title: "Installing Lisk (using Binaries)",
