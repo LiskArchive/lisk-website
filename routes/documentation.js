@@ -83,16 +83,6 @@ var menu = [
 		]
 	},
 	{
-		name: "Whitepaper",
-		url: "/documentation?i=lisk-whitepaper/README",
-		subitems: [
-			{
-				name: "English Version",
-				i: "lisk-whitepaper/LiskWhitepaper"
-			}
-		]
-	},
-	{
 		name: "Lisk API",
 		url: "/documentation?i=lisk-docs/APIReference"
 	}
@@ -101,23 +91,19 @@ var menu = [
 var docs = [
 	{
 		title: "Welcome to Lisk",
-		i: "lisk-docs/README",
-		next: "lisk-docs/BinaryInstall"
+		i: "lisk-docs/README"
 	},
 	{
 		title: "Installing Lisk (using Binaries)",
-		i: "lisk-docs/BinaryInstall",
-		next: "lisk-docs/DockerInstall"
+		i: "lisk-docs/BinaryInstall"
 	},
 	{
 		title: "Installing Lisk (using Docker)",
-		i: "lisk-docs/DockerInstall",
-		next: "lisk-docs/SourceInstall"
+		i: "lisk-docs/DockerInstall"
 	},
 	{
 		title: "Installing Lisk (from Source)",
-		i: "lisk-docs/SourceInstall",
-		next: "lisk-dapps-docs/README"
+		i: "lisk-docs/SourceInstall"
 	},
 	{
 		title: "Developing Apps",
@@ -161,8 +147,7 @@ var docs = [
 	},
 	{
 		title: "Debugging Apps",
-		i: "lisk-dapps-docs/DebuggingApps",
-		next: "lisk-handbooks/README"
+		i: "lisk-dapps-docs/DebuggingApps"
 	},
 	{
 		title: "Handbooks",
@@ -171,17 +156,7 @@ var docs = [
 	},
 		{
 		title: "Delegates & Forging",
-		i: "lisk-handbooks/DelegateHandbook",
-		next: "lisk-whitepaper/README"
-	},
-	{
-		title: "Whitepaper",
-		i: "lisk-whitepaper/README",
-		next: "lisk-whitepaper/LiskWhitepaper"
-	},
-	{
-		title: "Whitepaper (English)",
-		i: "lisk-whitepaper/LiskWhitepaper"
+		i: "lisk-handbooks/DelegateHandbook"
 	},
 	{
 		title: "Lisk API",
