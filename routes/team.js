@@ -135,6 +135,12 @@ var conferences = [
 		date: "22nd - 24th June 2016"
 	},
 	{
+		name: "BIP 001: Black Sea Edition",
+		country: "ukraine",
+		website: "http://bip001.com",
+		date: "7th July 2016"
+	},
+	{
 		name: "Euroforum: Blockchain an einem Tag",
 		country: "germany",
 		website: "http://www.euroforum.de/blockchain/",
