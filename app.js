@@ -68,7 +68,7 @@ var hbs = exphbs.create({
 			return "";
 		},
 		macos : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
+			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
 		},
 		windows : function () {
 			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
@@ -86,7 +86,7 @@ var hbs = exphbs.create({
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		version : function () {
-			return "v0.3.0";
+			return "v0.3.1";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
