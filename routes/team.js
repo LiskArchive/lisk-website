@@ -1,17 +1,33 @@
 var adviser = [
 	{
+		name: "Charles Hoskinson",
+		img : "charles_hoskinson",
+		company: "Input Output HK",
+		description: "Senior Adviser",
+		linked: "https://www.linkedin.com/in/charles-hoskinson-1a95a4b4",
+		twitter: "https://twitter.com/IOHK_Charles"
+	},	
+	{
+		name: "Steven Nerayoff",
+		img : "steven_nerayoff",
+		company: "Maple Ventures",
+		description: "Senior Adviser",
+		linked: "https://www.linkedin.com/in/nerayoff",
+		twitter: "https://twitter.com/stevennerayoff"
+	},	
+	{
 		name: "Boris Povod",
 		img : "boris_povod",
-		company: "Crypti",
-		description: "Blockchain Expert",
+		company: "Wings",
+		description: "Technical Adviser",
 		linked: "https://www.linkedin.com/in/boris-povod-361a1b79/en",
-		twitter: "https://twitter.com/CryptiTeam"
+		twitter: "https://twitter.com/Mr_Povod"
 	},
 	{
 		name: "Axel Hellinger",
 		img : "hellinger",
 		company: "Kanzlei Hellinger",
-		description: "Lawyer",
+		description: "Legal Adviser",
 		linked: "https://de.linkedin.com/in/ahellinger"
 	}
 ];
@@ -111,19 +127,12 @@ var correspondents = [
 		btt: "https://bitcointalk.org/index.php?topic=1370696",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
 		linked: "https://www.linkedin.com/in/petrosanagnostou"
-	},
-	{
-		name: "JM N. Erestain",
-		lang: "filipino",
-		country: "Philippines",
-		btt: "https://bitcointalk.org/index.php?topic=1360016",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=521242"
 	}
 ];
 
 var conferences = [
 	{
-		name: "BlueYard: Decentralized & Encrypted",
+		name: "√ BlueYard: Decentralized & Encrypted",
 		country: "germany",
 		website: "https://medium.com/@BlueYard/join-the-people-working-on-upgrading-the-internet-decentralized-encrypted-7ff2b6ac1f8#.a9poen7uk",
 		date: "1st June 2016"
