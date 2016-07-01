@@ -109,16 +109,6 @@ var correspondents = [
 		linked: "https://www.linkedin.com/in/samuel-heinrichs-243891a0"
 	},
 	{
-		name: "Rendra Permana",
-		lang: "indonesia",
-		country: "Indonesia",
-		btt: "https://bitcointalk.org/index.php?topic=1357381",
-		twitter: "https://twitter.com/Lisk_Indonesia",
-		facebook: "https://www.facebook.com/Lisk-Indonesia-182561438776664/",
-		linked: "https://www.linkedin.com/in/rendra-permana-18b641b4",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=384646"
-	},
-	{
 		name: "Petros Anagnostou",
 		lang: "greece",
 		country: "Greece",
