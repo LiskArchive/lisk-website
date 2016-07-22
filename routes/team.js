@@ -128,16 +128,22 @@ var conferences = [
 		date: "1st June 2016"
 	},
 	{
-		name: "Global Blockchain Summit",
+		name: "√ Global Blockchain Summit",
 		country: "china",
 		website: "http://www.global-blockchain-summit.com",
 		date: "22nd - 24th June 2016"
 	},
 	{
-		name: "BIP 001: Black Sea Edition",
+		name: "√ BIP 001: Black Sea Edition",
 		country: "ukraine",
 		website: "http://bip001.com",
 		date: "7th July 2016"
+	},
+	{
+		name: "Bitcoin Wednesday",
+		country: "netherlands",
+		website: "http://www.meetup.com/BitcoinWednesday/events/224454244/",
+		date: "3rd August 2016"
 	},
 	{
 		name: "Euroforum: Blockchain an einem Tag",
