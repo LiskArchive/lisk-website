@@ -134,6 +134,12 @@ var conferences = [
 		date: "22nd - 24th June 2016"
 	},
 	{
+		name: "√ FoundersDevelopers",
+		country: "russia",
+		website: "https://www.facebook.com/events/1763404587211413/",
+		date: "1st July 2016"
+	},
+	{
 		name: "√ BIP 001: Black Sea Edition",
 		country: "ukraine",
 		website: "http://bip001.com",
@@ -146,9 +152,21 @@ var conferences = [
 		date: "3rd August 2016"
 	},
 	{
+		name: "Global Blockchain Roadshow",
+		country: "china",
+		website: "http://hechain.com",
+		date: "6th August 2016"
+	},
+	{
 		name: "Euroforum: Blockchain an einem Tag",
 		country: "germany",
 		website: "http://www.euroforum.de/blockchain/",
+		date: "19th September 2016"
+	},
+	{
+		name: "International Blockchain Week",
+		country: "china",
+		website: "http://www.blockchainweek2016.org",
 		date: "19th September 2016"
 	}
 ];
