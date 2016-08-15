@@ -146,13 +146,13 @@ var conferences = [
 		date: "7th July 2016"
 	},
 	{
-		name: "Bitcoin Wednesday",
+		name: "√ Bitcoin Wednesday",
 		country: "netherlands",
 		website: "http://www.meetup.com/BitcoinWednesday/events/224454244/",
 		date: "3rd August 2016"
 	},
 	{
-		name: "Global Blockchain Roadshow",
+		name: "√ Global Blockchain Roadshow",
 		country: "china",
 		website: "http://hechain.com",
 		date: "6th August 2016"
@@ -167,7 +167,7 @@ var conferences = [
 		name: "International Blockchain Week",
 		country: "china",
 		website: "http://www.blockchainweek2016.org",
-		date: "19th September 2016"
+		date: "19th-24th September 2016"
 	}
 ];
 
