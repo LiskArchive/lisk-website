@@ -67,17 +67,17 @@ var hbs = exphbs.create({
 		chinese_macos: function () {
 			return "";
 		},
-    binaries : function () {
+    		binaries : function () {
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
-		macos : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
+		nano_macos : function () {
+			return "";
 		},
-		windows : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
+		nano_windows : function () {
+			return "";
 		},
-		linux : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
+		nano_linux : function () {
+			return "";
 		},
 		docker : function () {
 			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
