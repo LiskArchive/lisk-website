@@ -67,7 +67,7 @@ var hbs = exphbs.create({
 		chinese_macos: function () {
 			return "";
 		},
-    		binaries : function () {
+    binaries : function () {
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		nano_macos : function () {
