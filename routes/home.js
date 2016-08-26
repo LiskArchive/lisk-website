@@ -43,9 +43,9 @@ var partnerships = [
 		url: "http://chainofthings.com/"
 	},
 	{
-		name: "Transform PR",
-		img: "transformpr",
-		url: "http://transform.pr/"
+		name: "BitcoinPRBuzz",
+		img: "bitcoinprbuzz",
+		url: "http://bitcoinprbuzz.com"
 	}
 ];
 
