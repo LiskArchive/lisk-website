@@ -9,6 +9,7 @@ module.exports = {
 	documentation: require('./documentation.js'),
 	ico: require('./ico.js'),
 	careers: require('./careers.js'),
+	bounties: require('./bounties.js'),
 	whitepaper: require('./whitepaper.js'),
 	missing: require('./missing.js')
 }
