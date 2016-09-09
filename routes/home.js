@@ -46,6 +46,11 @@ var partnerships = [
 		name: "BitcoinPRBuzz",
 		img: "bitcoinprbuzz",
 		url: "http://bitcoinprbuzz.com"
+	},
+	{
+		name: "WachsmanPR",
+		img: "wachsmanpr",
+		url: "http://wachsmanpr.com"
 	}
 ];
 
