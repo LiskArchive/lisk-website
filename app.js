@@ -8,7 +8,9 @@ var express = require('express'),
 
 var price_usd = null,
     price_btc = null,
-    market = null;
+    marketcap = null;
+    volume = null;
+    price = null;
 
 function getBtcUsd() {
 	bter.getPrice(function (err, result) {
@@ -49,8 +51,14 @@ var app = express();
 var hbs = exphbs.create({
 	defaultLayout : 'main',
 	helpers : {
-		market : function () {
-			return market;
+    marketcap : function () {
+			return marketcap;
+		},
+    volume : function () {
+			return volume;
+		},
+    price : function () {
+			return price;
 		},
 		price_usd : function () { return price_usd; },
 		price_btc : function () { return price_btc; },
@@ -89,7 +97,7 @@ var hbs = exphbs.create({
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		version : function () {
-			return "v0.3.3";
+			return "v0.3.2";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
@@ -152,14 +160,18 @@ app.use(function(req, res, next) {
 
 request({
 	type: "GET",
-	url: "http://coinmarketcap-nexuist.rhcloud.com/api/xcr",
+	url: "http://coinmarketcap-nexuist.rhcloud.com/api/lsk",
 	json: true
 }, function (err, resp, body) {
 	if (err || !body.market_cap) {
 		return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
 	}
 
-	market = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+  price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
+
+	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+
+  volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
 
 	app.listen(config.port, function (err) {
 		if (err) {
