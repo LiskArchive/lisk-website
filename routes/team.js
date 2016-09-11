@@ -6,7 +6,7 @@ var adviser = [
 		description: "Senior Adviser",
 		linked: "https://www.linkedin.com/in/charles-hoskinson-1a95a4b4",
 		twitter: "https://twitter.com/IOHK_Charles"
-	},	
+	},
 	{
 		name: "Steven Nerayoff",
 		img : "steven_nerayoff",
@@ -14,7 +14,7 @@ var adviser = [
 		description: "Senior Adviser",
 		linked: "https://www.linkedin.com/in/nerayoff",
 		twitter: "https://twitter.com/stevennerayoff"
-	},	
+	},
 	{
 		name: "Boris Povod",
 		img : "boris_povod",
@@ -100,6 +100,14 @@ var correspondents = [
 		linked: "https://ru.linkedin.com/in/densmirnov"
 	},
 	{
+		name: "Daniel Vassilev",
+		lang: "australia",
+		country: "Australia",
+		twitter: "https://twitter.com/LiskAustralia",
+		btt: "https://bitcointalk.org/index.php?topic=1346646",
+		linked: "https://au.linkedin.com/in/daniel-vassilev-8b0a59b2"
+	},
+	{
 		name: "Samuel Heinrichs",
 		lang: "brazil",
 		country: "Brazil",
@@ -107,16 +115,6 @@ var correspondents = [
 		btt: "https://bitcointalk.org/index.php?topic=1348132",
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=821447",
 		linked: "https://www.linkedin.com/in/samuel-heinrichs-243891a0"
-	},
-	{
-		name: "Petros Anagnostou",
-		lang: "greece",
-		country: "Greece",
-		facebook: "https://www.facebook.com/Lisk-Greece-1097089743664106",
-		twitter: "https://twitter.com/LiskGreece",
-		btt: "https://bitcointalk.org/index.php?topic=1370696",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=517454",
-		linked: "https://www.linkedin.com/in/petrosanagnostou"
 	}
 ];
 
@@ -168,6 +166,12 @@ var conferences = [
 		country: "china",
 		website: "http://www.blockchainweek2016.org",
 		date: "19th-24th September 2016"
+	},
+	{
+		name: "Web Summit",
+		country: "portugal",
+		website: "http://websummit.net",
+		date: "7th-10th November 2016"
 	}
 ];
 
