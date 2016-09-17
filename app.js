@@ -97,7 +97,7 @@ var hbs = exphbs.create({
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		version : function () {
-			return "v0.3.3";
+			return "v0.3.4";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
