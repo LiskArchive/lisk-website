@@ -156,22 +156,40 @@ var conferences = [
 		date: "6th August 2016"
 	},
 	{
-		name: "Euroforum: Blockchain an einem Tag",
+		name: "√ Euroforum: Blockchain an einem Tag",
 		country: "germany",
 		website: "http://www.euroforum.de/blockchain/",
 		date: "19th September 2016"
 	},
 	{
-		name: "International Blockchain Week",
+		name: "√ International Blockchain Week",
 		country: "china",
 		website: "http://www.blockchainweek2016.org",
 		date: "19th-24th September 2016"
+	},
+	{
+		name: "Golden Drum",
+		country: "portugal",
+		website: "http://www.goldendrum.com",
+		date: "20th October 2016"
+	},
+	{
+		name: "StartupCon",
+		country: "germany",
+		website: "http://www.startupcon.de",
+		date: "27th October 2016"
 	},
 	{
 		name: "Web Summit",
 		country: "portugal",
 		website: "http://websummit.net",
 		date: "7th-10th November 2016"
+	},
+	{
+		name: "33C3",
+		country: "germany",
+		website: "https://events.ccc.de",
+		date: "27th-30th December 2016"
 	}
 ];
 
