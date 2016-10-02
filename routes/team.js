@@ -169,7 +169,7 @@ var conferences = [
 	},
 	{
 		name: "Golden Drum",
-		country: "portugal",
+		country: "slovenia",
 		website: "http://www.goldendrum.com",
 		date: "20th October 2016"
 	},
