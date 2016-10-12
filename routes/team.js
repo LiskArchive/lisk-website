@@ -67,7 +67,7 @@ var correspondents = [
 		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
 	},
 	{
-		name: "Kostyantyn Ahafontsev",
+		name: "Kostayntyn Ahafontsev",
 		lang: "ukraine",
 		country: "Ukraine",
 		twitter: "https://twitter.com/liskukraine",
