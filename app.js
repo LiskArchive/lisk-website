@@ -12,6 +12,25 @@ var price_usd = null,
     volume = null;
     price = null;
 
+
+setInterval(function() {
+    request({
+    	type: "GET",
+    	url: "http://coinmarketcap-nexuist.rhcloud.com/api/lsk",
+    	json: true
+    }, function (err, resp, body) {
+      if (err || !body.market_cap) {
+        return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
+  	}
+ 	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
+    	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+ 	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+    }
+  )
+}, 5000);
+
+
+
 function getBtcUsd() {
 	bter.getPrice(function (err, result) {
 		if (!err) {
@@ -51,13 +70,13 @@ var app = express();
 var hbs = exphbs.create({
 	defaultLayout : 'main',
 	helpers : {
-    		marketcap : function () {
+    marketcap : function () {
 			return marketcap;
 		},
-    		volume : function () {
+    volume : function () {
 			return volume;
 		},
-    		price : function () {
+    price : function () {
 			return price;
 		},
 		price_usd : function () { return price_usd; },
@@ -158,26 +177,10 @@ app.use(function(req, res, next) {
 	res.status(404).redirect("/missing");
 });
 
-request({
-	type: "GET",
-	url: "http://coinmarketcap-nexuist.rhcloud.com/api/lsk",
-	json: true
-}, function (err, resp, body) {
-	if (err || !body.market_cap) {
-		return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
+app.listen(config.port, function (err) {
+	if (err) {
+		console.error(err);
+	} else {
+		console.log("Server started at: " + config.port);
 	}
-
-  	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
-
-	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
-
-  	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
-
-	app.listen(config.port, function (err) {
-		if (err) {
-			console.error(err);
-		} else {
-			console.log("Server started at: " + config.port);
-		}
-	})
 });
