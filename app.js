@@ -23,9 +23,9 @@ setInterval(function() {
       if (err || !body.market_cap) {
         return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
   	}
-	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
-	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
-	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+      price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
+    	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+      volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
     }
   )
 }, 5000);
@@ -42,22 +42,24 @@ setInterval(function() {
       var currentHeight = body.height;
       var rewardActivation = 1451520;
       var blocksLeft = rewardActivation - currentHeight;
-      var averageTimeSec = blocksLeft * 10;
+      if (blocksLeft <= 0) { blocksLeft = 0; }
+      //var averageTimeSec = blocksLeft * 10;
 
-      var numDays = Math.floor(averageTimeSec / 86400);
-      var numHours = Math.floor((averageTimeSec % 86400) / 3600);
+      //var numDays = Math.floor(averageTimeSec / 86400);
+      //var numHours = Math.floor((averageTimeSec % 86400) / 3600);
       //var numMinutes = Math.floor(((averageTimeSec % 86400) % 3600) / 60);
       //var numSeconds = ((averageTimeSec % 86400) % 3600) % 60;
 
-      switch(numHours) {
+      switch(blocksLeft) {
         case 0:
-          rewardTime = "Only " + numDays + " Days left! Prepare your Nodes!";
+          rewardTime = "It's here! Setup your Node now!";
           break;
         case 1:
-          rewardTime = "Only " + numDays + " Days and " + numHours + " Hour left! Prepare your Nodes!";
+          rewardTime = "Only " + blocksLeft  + " Block left. Prepare your Node!";
           break;
         default:
-          rewardTime = "Only " + numDays + " Days and " + numHours + " Hours left! Prepare your Nodes!";
+          blocksLeft = blocksLeft.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          rewardTime = "Only " + blocksLeft  + " Blocks left. Prepare your Node!";
       }
 
     }
@@ -105,16 +107,16 @@ var app = express();
 var hbs = exphbs.create({
 	defaultLayout : 'main',
 	helpers : {
-		rewardTime : function () {
+    rewardTime : function () {
 			return rewardTime;
 		},
-		marketcap : function () {
+    marketcap : function () {
 			return marketcap;
 		},
-		volume : function () {
+    volume : function () {
 			return volume;
 		},
-		price : function () {
+    price : function () {
 			return price;
 		},
 		price_usd : function () { return price_usd; },
