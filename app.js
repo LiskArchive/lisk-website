@@ -11,6 +11,7 @@ var price_usd = null,
     marketcap = null;
     volume = null;
     price = null;
+    rewardTime = null;
 
 
 setInterval(function() {
@@ -22,9 +23,43 @@ setInterval(function() {
       if (err || !body.market_cap) {
         return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
   	}
- 	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
-    	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
- 	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
+	marketcap = body.market_cap.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+    }
+  )
+}, 5000);
+
+setInterval(function() {
+    request({
+    	type: "GET",
+    	url: "http://explorer.lisk.io/api/getBlockStatus",
+    	json: true
+    }, function (err, resp, body) {
+      if (err || !body.height) {
+        return console.error("Can't get block height from the Lisk Explorer: " + err.toString());
+  	}
+      var currentHeight = body.height;
+      var rewardActivation = 1451520;
+      var blocksLeft = rewardActivation - currentHeight;
+      var averageTimeSec = blocksLeft * 10;
+
+      var numDays = Math.floor(averageTimeSec / 86400);
+      var numHours = Math.floor((averageTimeSec % 86400) / 3600);
+      //var numMinutes = Math.floor(((averageTimeSec % 86400) % 3600) / 60);
+      //var numSeconds = ((averageTimeSec % 86400) % 3600) % 60;
+
+      switch(numHours) {
+        case 0:
+          rewardTime = "Only " + numDays + " Days left! Prepare your Nodes!";
+          break;
+        case 1:
+          rewardTime = "Only " + numDays + " Days and " + numHours + " Hour left! Prepare your Nodes!";
+          break;
+        default:
+          rewardTime = "Only " + numDays + " Days and " + numHours + " Hours left! Prepare your Nodes!";
+      }
+
     }
   )
 }, 5000);
@@ -70,13 +105,16 @@ var app = express();
 var hbs = exphbs.create({
 	defaultLayout : 'main',
 	helpers : {
-    marketcap : function () {
+		rewardTime : function () {
+			return rewardTime;
+		},
+		marketcap : function () {
 			return marketcap;
 		},
-    volume : function () {
+		volume : function () {
 			return volume;
 		},
-    price : function () {
+		price : function () {
 			return price;
 		},
 		price_usd : function () { return price_usd; },
@@ -98,13 +136,13 @@ var hbs = exphbs.create({
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		nano_macos : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.1/lisk-nano-0.1.1.dmg";
+			return "https://downloads.lisk.io/lisk-nano/0.1.0/lisk-nano-0.1.0.dmg";
 		},
 		nano_windows : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.1/lisk-nano-0.1.1.exe";
+			return "https://downloads.lisk.io/lisk-nano/0.1.0/lisk-nano-0.1.0.exe";
 		},
 		nano_linux : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.1/lisk-nano-0.1.1.deb";
+			return "https://downloads.lisk.io/lisk-nano/0.1.0/lisk-nano-0.1.0.deb";
 		},
 		docker : function () {
 			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
@@ -116,7 +154,7 @@ var hbs = exphbs.create({
 			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
 		},
 		version : function () {
-			return "v0.4.1";
+			return "v0.3.2";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
@@ -177,10 +215,11 @@ app.use(function(req, res, next) {
 	res.status(404).redirect("/missing");
 });
 
-app.listen(config.port, function (err) {
-	if (err) {
-		console.error(err);
-	} else {
-		console.log("Server started at: " + config.port);
-	}
-});
+
+	app.listen(config.port, function (err) {
+		if (err) {
+			console.error(err);
+		} else {
+			console.log("Server started at: " + config.port);
+		}
+	});
