@@ -229,7 +229,7 @@ h1 {
 	&.fixed {
 		@include transform_translate(0, -100%);
 		@include transition_all(padding .5s, transform .5s);
-		background : $brown;
+		background : $gray2;
 
 		padding    : 8px 0 12px;
 
@@ -309,7 +309,7 @@ h1 {
 	left                    : 0;
 	padding-top             : inherit;
 	background              : url(/i/hero.jpg);
-	background-color        : $brown;
+	background-color        : $gray2;
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
 	-o-background-size      : cover;
@@ -520,7 +520,7 @@ $rectWidth : 1180px;
 	left       : 0;
 	min-height : 570px;
 	color      : $color_gray_g;
-	background : $brown1;
+	background : $gray3;
 
 	&:before {
 		position   : absolute;
@@ -529,7 +529,7 @@ $rectWidth : 1180px;
 		left       : 0;
 		height     : 470px;
 		content    : '';
-		background : $brown;
+		background : $gray2;
 	}
 
 	.documents_mode & {
