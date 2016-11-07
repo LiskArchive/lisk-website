@@ -166,10 +166,16 @@ var conferences = [
 		date: "20th October 2016"
 	},
 	{
-		name: "StartupCon",
+		name: "√ StartupCon",
 		country: "germany",
 		website: "http://www.startupcon.de",
 		date: "27th October 2016"
+	},
+	{
+		name: "√ Web Summit",
+		country: "portugal",
+		website: "http://websummit.net",
+		date: "7th-10th November 2016"
 	},
 	{
 		name: "33C3",
