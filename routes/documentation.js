@@ -179,6 +179,10 @@ var docs = [
 	{
 		title: "Lisk API",
 		i: "lisk-docs/APIReference"
+	},
+        {
+                title: "Testnet FAQ",
+                i: "lisk-docs/WhatIsTestnet"
 	}
 ]
 
