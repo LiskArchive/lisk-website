@@ -11,5 +11,6 @@ module.exports = {
 	careers: require('./careers.js'),
 	bounties: require('./bounties.js'),
 	whitepaper: require('./whitepaper.js'),
+	delegates: require('./delegates.js'),
 	missing: require('./missing.js')
 }
