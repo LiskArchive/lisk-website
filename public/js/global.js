@@ -46,6 +46,14 @@ $(function($){
 		return false;
 	});
 
+	$("#becomeADelegateBtn").on('click', function() {
+		$('html, body').animate({
+			scrollTop: $("#becomeADelegate").offset().top - 70
+		}, 2000);
+
+		return false;
+	});
+
 	$(".footer_menu_block").click(function (e) {
 		var menuItem = $(this);
 		menuItem.toggleClass("open_submenu");
