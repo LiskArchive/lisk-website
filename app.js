@@ -189,7 +189,7 @@ var hbs = exphbs.create({
 			return "https://login.lisk.io/";
 		},
 		mediakit: function() {
-			return "https://drive.google.com/file/d/0B7DjyOJhmpJkaU55VWRyeFhQYms/view?usp=sharing";
+			return "https://drive.google.com/file/d/0B6RSR8wsq2e1aFM3N1dqLWRYdXM/view?usp=sharing";
 		},
 		whitepaper: function() {
 			return "/whitepaper";
