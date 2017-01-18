@@ -1,15 +1,9 @@
 var jobs = [
 	{
 		img: "backend",
-		position : "2x Back End Developer",
+		position : "Back End Developer",
 		skills: "JavaScript · Node.JS · PostgreSQL",
-		description: "Do you have a passion for coding, cryptography, and algorithms? We are actively looking for two back end developers who can efficiently optimise and improve our existing codebase. You should also be able to implement new features from scratch with great quality."
-	},
-	{
-		img: "frontend",
-		position : "2x Front End Developer",
-		skills: "Javascript · HTML · CSS · Angular 1&2",
-		description: "Lisk needs to have the most useful and simple user interface of all crypto-currencies. Your task would be to achieve that together with us. From time to time you also would have to take care of our official web presence."
+		description: "Do you have a passion for coding, cryptography, and algorithms? We are actively looking for back end developers who can efficiently optimise and improve our existing codebase."
 	},
 	{
 		img: "designer",
