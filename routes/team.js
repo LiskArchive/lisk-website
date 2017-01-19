@@ -51,14 +51,6 @@ var correspondents = [
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=174939"
 	},
 	{
-		name: "Nick Friedrich",
-		lang: "netherlands",
-		country: "Netherlands",
-		twitter: "https://twitter.com/lisknederland",
-		btt: "https://bitcointalk.org/index.php?topic=1368751",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=231239"
-	},
-	{
 		name: "Joel Fernández",
 		lang: "puertorico",
 		country: "Puerto Rico",
