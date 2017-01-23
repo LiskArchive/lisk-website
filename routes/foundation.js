@@ -22,13 +22,6 @@ var adviser = [
 		description: "Technical Adviser",
 		linked: "https://www.linkedin.com/in/boris-povod-361a1b79/en",
 		twitter: "https://twitter.com/Mr_Povod"
-	},
-	{
-		name: "Axel Hellinger",
-		img : "hellinger",
-		company: "Kanzlei Hellinger",
-		description: "Legal Adviser",
-		linked: "https://de.linkedin.com/in/ahellinger"
 	}
 ];
 
@@ -170,15 +163,27 @@ var conferences = [
 		date: "7th-10th November 2016"
 	},
 	{
-		name: "33C3",
+		name: "√ 33C3",
 		country: "germany",
 		website: "https://events.ccc.de",
 		date: "27th-30th December 2016"
+	},
+	{
+		name: "Bitcoin SF: Sidechains and Lisk",
+		country: "usa",
+		website: "https://www.meetup.com/San-Francisco-Bitcoin-Social/events/228473712/",
+		date: "31st January 2017"
+	},
+	{
+		name: "New Finance Meetup NYC",
+		country: "usa",
+		website: "https://www.meetup.com/NewFinanceNewYork/events/236838011/",
+		date: "1st February 2017"
 	}
 ];
 
 module.exports = function (app) {
-	app.get("/team", function (req, res) {
-		return res.render("team", {pageId: "team", title: "Team", conferences: conferences, correspondents: correspondents, adviser : adviser, description: "Take a look at the team which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, crypti, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
+	app.get("/foundation", function (req, res) {
+		return res.render("foundation", {pageId: "foundation", title: "The Foundation", conferences: conferences, correspondents: correspondents, adviser : adviser, description: "Take a look at the Lisk Foundation which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
 	});
 }
