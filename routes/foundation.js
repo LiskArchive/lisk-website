@@ -83,15 +83,6 @@ var correspondents = [
 		twitter: "https://twitter.com/LiskAustralia",
 		btt: "https://bitcointalk.org/index.php?topic=1346646",
 		linked: "https://au.linkedin.com/in/daniel-vassilev-8b0a59b2"
-	},
-	{
-		name: "Samuel Heinrichs",
-		lang: "brazil",
-		country: "Brazil",
-		facebook: "https://www.facebook.com/groups/liskbr/",
-		btt: "https://bitcointalk.org/index.php?topic=1348132",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=821447",
-		linked: "https://www.linkedin.com/in/samuel-heinrichs-243891a0"
 	}
 ];
 
@@ -169,13 +160,13 @@ var conferences = [
 		date: "27th-30th December 2016"
 	},
 	{
-		name: "Bitcoin SF: Sidechains and Lisk",
+		name: "√ Bitcoin SF: Sidechains and Lisk",
 		country: "usa",
 		website: "https://www.meetup.com/San-Francisco-Bitcoin-Social/events/228473712/",
 		date: "31st January 2017"
 	},
 	{
-		name: "New Finance Meetup NYC",
+		name: "√ New Finance Meetup NYC",
 		country: "usa",
 		website: "https://www.meetup.com/NewFinanceNewYork/events/236838011/",
 		date: "1st February 2017"
