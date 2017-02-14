@@ -44,14 +44,6 @@ var correspondents = [
 		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=174939"
 	},
 	{
-		name: "Joel Fernández",
-		lang: "puertorico",
-		country: "Puerto Rico",
-		btt: "https://bitcointalk.org/index.php?topic=1347362",
-		pm: "https://bitcointalk.org/index.php?action=pm;sa=send;u=157356",
-		linked: "https://www.linkedin.com/in/joel-fernández-92669359"
-	},
-	{
 		name: "Kostayntyn Ahafontsev",
 		lang: "ukraine",
 		country: "Ukraine",
