@@ -162,6 +162,24 @@ var conferences = [
 		country: "usa",
 		website: "https://www.meetup.com/NewFinanceNewYork/events/236838011/",
 		date: "1st February 2017"
+	},
+	{
+		name: "Lisk Berlin - Blockchain Meetup",
+		country: "germany",
+		website: "https://www.meetup.com/de-DE/Lisk-Berlin-Blockchain-Meetup/",
+		date: "9th March 2017"
+	},
+	{
+		name: "Consensus 2017",
+		country: "usa",
+		website: "http://www.coindesk.com/events/consensus-2017/",
+		date: "22nd-24th May 2017"
+	},
+	{
+		name: "Distribute - Blockchain Conference",
+		country: "germany",
+		website: "http://www.distribute-conference.com",
+		date: "16th June 2017"
 	}
 ];
 
