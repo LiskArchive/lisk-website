@@ -107,16 +107,16 @@ var app = express();
 var hbs = exphbs.create({
 	defaultLayout : 'main',
 	helpers : {
-    rewardTime : function () {
+    		rewardTime : function () {
 			return rewardTime;
 		},
-    marketcap : function () {
+    		marketcap : function () {
 			return marketcap;
 		},
-    volume : function () {
+    		volume : function () {
 			return volume;
 		},
-    price : function () {
+    		price : function () {
 			return price;
 		},
 		price_usd : function () { return price_usd; },
@@ -134,8 +134,8 @@ var hbs = exphbs.create({
 		chinese_macos: function () {
 			return "";
 		},
-    binaries : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
+    		binaries : function () {
+			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
 		nano_macos : function () {
 			return "https://downloads.lisk.io/lisk-nano/0.1.2/lisk-nano-0.1.2.dmg";
@@ -147,16 +147,16 @@ var hbs = exphbs.create({
 			return "https://downloads.lisk.io/lisk-nano/0.1.2/lisk-nano-0.1.2.deb";
 		},
 		docker : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/DockerInstall";
+			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
 		},
 		armv6 : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
+			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
 		armv7 : function () {
-			return "https://lisk.io/documentation?i=lisk-docs/BinaryInstall";
+			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
 		version : function () {
-			return "v0.5.1";
+			return "v0.5.2";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
@@ -180,7 +180,7 @@ var hbs = exphbs.create({
 			return "http://downloads.lisk.chat/rocketchat_amd64.deb";
 		},
 		documentation: function () {
-			return "/documentation?i=lisk-docs/README";
+			return "https://github.com/LiskHQ/lisk-wiki/wiki";
 		},
 		dappstore: function () {
 			return "https://store.lisk.io/";
@@ -192,7 +192,7 @@ var hbs = exphbs.create({
 			return "https://drive.google.com/file/d/0B6RSR8wsq2e1aFM3N1dqLWRYdXM/view?usp=sharing";
 		},
 		whitepaper: function() {
-			return "/whitepaper";
+			return "https://github.com/LiskHQ/lisk-wiki/wiki";
 		}
 	}
 });
