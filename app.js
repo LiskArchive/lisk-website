@@ -24,8 +24,8 @@ setInterval(function() {
         return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
   	}
       	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
-      	volume = body.volume.usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
-    	marketcap = body.market_cap.usd.toString().substring(0,8).replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commata for better readability
+      	volume = parseInt(body.volume.usd).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
+    	marketcap = body.market_cap.usd.toString().substring(0,8).replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
     }
   )
 }, 5000);
