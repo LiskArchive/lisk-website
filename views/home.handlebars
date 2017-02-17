@@ -47,7 +47,7 @@
                         <div class="section_inner">
                             <div class="step_description">
                                 <h2 class="step_caption fw_600">Build Incredible Applications</h2>
-                                <p>Lisk blockchain apps can be built from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, every app is running in its own sidechain to ensure that Lisk itself is safe. In the future all apps will be executed in the Lisk VM to ensure they are safe to run on any node. Learn how to code blockchain apps in our documentation section.</p><a href="/documentation?i=lisk-dapps-docs/README" class="btn_v2 fw_600 wide_btn white_btn">How to Code</a>
+                                <p>Lisk blockchain apps will be built from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, every app will run in its own sidechain to ensure that Lisk itself is safe. Currently in development, these features will become available towards the end of the year. Learn more about blockchain apps and what Lisk is about in the following blog post 'What is Lisk?'.</p><a href="https://blog.lisk.io/what-is-lisk-and-what-it-isnt-e7b6b6188211" class="btn_v2 fw_600 wide_btn white_btn">What is Lisk?</a>
                             </div>
                         </div>
                         <div class="step_code_block">{{> sandbox }}</div>
@@ -60,9 +60,8 @@
                         <div class="section_inner">
                             <div class="step_description">
                                 <h2 class="step_caption fw_600">Easy, Rapid Deployment</h2>
-                                <p>The Lisk network allows for a multitude of storage options for your blockchain apps. Easily deploy your code in a .zip archive to services such as GitHub or your own web server.<br><br>
+                                <p>The Lisk network will allow for a multitude of storage options for your blockchain apps. Easily deploy your code in a .zip archive to services such as GitHub or your own web server.<br><br>
                                 Once deployed you can continue to register your app on the Lisk network. Simply fill in the necessary fields like name, description, tags, the download link, and you are done.</p>
-                                <!--<a href="/documentation?i=DappDeployment" class="btn_v2 fw_600 wide_btn white_btn">How to deploy</a>-->
                             </div>
                             <figure class="step_figure">
                                 <p><img src="i/home/integrations.png" alt="Upload to one of the following services"></p>
@@ -77,9 +76,9 @@
                         <div class="section_inner">
                             <div class="step_description">
                                 <h2 class="step_caption fw_600">Unlock the Power of Lisk</h2>
-                                <p>The Lisk network is a decentralized powerhouse. By utilizing our extensive user base, you can quickly find 3rd party nodes to execute your blockchain app through servers all over the world in a truly decentralized manner.<br><br>
+                                <p>The Lisk network is a decentralized powerhouse. By utilizing our extensive user base, you can quickly find 3rd party nodes to execute your future blockchain app through servers all over the world in a truly decentralized manner.<br><br>
                                 Combined with the Lisk Directory and our global community network your app will quickly find its first users and can build out to conquer the world!</p>
-                                <a href="https://login.lisk.io/" class="btn_v2 fw_600 wide_btn white_btn">Lisk App Directory</a>
+                                <a href="/features" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
                             </div>
                             <ul class="work_process">
                                 <li class="work_process_step">
@@ -110,9 +109,8 @@
             <div class="section_inner">
                 <div class="section_content clearfix ">
                     <div class="partners_block">
-                        <div class="section_caption text_center text_gray">Lisk Apps</div>
+                        <div class="section_caption text_center text_gray">App Examples</div>
                         <ul class="dapps_list">
-                        <!-- More than 3 rows, make it a slider -->
                             {{#each apps}}
                             <li class="dapps_item"><a href="{{url}}" target="_blank"><img src="i/dapps/{{image}}"></img></a><br>{{description}}</li>
                             {{/each}}
@@ -140,13 +138,6 @@
                               <p class="text_center">You can power up a VPS on Azure, AWS, Google Cloud, Digital Ocean or Vultr and use Lisk as the Blockchain as a Service (BaaS) platform of your choice. Additionally, you can use your Raspberry Pi to build a custom BaaS cluster from your home.</p>
                           </div>
                           <div class="dapp_slide_img"><img src="/i/home/blockchain_as_a_service.png" alt="Blockchain as a Service"/></div>
-                      </div>
-                      <div class="dapp_slide">
-                          <div class="lisk_info">
-                              <div class="section_caption text_gray">Multi-Platform Support</div>
-                              <p class="text_center">Lisk is a truly versatile platform. It runs on high performance VPS or on inexpensive, low-end ARM devices like a Raspberry Pi or Odroid. You can execute our client on Windows, Mac OS and Linux. Lisk is open source that means other platforms can be supported easily.</p>
-                          </div>
-                          <div class="dapp_slide_img"><img src="/i/home/multi_platform.png" alt="Multi-Platform Support"/></div>
                       </div>
                     </div>
                 </div>
@@ -207,10 +198,9 @@
             </div>
             <div class="gl_table_cell">
                 <div class="section_inner">
-                    <!--<h1 class="hero_title">Blockchain Applications</h1>
-                    <div class="hero_text">Written in JavaScript. Running on Sidechains.</div> <a href="/download" class="btn_v2 fw_600 wide_btn blue_btn">Download</a> <a href="" id="readMoreBtn" class="btn_v2 fw_600 wide_btn white_btn">Read More</a>-->
-                    <h1 class="hero_title">Community Forging</h1>
-                    <div class="hero_text">{{rewardTime}}</div> <!--<a href="/download" class="btn_v2 fw_600 wide_btn blue_btn">Download Lisk</a>--><a href="/delegates" class="btn_v2 fw_600 wide_btn blue_btn">Become a Delegate</a> <!--id="readMoreBtn"-->
+                    <h1 class="hero_title">Blockchain Applications</h1>
+                    <div class="hero_text">Written in JavaScript. Running on Sidechains.</div>
+                    <div class="hero_text"><a href="/download" class="btn_v2 fw_600 wide_btn blue_btn">Download Lisk</a> <a href="/delegates" class="btn_v2 fw_600 wide_btn blue_btn">Become a Delegate</a></div>
                 </div>
             </div>
         </div>
