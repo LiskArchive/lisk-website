@@ -27,7 +27,7 @@ var apps = [
 	{
 		url: "mailto:business@lisk.io",
 		image: "newdapp.png",
-		description: "You developed an app?"
+		description: "You developed a prototype?"
 	}
 ];
 
