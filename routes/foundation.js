@@ -1,13 +1,5 @@
 var adviser = [
 	{
-		name: "Charles Hoskinson",
-		img : "charles_hoskinson",
-		company: "Input Output HK",
-		description: "Senior Adviser",
-		linked: "https://www.linkedin.com/in/charles-hoskinson-1a95a4b4",
-		twitter: "https://twitter.com/IOHK_Charles"
-	},
-	{
 		name: "Steven Nerayoff",
 		img : "steven_nerayoff",
 		company: "Maple Ventures",
