@@ -2,7 +2,6 @@ var express = require('express'),
     exphbs  = require('express-handlebars'),
     config  = require('./config.json'),
     routes  = require('./routes'),
-    bter    = require('./bter.js'),
     request = require('request'),
     bodyParser = require('body-parser');
 
@@ -65,43 +64,6 @@ setInterval(function() {
     }
   )
 }, 5000);
-
-
-
-function getBtcUsd() {
-	bter.getPrice(function (err, result) {
-		if (!err) {
-			price_usd = result.toFixed(4);;
-		} else {
-			console.error(err);
-
-			if (!price_usd) {
-				price_usd = "?";
-			}
-		}
-
-		setTimeout(getBtcUsd, 1000 * 60 * 5);
-	});
-}
-
-function getBtc() {
-	bter.getLISKBTC(function (err, result) {
-		if (!err) {
-			price_btc = result;
-		} else {
-			console.log(err);
-
-			if (!price_btc) {
-				price_btc = "?";
-			}
-		}
-
-		setTimeout(getBtc, 1000 * 60 * 5);
-	})
-}
-
-getBtcUsd();
-getBtc();
 
 var app = express();
 var hbs = exphbs.create({
