@@ -13,12 +13,6 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>http://lisk.io/documentation</loc>
-        <lastmod>2016-01-12T05:00:00+00:00</lastmod>
-        <priority>0.6</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>http://lisk.io/download</loc>
         <lastmod>2016-01-12T05:00:00+00:00</lastmod>
         <priority>0.6</priority>
