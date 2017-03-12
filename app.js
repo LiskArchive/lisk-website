@@ -190,9 +190,6 @@ var hbs = exphbs.create({
 		},
 		mediakit: function() {
 			return "https://drive.google.com/file/d/0B6RSR8wsq2e1aFM3N1dqLWRYdXM/view?usp=sharing";
-		},
-		whitepaper: function() {
-			return "https://github.com/LiskHQ/lisk-wiki/wiki";
 		}
 	}
 });
