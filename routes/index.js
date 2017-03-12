@@ -6,7 +6,6 @@ module.exports = {
 	features : require('./features.js'),
 	foundation: require('./foundation.js'),
 	contact_us: require('./contact_us.js'),
-	documentation: require('./documentation.js'),
 	ico: require('./ico.js'),
 	careers: require('./careers.js'),
 	bounties: require('./bounties.js'),

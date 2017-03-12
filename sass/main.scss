@@ -86,10 +86,6 @@ h1 {
 .base {
 	position       : relative;
 	padding-bottom : 570px;
-
-	.documents_mode & {
-		padding-bottom : 100px;
-	}
 }
 
 .mb {
@@ -120,10 +116,6 @@ h1 {
 
 .section_inner {
 	position : relative;
-
-	.documents_mode & {
-		max-width : 1000px;
-	}
 }
 
 .header_inner {
@@ -530,10 +522,6 @@ $rectWidth : 1180px;
 		height     : 470px;
 		content    : '';
 		background : $gray2;
-	}
-
-	.documents_mode & {
-		min-height : 100px;
 	}
 }
 
