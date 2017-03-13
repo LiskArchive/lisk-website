@@ -162,7 +162,7 @@ var conferences = [
 		date: "9th March 2017"
 	},
 	{
-		name: "Digitalisierung & Start-up",
+		name: "Digitalisierung & Start-ups",
 		country: "germany",
 		website: "https://www.frankfurter-zukunftsrat.de/projekte/digitalisierung-start-ups/",
 		date: "23rd March 2017"
