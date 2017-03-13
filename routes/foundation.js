@@ -156,16 +156,28 @@ var conferences = [
 		date: "1st February 2017"
 	},
 	{
-		name: "Lisk Berlin - Blockchain Meetup",
+		name: "√ Lisk Berlin - Blockchain Meetup",
 		country: "germany",
 		website: "https://www.meetup.com/de-DE/Lisk-Berlin-Blockchain-Meetup/",
 		date: "9th March 2017"
+	},
+	{
+		name: "Digitalisierung & Start-ups",
+		country: "germany",
+		website: "https://www.frankfurter-zukunftsrat.de/projekte/digitalisierung-start-ups/",
+		date: "23rd March 2017"
 	},
 	{
 		name: "Consensus 2017",
 		country: "usa",
 		website: "http://www.coindesk.com/events/consensus-2017/",
 		date: "22nd-24th May 2017"
+	},
+	{
+		name: "Blockchain Expo",
+		country: "germany",
+		website: "http://blockchain-expo.com/europe/track/blockchain-for-industry-berlin/",
+		date: "1st-2nd June 2017"
 	},
 	{
 		name: "Distribute - Blockchain Conference",
