@@ -133,13 +133,13 @@ var hbs = exphbs.create({
 			return "https://github.com/LiskHQ/lisk";
 		},
 		liskchat_windows: function () {
-			return "http://downloads.lisk.chat/rocketchat.exe";
+			return "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.5.0/rocketchat-Setup-2.5.0.exe";
 		},
 		liskchat_macos: function () {
-			return "http://downloads.lisk.chat/rocketchat.dmg";
+			return "https://itunes.apple.com/app/rocket.chat/id1086818840";
 		},
 		liskchat_linux: function () {
-			return "http://downloads.lisk.chat/rocketchat_amd64.deb";
+			return "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.5.0/rocketchat_2.5.0_amd64.deb";
 		},
 		documentation: function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki";
