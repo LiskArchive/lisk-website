@@ -38,9 +38,19 @@ var partnerships = [
 		url: "https://microsoft.com/"
 	},
 	{
-		name: "Chain of Things",
-		img: "chainofthings",
-		url: "http://chainofthings.com/"
+		name: "lightcurve",
+		img: "lightcurve",
+		url: "http://www.lightcurve.io"
+	},
+	{
+		name: "WachsmanPR",
+		img: "wachsmanpr",
+		url: "http://wachsmanpr.com"
+	},
+	{
+		name: "Bitcoin Suisse AG",
+		img: "bitcoinsuisse",
+		url: "https://www.bitcoinsuisse.ch"
 	},
 	{
 		name: "BitcoinPRBuzz",
@@ -48,9 +58,9 @@ var partnerships = [
 		url: "http://bitcoinprbuzz.com"
 	},
 	{
-		name: "WachsmanPR",
-		img: "wachsmanpr",
-		url: "http://wachsmanpr.com"
+		name: "Chain of Things",
+		img: "chainofthings",
+		url: "http://chainofthings.com/"
 	}
 ];
 
