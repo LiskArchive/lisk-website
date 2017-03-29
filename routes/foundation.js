@@ -1,22 +1,3 @@
-var adviser = [
-	{
-		name: "Steven Nerayoff",
-		img : "steven_nerayoff",
-		company: "Maple Ventures",
-		description: "Senior Adviser",
-		linked: "https://www.linkedin.com/in/nerayoff",
-		twitter: "https://twitter.com/stevennerayoff"
-	},
-	{
-		name: "Boris Povod",
-		img : "boris_povod",
-		company: "Wings",
-		description: "Technical Adviser",
-		linked: "https://www.linkedin.com/in/boris-povod-361a1b79/en",
-		twitter: "https://twitter.com/Mr_Povod"
-	}
-];
-
 var correspondents = [
 	{
 		name: "Luiz Chen",
@@ -67,6 +48,12 @@ var correspondents = [
 		twitter: "https://twitter.com/LiskAustralia",
 		btt: "https://bitcointalk.org/index.php?topic=1346646",
 		linked: "https://au.linkedin.com/in/daniel-vassilev-8b0a59b2"
+	},
+	{
+		name: "John Cortesi",
+		lang: "france",
+		country: "France",
+		btt: "https://bitcointalk.org/index.php?topic=1354476"
 	}
 ];
 
@@ -162,7 +149,7 @@ var conferences = [
 		date: "9th March 2017"
 	},
 	{
-		name: "Digitalisierung & Start-ups",
+		name: "√ Digitalisierung & Start-ups",
 		country: "germany",
 		website: "https://www.frankfurter-zukunftsrat.de/projekte/digitalisierung-start-ups/",
 		date: "23rd March 2017"
@@ -189,6 +176,6 @@ var conferences = [
 
 module.exports = function (app) {
 	app.get("/foundation", function (req, res) {
-		return res.render("foundation", {pageId: "foundation", title: "The Foundation", conferences: conferences, correspondents: correspondents, adviser : adviser, description: "Take a look at the Lisk Foundation which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
+		return res.render("foundation", {pageId: "foundation", title: "The Foundation", conferences: conferences, correspondents: correspondents, description: "Take a look at the Lisk Foundation which makes hard problems simple and maintain Lisk on a regular basis.", words: "lisk, contact, team, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain", hasScript: false});
 	});
 }
