@@ -100,13 +100,13 @@ var hbs = exphbs.create({
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
 		nano_macos : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.2/lisk-nano-0.1.2.dmg";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0.dmg";
 		},
 		nano_windows : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.2/lisk-nano-0.1.2.exe";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0.exe";
 		},
 		nano_linux : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.1.2/lisk-nano-0.1.2.deb";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0.deb";
 		},
 		docker : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
