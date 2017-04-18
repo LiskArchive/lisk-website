@@ -106,7 +106,7 @@ var hbs = exphbs.create({
 			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0.exe";
 		},
 		nano_linux : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0.deb";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.0-x86_64.AppImage";
 		},
 		docker : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
