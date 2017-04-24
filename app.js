@@ -15,16 +15,17 @@ var price_usd = null,
 
 setInterval(function() {
     request({
-    	type: "GET",
-    	url: "http://coinmarketcap-nexuist.rhcloud.com/api/lsk",
-    	json: true
+        type: "GET",
+        url: "https://api.coinmarketcap.com/v1/ticker/lisk/",
+        json: true
     }, function (err, resp, body) {
-      if (err || !body.market_cap) {
+      if (err || !body[0].market_cap_usd) {
         return console.error("Can't get market cap from coinmarketcap.com: " + err.toString());
-  	}
-      	price = body.price.usd.toString().substring(0,5); // Cut to 3 numbers after comma
-      	volume = parseInt(body.volume.usd).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
-    	marketcap = body.market_cap.usd.toString().substring(0,8).replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
+        }
+        body = body[0];
+        price = body['price_usd'].toString().substring(0,5); // Cut to 3 numbers after comma
+        volume = parseInt(body['24h_volume_usd']).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
+        marketcap = body['market_cap_usd'].toString().substring(0,8).replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add comma for better readability
     }
   )
 }, 5000);
