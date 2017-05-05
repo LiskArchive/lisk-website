@@ -119,7 +119,7 @@ var hbs = exphbs.create({
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
 		version : function () {
-			return "v0.8.1";
+			return "v0.8.2";
 		},
 		blog : function () {
 			return "http://blog.lisk.io";
