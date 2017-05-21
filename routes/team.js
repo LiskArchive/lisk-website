@@ -6,17 +6,6 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Diego Garcia",
-		pic: "diego",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
-		name: "Guido Schmitz-Krummacher",
-		pic: "guido",
-		post: "Legal & Financials",
-	},
-	{
 		name: "Isabella Dell",
 		pic: "isabella",
 		post: "System Architect",
@@ -29,20 +18,8 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Lucas Isasmendi",
-		pic: "lucas",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
 		name: "Maciej Baj",
 		pic: "maciej",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
-		name: "Mariusz Serek",
-		pic: "mariusz",
 		post: "Back End Developer",
 		hired: " "
 	},
@@ -63,6 +40,35 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Vit Stanislav",
+		pic: "vit",
+		post: "Front End Developer",
+		hired: " "
+	},
+	{
+		name: "Diego Garcia",
+		pic: "diego",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
+		name: "Guido Schmitz-Krummacher",
+		pic: "guido",
+		post: "Legal & Financials",
+	},
+	{
+		name: "Lucas Isasmendi",
+		pic: "lucas",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
+		name: "Mariusz Serek",
+		pic: "mariusz",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
 		name: "Tobias Schwarz",
 		pic: "tobias",
 		post: "Full Stack Developer",
@@ -75,8 +81,8 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Vit Stanislav",
-		pic: "vit",
+		name: "Yashar Ayari",
+		pic: "yashar",
 		post: "Front End Developer",
 		hired: " "
 	}
