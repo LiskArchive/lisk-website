@@ -1,3 +1,22 @@
+.lisk_preview {
+	box-shadow: 0 15px 25px #222;
+	max-width: 100%;
+	max-height: 560px;
+	@include transition(all 200ms);
+	@media (max-height: 940px) {
+		max-height: 400px;
+	}
+	@media (max-height: 780px) {
+		max-height: 280px;
+	}
+}
+
+.hero_download {
+	color: #ddd;
+	font-size: 12px;
+	padding-top: 8px;
+}
+
 .feature_counter_block {
 	@extend %global_flex_block_row_nowrap_space_between_stretch;
 	padding : 53px 18px;

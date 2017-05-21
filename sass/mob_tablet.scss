@@ -168,6 +168,10 @@
 		float : none;
 	}
 
+	.hide_on_mobile {
+		display: none;
+	}
+
 	.menu_link {
 		&:before {}
 

@@ -1,0 +1,338 @@
+.about_block {
+	max-width      : 780px;
+	margin         : 0 auto;
+	padding-bottom : 70px;
+
+	p {
+		margin-bottom : 30px;
+		line-height   : 1.9;
+	}
+}
+
+.team_list {
+	@extend %clearfix;
+	margin     : 0 0 100px -20px;
+	text-align : center;
+}
+
+.team_unit {
+	float         : none;
+	display       : inline-block;
+	width         : 20%;
+	margin-bottom : 20px;
+	padding-left  : 20px;
+}
+
+.employee_card {
+	position   : relative;
+
+	.employee_block {
+		@include transition_all(transform .3s);
+		@extend %global_flex_block_column_nowrap_space_between_stretch;
+		position   : absolute;
+		border-radius: 26px;
+		top        : 0;
+		right      : 0;
+		bottom     : 0;
+		left       : 0;
+		padding    : 55px 20px;
+		text-align : center;
+		vertical-align: middle;
+		background : #fff;
+		box-shadow : 0 0 49px rgba(0, 0, 0, .29);
+	}
+
+	&:not(:hover) {
+		.employee_block {
+			display : none;
+		}
+	}
+}
+
+.employee_name {
+	margin-bottom : 20px;
+    font: 24px $RobotoMedium;
+    color: $color_gray_g;
+}
+
+.team_photo {
+  text-align: center;
+	img {
+		display   : block;
+		max-width : 100%;
+		border-radius: 28px;
+		margin    : 0 auto;
+	}
+}
+
+.employer_info {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	bottom: 3px;
+	font-size: 12px;
+}
+
+.employee_contact_link {
+	display         : inline-block;
+	margin          : 0 25px;
+	vertical-align  : top;
+	text-decoration : none;
+	font-size       : 26px;
+	color           : $color_gray_g;
+}
+
+.team_slider_holder {
+	position : relative;
+	padding  : 0 20px;
+
+	.slick-track {
+		@extend %clearfix;
+	}
+
+	.slider_next,
+	.slider_prev {
+		z-index    : 1;
+		cursor     : pointer;
+		position   : absolute;
+		top        : 42%;
+		text-align : center;
+		font-size  : 60px;
+		color      : $color_gray2_g;
+
+		&.slick-disabled {
+			cursor : default;
+			color  : #e1e5e7;
+		}
+	}
+
+	.slider_next {
+		right : 40px;
+	}
+
+	.slider_prev {
+		left : 40px;
+	}
+}
+
+.team_slider {
+	@extend %clearfix;
+	padding    : 80px 0 0px;
+	margin     : 0 auto;
+	overflow   : hidden;
+	max-width  : 980px;
+	border-bottom : 1px solid #ced5df;
+}
+
+.team_slider_first {
+	@extend %clearfix;
+	padding    : 0px;
+	margin     : 0 auto;
+	overflow   : hidden;
+	max-width  : 980px;
+	border-bottom : 1px solid #ced5df;
+}
+
+
+.team_slider_last {
+	@extend %clearfix;
+	padding    : 80px 0 0px;
+	margin     : 0 auto;
+	overflow   : hidden;
+	max-width  : 980px;
+}
+
+.team_slide {
+	@extend %global_flex_block_row_nowrap_space_between_stretch;
+	float      : left;
+	min-height : 260px;
+
+	p {
+		line-height : 1.5;
+		font-size   : 18px;
+	}
+}
+
+.team_slide_info {
+	position       : relative;
+	padding-bottom : 100px;
+}
+
+.collaboration_slide_info {
+	position       : relative;
+	padding-bottom : 20px;
+}
+
+.team_slide_share {
+	position : absolute;
+	left     : -25px;
+	bottom   : 85px;
+}
+
+.team_share_link {
+	display         : inline-block;
+	margin          : 5px 15px 0 25px;
+	float           : right;
+	text-decoration : none;
+	font-size       : 26px;
+	color           : $color_gray_g;
+}
+
+.team_slide_img {
+	min-width    : 280px;
+	max-width    : 100%;
+	margin-right : 120px;
+	color        : $color_gray_g;
+
+	img {
+		display        : inline-block;
+		vertical-align : top;
+		width          : 100%;
+		border-radius  : 28px;
+	}
+}
+
+.collaboration_slide_img {
+	min-width    : 280px;
+	max-width    : 100%;
+	margin-left  : 50px;
+	margin-right : 70px;
+	margin-top   : 30px;
+	color        : $color_gray_g;
+
+	img {
+		display        : inline-block;
+		vertical-align : middle;
+		width          : 100%;
+		border-radius  : 28px;
+
+	}
+}
+
+.team_slide_name {
+	margin-bottom : 18px;
+	font          : 36px/1 $RobotoMedium;
+}
+
+.team_slide_post {
+	color          : $def_text_color;
+	margin-bottom  : 40px;
+	font-family    : $RobotoMedium;
+	text-transform : uppercase;
+}
+
+.text_block {
+	line-height : 1.9;
+}
+
+.country_correspondents {
+	padding-top : 40px;
+}
+
+.conferences {
+	padding-top : 0px;
+}
+
+.country_correspondents_list {
+	padding : 25px 0 25px;
+}
+
+.country_corr_country {
+	@extend %clearfix;
+	font  : 24px/1 $RobotoMedium;
+	color : #626b7a;
+}
+
+.country_corr_flag {
+	float        : left;
+	margin-right : 25px;
+
+	img {
+		display : block;
+	}
+}
+
+.country_corr {
+	@extend %global_flex_block_row_nowrap_space_between_center;
+	height       : 65px;
+	position     : relative;
+	padding-left : 14%;
+
+	&:before {
+		@extend %vert_centr;
+		content  : '\2022';
+		position : absolute;
+		left     : 12.8%;
+	}
+
+	&:hover {
+		box-shadow : 0 0 9px rgba(0, 0, 0, .3);
+	}
+
+}
+
+.conference_att {
+	@extend %global_flex_block_row_nowrap_space_between_center;
+	height       : 65px;
+	position     : relative;
+	padding-left : 28px;
+	padding-right: 28px;
+
+	&:hover {
+		box-shadow : 0 0 9px rgba(0, 0, 0, .3);
+	}
+
+}
+
+.country_corr_name {
+	@include flex(0 44%);
+	font-size : 18px;
+	position  : relative;
+	color     : #626b7a;
+}
+
+.country_corr_info {
+	@extend %clearfix;
+	@include flex(0 56%);
+}
+
+.conference_info {
+	@extend %clearfix;
+	@include flex(0 56%);
+}
+
+.country_corr_share {
+	margin-left : -30px;
+}
+
+.conference_name {
+	font-size : 18px;
+	position  : relative;
+	color     : #626b7a;
+}
+
+.conference_date {
+	margin-left : 30px;
+}
+
+.conference_flag {
+	position: relative;
+	top: 4px;
+}
+
+.corr_share_link {
+	display         : inline-block;
+	margin          : 0 30px;
+	text-decoration : none;
+	font-size       : 18px;
+	color           : $color_gray_g;
+}
+
+.conference_share_link {
+	display         : inline-block;
+	margin          : 0 10px 0 0;
+	text-decoration : none;
+	font-size       : 18px;
+	color           : $color_gray_g;
+}

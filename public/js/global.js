@@ -115,7 +115,7 @@ function resize_f(){
 
 	});
 
-	body_var.toggleClass('collapsed_menu', browserWindow.width() < 1060);
+	body_var.toggleClass('collapsed_menu', browserWindow.width() < 1200);
 }
 
 function all_dialog_close(){

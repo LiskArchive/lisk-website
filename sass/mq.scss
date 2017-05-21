@@ -92,6 +92,8 @@
 		&.login_btn {
 			height      : 44px;
 			line-height : 44px;
+			margin-top: 10px;
+			display: none;
 		}
 
 	}
@@ -161,6 +163,10 @@
 
 	.menu_item {
 		float : none;
+	}
+
+	.hide_on_mobile {
+		display: none;
 	}
 
 	.menu_link {

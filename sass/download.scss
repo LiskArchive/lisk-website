@@ -1,3 +1,31 @@
+.gallery {
+    margin-top: 50px;
+	margin-bottom: 50px;
+    width: 100%;
+	text-align: center;
+}
+
+.gallery img {
+    width: 70%;
+	box-shadow: 0 3px 10px #aaa;
+}
+
+.download_btns {
+	text-align: center;
+}
+
+.download_btn_text {
+	padding-right: 20px;
+}
+
+.download_btn {
+	margin: 4px;
+}
+
+.lisk_wallet_downloads {
+	width: 250px;
+}
+
 .disabled {
 	opacity: 0.5;
 
