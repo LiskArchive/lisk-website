@@ -13,7 +13,7 @@ var price_usd = null,
     rewardTime = null;
 
 
-setInterval(function() {
+/*setInterval(function() {
     request({
         type: "GET",
         url: "https://api.coinmarketcap.com/v1/ticker/lisk/",
@@ -64,7 +64,7 @@ setInterval(function() {
 
     }
   )
-}, 5000);
+}, 5000);*/
 
 var app = express();
 var hbs = exphbs.create({
@@ -100,14 +100,20 @@ var hbs = exphbs.create({
     		binaries : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Binary-Install";
 		},
+		nano : function () {
+			return "1.0.0";
+		},
+		nano_size : function () {
+			return "50";
+		},
 		nano_macos : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.2.1/lisk-nano-0.2.1.dmg";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.1.dmg";
 		},
 		nano_windows : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.2.1/lisk-nano-0.2.1.exe";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.1.exe";
 		},
 		nano_linux : function () {
-			return "https://downloads.lisk.io/lisk-nano/0.2.1/lisk-nano-0.2.1-x86_64.AppImage";
+			return "https://downloads.lisk.io/lisk-nano/0.2.0/lisk-nano-0.2.1-x86_64.AppImage";
 		},
 		docker : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
@@ -127,6 +133,9 @@ var hbs = exphbs.create({
 		liskcli : function () {
 			return "https://www.npmjs.com/package/lisk-cli";
 		},
+		liskjs : function () {
+			return "https://www.npmjs.com/package/lisk-js";
+		},
 		lisksdk : function () {
 			return "https://github.com/LiskHQ/lisk-sdk";
 		},
@@ -143,7 +152,7 @@ var hbs = exphbs.create({
 			return "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.5.0/rocketchat_2.5.0_amd64.deb";
 		},
 		documentation: function () {
-			return "https://github.com/LiskHQ/lisk-wiki/wiki";
+			return "https://docs.lisk.io/";
 		},
 		dappstore: function () {
 			return "https://store.lisk.io/";

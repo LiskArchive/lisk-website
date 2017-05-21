@@ -1,25 +1,13 @@
 <main class="wrapper h_420">
     <div class="base">
-        <div class="section white_section_2">
-            <div class="section_inner">
-                <div class="section_content text_block"><a href="https://twitter.com/intent/tweet?text=The%20Lisk%20Foundation%20looks%20awesome%20with%2C%20many%20contributors%20and%20great%20partnerships.%20Check%20it%20out%20on&amp;url=https://lisk.io/team" class="material-icons consensus_btn" target="_blank">share</a>
-                    <div class="about_block">
-                        <div class="section_caption text_gray">Lisk is the future and we are here to build it</div>
-                        <p>The Lisk team truly epitomizes the spirit of open source development and public collaborations. Everyone can help out building Lisk, either by writing tutorials, cutting videos, promoting the platform, supporting the community, being a country ambassador or developing the core. Just get in contact with us!</p>
-                        <p class="text_center text_center_mob btns_v1"><a href="https://lisk.chat/" class="btn_v2 wide_btn blue_btn" target="_blank">Join our Chat</a><a href="https://forum.lisk.io" class="btn_v2 wide_btn gray_btn" target="_blank">Our Forum</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="section gray_section">
             <div class="section_inner">
                 <div class="section_content clearfix">
-                    <div class="section_caption text_gray text_center">Meet the Foundation behind Lisk</div>
                     <!-- <div class="slider_prev material-icons">chevron_left</div>
                     <div class="slider_next material-icons">chevron_right</div> -->
-                    <div class="team_slider teamSlider">
+                    <div class="team_slider_first teamSlider">
                         <div class="team_slide">
-                            <div class="team_slide_img"><img src="i/members/max_kordek.jpeg"></div>
+                            <div class="team_slide_img"><img src="i/members/max.jpg"></div>
                             <div class="team_slide_info">
                                 <div class="team_slide_name">Max Kordek <a target="_blank" href="https://www.linkedin.com/in/maxkordek?locale=en_US" class="team_share_link fa fa-linkedin"></a><a target="_blank" href="https://twitter.com/MaxKordek" class="team_share_link fa fa-twitter"></a></div>
                                 <div class="team_slide_post">PRESIDENT &middot; FOUNDER</div>
@@ -29,7 +17,7 @@
                     </div>
                     <div class="team_slider teamSlider">
                         <div class="team_slide">
-                            <div class="team_slide_img"><img src="i/members/oliver_beddows.jpeg"></div>
+                            <div class="team_slide_img"><img src="i/members/oliver.jpg"></div>
                             <div class="team_slide_info">
                                 <div class="team_slide_name">Oliver Beddows <a target="_blank" href="https://www.linkedin.com/in/oliver-beddows-19aa09107" class="team_share_link fa fa-linkedin"></a><a target="_blank" href="https://twitter.com/Karmacrypto" class="team_share_link fa fa-twitter"></a></div>
                                 <div class="team_slide_post">VICE PRESIDENT &middot; FOUNDER</div>
@@ -37,70 +25,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team_slider teamSlider">
+                    <div class="team_slider_last teamSlider">
                         <div class="team_slide">
-                            <div class="team_slide_img"><img src="i/members/guido_schmitz_krummacher.jpeg"></div>
+                            <div class="team_slide_img"><img src="i/members/guido.jpg"></div>
                             <div class="team_slide_info">
                                 <div class="team_slide_name">Guido Schmitz-Krummacher <a target="_blank" href="https://www.linkedin.com/in/guidos1" class="team_share_link fa fa-linkedin"></a></div>
                                 <div class="team_slide_post">MEMBER</div>
-                                <p>Guido is an experienced entrepreneur with more than 25 years of leadership experience in companies at different stages and segments. His background is international-law and economics (EMBA in finance) and he is based in Zug/ Switzerland. Guido is interested in new technologies and is supporting start-ups engaged in blockchain-technologies at board level to set up their legal and financial environment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section white_section">
-            <div class="section_inner">
-                <div class="section_content text_block">
-                    <div class="about_block fz_18">
-                        <div class="section_caption text_gray">Country Ambassadors</div>
-                        <div class="text_block">
-                            <p>Lisk is building up a team of <a href="https://blog.lisk.io/lisk-country-ambassadors-initiative-6fccbcabcb15" class="gl_link text_blue" target="_blank">country based ambassadors</a> to help spread the word about the power of the Lisk network. These roles typically include translations of relevant content, community organization, and the creation of small meetup groups. If you love Lisk and would like to be an ambassador for Lisk in your Country, please send a message to Max Kordek. Please note that the country ambassadors are often not the Bitcointalk thread starters, please don't confuse them.</p>
-                        </div>
-                        <div class="country_correspondents">
-                            {{#each correspondents}}
-                            <div class="country_corr_block">
-                                <div class="country_corr_country"><span class="country_corr_flag"><img src="i/countries/flags/flag_{{lang}}.png" alt="{{country}} Lisk Ambassadors"></span><span>{{country}}</span></div>
-                                <ul class="country_correspondents_list">
-                                    <li class="country_corr">
-                                        <div class="country_corr_name">{{name}}</div>
-                                        <div class="country_corr_info">
-                                            <div class="fl">
-                                                <div class="country_corr_share">{{#if btt}}<a href="{{btt}}" class="corr_share_link fa fa-bitcoin" target="_blank"></a>{{/if}}{{#if facebook}}<a href="{{facebook}}" class="corr_share_link fa fa-facebook" target="_blank"></a>{{/if}}{{#if twitter}}<a href="{{twitter}}" class="corr_share_link fa fa-twitter" target="_blank"></a>{{/if}}</div>
-                                            </div>
-                                            <div class="fr">{{#if linked}}<a href="{{linked}}" class="corr_share_link fa fa-linkedin" target="_blank"></a>{{/if}}{{#if pm}}<a href="{{pm}}" class="corr_share_link fa fa-envelope fa-blue" target="_blank"></a></div>{{/if}}
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            {{/each}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section gray_section">
-            <div class="section_inner">
-                <div class="section_content text_block">
-                    <div class="about_block fz_18">
-                        <div class="section_caption text_gray">Conference Attendance</div>
-                        <div class="conferences">
-                            <div class="country_corr_block">
-                                <ul class="country_correspondents_list">
-                            {{#each conferences}}
-                                    <li class="conference_att">
-                                        <div class="conference_name">{{name}}</div>
-                                        <div class="conference_info">
-                                            <div class="fl">
-                                                <div class="conference_date">{{#if date}}{{date}}{{/if}}</div>
-                                            </div>
-                                            <div class="fr">{{#if website}}<a href="{{website}}" class="conference_share_link fa fa-globe" target="_blank"></a>{{/if}} <img src="i/countries/flags/flag_{{country}}.png" alt="{{country}}" class="conference_flag"></div>
-                                        </div>
-                                    </li>
-
-                            {{/each}}
-                             </ul>
+                                <p>Guido is an experienced entrepreneur with more than 25 years of leadership experience in companies at different stages and segments. His background is international-law and economics (EMBA in finance) and he is based in Zug, Switzerland. Guido is interested in new technologies and is supporting start-ups engaged in blockchain-technologies at board level to set up their legal and financial environment.</p>
                             </div>
                         </div>
                     </div>
@@ -113,8 +44,8 @@
         <div class="abs_container">
             <div class="gl_table_cell">
                 <div class="section_inner">
-                    <h1 class="hero_title">The Foundation</h1>
-                    <div class="hero_text">Building Lisk since 2016</div>
+                    <h1 class="hero_title">The Lisk Foundation</h1>
+                    <div class="hero_text">Overseeing Lisk since 2016</div>
                 </div>
             </div>
         </div>

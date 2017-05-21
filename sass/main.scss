@@ -47,7 +47,7 @@ h1 {
 
 		$height: 100; // Set your height in vh
 		$heightPercent: $height/100;
-		padding-top: 580px;
+		padding-top: 100vh;
 
 		@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
 		  padding-top: 480px*$heightPercent;
@@ -234,7 +234,8 @@ h1 {
 			min-width : 285px;
 		}
 
-		.login_btn {}
+		.login_btn {
+		}
 	}
 
 	&.sticky {
@@ -368,6 +369,7 @@ h1 {
 
 .main_menu {
 	padding-bottom : 2px;
+	padding-top    : 9px;
 
 	.collapsed_menu & {
 		display    : none;
@@ -450,8 +452,8 @@ h1 {
 	}
 
 	.fixed & {
-		padding   : 0 16px;
-		font-size : 16px;
+		padding   : 0 24px;
+		font-size : 14px;
 		color     : $white;
 
 		&:before {
@@ -577,6 +579,25 @@ $rectWidth : 1180px;
 	text-align : center;
 	color      : $white;
 	@include flex(0 60%);
+}
+
+.contactus {
+	text-align : center;
+	padding-right: 0;
+	@include flex(0 13%);
+	
+	a:link {
+		color : $gray;
+	}
+
+	a:visited {
+		color : $gray;
+	}
+
+	a:hover {
+		color : $orange;
+	}
+	
 }
 
 .logo_holder, .dev_block {
