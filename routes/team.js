@@ -14,7 +14,7 @@ var members = [
 	{
 		name: "Joel Fernandez",
 		pic: "joel",
-		post: "Communications",
+		post: "Communications Lead",
 		hired: " "
 	},
 	{
@@ -26,12 +26,12 @@ var members = [
 	{
 		name: "Max Kordek",
 		pic: "max",
-		post: "Business Lead",
+		post: "Co-Founder",
 	},
 	{
 		name: "Oliver Beddows",
 		pic: "oliver",
-		post: "Technical Lead",
+		post: "Co-Founder",
 	},
 	{
 		name: "Thomas Schouten",
