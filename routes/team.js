@@ -81,6 +81,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Will Clark",
+		pic: "will",
+		post: "Full Stack Developer",
+		hired: " "
+	},
+	{
 		name: "Yashar Ayari",
 		pic: "yashar",
 		post: "Front End Developer",
