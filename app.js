@@ -107,13 +107,13 @@ var hbs = exphbs.create({
 			return "50";
 		},
 		nano_macos : function () {
-			return "https://downloads.lisk.io/lisk-nano/1.0.2/lisk-nano-mac-1.0.2.dmg";
+			return "https://downloads.lisk.io/lisk-nano/1.0.1/lisk-nano-mac-1.0.1.dmg";
 		},
 		nano_windows : function () {
-			return "https://downloads.lisk.io/lisk-nano/1.0.2/lisk-nano-win-1.0.2.exe";
+			return "https://downloads.lisk.io/lisk-nano/1.0.1/lisk-nano-win-1.0.1.exe";
 		},
 		nano_linux : function () {
-			return "https://downloads.lisk.io/lisk-nano/1.0.2/lisk-nano-1.0.2-x86_64.AppImage";
+			return "https://downloads.lisk.io/lisk-nano/1.0.1/lisk-nano-1.0.1-x86_64.AppImage";
 		},
 		docker : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
@@ -130,8 +130,8 @@ var hbs = exphbs.create({
 		blog : function () {
 			return "http://blog.lisk.io";
 		},
-		liskcli : function () {
-			return "https://www.npmjs.com/package/lisk-cli";
+		lisky : function () {
+			return "https://www.npmjs.com/package/lisky";
 		},
 		liskjs : function () {
 			return "https://www.npmjs.com/package/lisk-js";

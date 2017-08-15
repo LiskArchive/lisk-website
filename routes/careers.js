@@ -3,13 +3,57 @@ var jobs = [
 		img: "backend",
 		position : "Back End Developer",
 		skills: "JavaScript · Node.JS · PostgreSQL",
-		description: "Do you have a passion for coding, cryptography, and algorithms? We are actively looking for back end developers who can efficiently optimise and improve our existing codebase."
+		description: "We are actively looking for back end developers who can efficiently optimise and improve our existing codebases.",
+		link: "https://angel.co/lisk/jobs/180319-back-end-developer"
+	},
+	{
+		img: "frontend",
+		position : "Front End Developer",
+		skills: "JavaScript · React",
+		description: "We are actively looking for front end developers who can bring the Lisk user interfaces to an entirely new level.",
+		link: "https://angel.co/lisk/jobs/180316-front-end-developer"
+	},
+	{
+		img: "qa",
+		position : "Back End QA Engineer",
+		skills: "Node.JS · PostgreSQL · Cryptography",
+		description: "We are actively looking for a backend QA engineer who can help the Lisk project achieve the very highest standards in code quality, performance and security.",
+		link: "https://angel.co/lisk/jobs/255681-back-end-qa-engineer"
+	},
+	{
+		img: "devops",
+		position : "DevOps Engineer",
+		skills: "git · network configurations · data collection systems",
+		description: "We are actively looking for a backend QA engineer who can assist the Lisk project in configuring and orchestrating its entire development infrastructure.",
+		link: "https://angel.co/lisk/jobs/256017-devops-engineer"
 	},
 	{
 		img: "designer",
-		position : "Designer",
+		position : "Designer / Illustrator",
 		skills: "Photoshop · Illustrator · Vector",
-		description: "We are actively looking for an awesome designer with a great eye for beautiful and simplistic designs. Your tasks would be to design infographics, illustrations, icons, logos, UI/UX, banners, and more. If you are interested, feel free to send us your portfolio!"
+		description: "We are actively looking for a designer with a great eye for beautiful and simplistic designs. Please attach a portfolio to your application!",
+		link: "https://angel.co/lisk/jobs/251295-designer-illustrator"
+	},
+	{
+		img: "marketing",
+		position : "Marketing / Communications",
+		skills: "English native",
+		description: "We are actively looking for people with personality to join our passionate marketing and communications team to help drive the ideation, development and execution of marketing and communications strategies for Lisk.",
+		link: "https://angel.co/lisk/jobs/250443-marketing-and-communications"
+	},
+	{
+		img: "hr",
+		position : "HR Manager",
+		skills: "German native",
+		description: "We are actively looking for a HR manager to be responsible for the hiring process, operations and culture establishment of the Lisk team.",
+		link: "https://angel.co/lisk/jobs/251255-hr-manager"
+	},
+	{
+		img: "office",
+		position : "Office Manager / Executive Assistant / Bookkeeper",
+		skills: "German native",
+		description: "We are actively looking for a multi-talent to help us with important day to day operations.",
+		link: "https://angel.co/lisk/jobs/253405-office-manager-executive-assistant-bookkeeper"
 	}
 ];
 
