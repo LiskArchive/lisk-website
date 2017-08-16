@@ -130,8 +130,8 @@ var hbs = exphbs.create({
 		blog : function () {
 			return "http://blog.lisk.io";
 		},
-		liskcli : function () {
-			return "https://www.npmjs.com/package/lisk-cli";
+		lisky : function () {
+			return "https://www.npmjs.com/package/lisky";
 		},
 		liskjs : function () {
 			return "https://www.npmjs.com/package/lisk-js";

@@ -6,6 +6,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Diego Garcia",
+		pic: "diego",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
 		name: "Isabella Dell",
 		pic: "isabella",
 		post: "System Architect",
@@ -15,6 +21,12 @@ var members = [
 		name: "Joel Fernandez",
 		pic: "joel",
 		post: "Communications Lead",
+		hired: " "
+	},
+	{
+		name: "Lindsay Buescher",
+		pic: "lindsay",
+		post: "Marketing Manager",
 		hired: " "
 	},
 	{
@@ -29,6 +41,12 @@ var members = [
 		post: "Co-Founder",
 	},
 	{
+		name: "Mariusz Serek",
+		pic: "mariusz",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
 		name: "Oliver Beddows",
 		pic: "oliver",
 		post: "Co-Founder",
@@ -37,35 +55,6 @@ var members = [
 		name: "Thomas Schouten",
 		pic: "thomas",
 		post: "Marketing Lead",
-		hired: " "
-	},
-	{
-		name: "Vit Stanislav",
-		pic: "vit",
-		post: "Front End Developer",
-		hired: " "
-	},
-	{
-		name: "Diego Garcia",
-		pic: "diego",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
-		name: "Guido Schmitz-Krummacher",
-		pic: "guido",
-		post: "Legal & Financials",
-	},
-	{
-		name: "Lucas Isasmendi",
-		pic: "lucas",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
-		name: "Mariusz Serek",
-		pic: "mariusz",
-		post: "Back End Developer",
 		hired: " "
 	},
 	{
@@ -81,9 +70,21 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Vit Stanislav",
+		pic: "vit",
+		post: "Front End Developer",
+		hired: " "
+	},
+	{
 		name: "Will Clark",
 		pic: "will",
 		post: "Full Stack Developer",
+		hired: " "
+	},
+	{
+		name: "Lucas Isasmendi",
+		pic: "lucas",
+		post: "Back End Developer",
 		hired: " "
 	},
 	{
@@ -91,6 +92,11 @@ var members = [
 		pic: "yashar",
 		post: "Front End Developer",
 		hired: " "
+	},
+	{
+		name: "Guido Schmitz-Krummacher",
+		pic: "guido",
+		post: "Legal & Financials",
 	}
 ];
 
@@ -100,18 +106,6 @@ var correspondents = [
 		lang: "china",
 		country: "China",
 		pm: "mailto:china@liskambassador.io"
-	},
-	{
-		name: "Daniel B.",
-		lang: "germany",
-		country: "Germany",
-		pm: "mailto:germany@liskambassador.io"
-	},
-	{
-		name: "Kostayntyn Ahafontsev",
-		lang: "ukraine",
-		country: "Ukraine",
-		pm: "mailto:ukraine@liskambassador.io"
 	},
 	{
 		name: "Stefan Neagu",
