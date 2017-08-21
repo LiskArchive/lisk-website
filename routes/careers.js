@@ -35,13 +35,6 @@ var jobs = [
 		link: "https://angel.co/lisk/jobs/251295-designer-illustrator"
 	},
 	{
-		img: "marketing",
-		position : "Marketing / Communications",
-		skills: "English native",
-		description: "We are actively looking for people with personality to join our passionate marketing and communications team to help drive the ideation, development and execution of marketing and communications strategies for Lisk.",
-		link: "https://angel.co/lisk/jobs/250443-marketing-and-communications"
-	},
-	{
 		img: "hr",
 		position : "HR Manager",
 		skills: "German native",
