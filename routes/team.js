@@ -18,6 +18,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Jennifer Tekneci",
+		pic: "jennifer",
+		post: "Social Media Manager",
+		hired: " "
+	},
+	{
 		name: "Lindsay Buescher",
 		pic: "lindsay",
 		post: "Marketing Manager",
