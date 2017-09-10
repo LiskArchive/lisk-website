@@ -12,15 +12,33 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "François Chavant",
+		pic: "francois",
+		post: "DevOps Engineer",
+		hired: " "
+	},
+	{
 		name: "Isabella Dell",
 		pic: "isabella",
 		post: "System Architect",
 		hired: " "
 	},
 	{
+		name: "Jacob Kowalewski",
+		pic: "jacob",
+		post: "Marketing Manager",
+		hired: " "
+	},
+	{
 		name: "Jennifer Tekneci",
 		pic: "jennifer",
 		post: "Social Media Manager",
+		hired: " "
+	},
+	{
+		name: "Kuba Kufel",
+		pic: "kuba",
+		post: "Marketing Manager",
 		hired: " "
 	},
 	{
@@ -44,6 +62,12 @@ var members = [
 		name: "Mariusz Serek",
 		pic: "mariusz",
 		post: "Back End Developer",
+		hired: " "
+	},
+	{
+		name: "Mona Barenfänger",
+		pic: "mona",
+		post: "Student Assistant",
 		hired: " "
 	},
 	{
