@@ -65,7 +65,7 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Mona Barenfänger",
+		name: "Mona Bärenfänger",
 		pic: "mona",
 		post: "Student Assistant",
 		hired: " "
