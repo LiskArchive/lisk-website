@@ -18,6 +18,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Gina Contrino",
+		pic: "gina",
+		post: "Front End Developer",
+		hired: " "
+	},
+	{
 		name: "Isabella Dell",
 		pic: "isabella",
 		post: "System Architect",
@@ -36,6 +42,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Juan González",
+		pic: "juan",
+		post: "DevOps Engineer",
+		hired: " "
+	},
+	{
 		name: "Kuba Kufel",
 		pic: "kuba",
 		post: "Marketing Manager",
@@ -45,6 +57,12 @@ var members = [
 		name: "Lindsay Buescher",
 		pic: "lindsay",
 		post: "Marketing Manager",
+		hired: " "
+	},
+	{
+		name: "Lucas Isasmendi",
+		pic: "lucas",
+		post: "Back End Developer",
 		hired: " "
 	},
 	{
@@ -68,6 +86,12 @@ var members = [
 		name: "Mona Bärenfänger",
 		pic: "mona",
 		post: "Student Assistant",
+		hired: " "
+	},
+	{
+		name: "Nazar Hussain",
+		pic: "nazar",
+		post: "Back End Developer",
 		hired: " "
 	},
 	{
@@ -106,21 +130,9 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Lucas Isasmendi",
-		pic: "lucas",
-		post: "Back End Developer",
-		hired: " "
-	},
-	{
 		name: "Yashar Ayari",
 		pic: "yashar",
 		post: "Front End Developer",
-		hired: " "
-	},
-	{
-		name: "Nazar Hussain",
-		pic: "nazar",
-		post: "Back End Developer",
 		hired: " "
 	},
 	{
