@@ -83,6 +83,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Michael Borowiec",
+		pic: "michael",
+		post: "Marketing Manager",
+		hired: " "
+	},
+	{
 		name: "Mona Bärenfänger",
 		pic: "mona",
 		post: "Student Assistant",
@@ -127,6 +133,12 @@ var members = [
 		name: "Will Clark",
 		pic: "will",
 		post: "Full Stack Developer",
+		hired: " "
+	},
+	{
+		name: "Yair Etziony",
+		pic: "yair",
+		post: "QA Engineer",
 		hired: " "
 	},
 	{
