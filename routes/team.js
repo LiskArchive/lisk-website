@@ -24,12 +24,6 @@ var members = [
 		hired: " "
 	},
 	{
-		name: "Isabella Dell",
-		pic: "isabella",
-		post: "System Architect",
-		hired: " "
-	},
-	{
 		name: "Jacob Kowalewski",
 		pic: "jacob",
 		post: "Marketing Manager",
