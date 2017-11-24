@@ -32,7 +32,7 @@ var members = [
 	{
 		name: "Jennifer Tekneci",
 		pic: "jennifer",
-		post: "Social Media Manager",
+		post: "Content Strategist",
 		hired: " "
 	},
 	{
