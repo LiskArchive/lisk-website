@@ -6,6 +6,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Andries Bellemans",
+		pic: "andries",
+		post: "HR Manager",
+		hired: " "
+	},
+	{
 		name: "Diego Garcia",
 		pic: "diego",
 		post: "Back End Developer",
@@ -42,6 +48,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Julian Alterini",
+		pic: "julian",
+		post: "Motion Designer",
+		hired: " "
+	},
+	{
 		name: "Kuba Kufel",
 		pic: "kuba",
 		post: "Marketing Manager",
@@ -66,6 +78,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Mat Piaggi",
+		pic: "mat",
+		post: "Community Manager",
+		hired: " "
+	},
+	{
 		name: "Max Kordek",
 		pic: "max",
 		post: "Co-Founder",
@@ -73,6 +91,12 @@ var members = [
 	{
 		name: "Mariusz Serek",
 		pic: "mariusz",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
+		name: "Michal Tuleja",
+		pic: "michal",
 		post: "Back End Developer",
 		hired: " "
 	},
