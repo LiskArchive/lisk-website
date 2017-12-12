@@ -30,6 +30,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Iker Alustiza",
+		pic: "iker",
+		post: "Cryptographer",
+		hired: " "
+	},
+	{
 		name: "Jacob Kowalewski",
 		pic: "jacob",
 		post: "Marketing Manager",
