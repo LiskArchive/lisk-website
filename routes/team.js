@@ -186,12 +186,6 @@ var correspondents = [
 		pm: "mailto:china@liskambassador.io"
 	},
 	{
-		name: "Stefan Neagu",
-		lang: "romania",
-		country: "Romania",
-		pm: "mailto:romania@liskambassador.io"
-	},
-	{
 		name: "Denis Smirnov",
 		lang: "russia",
 		country: "Russia",
@@ -202,12 +196,6 @@ var correspondents = [
 		lang: "australia",
 		country: "Australia",
 		pm: "mailto:australia@liskambassador.io"
-	},
-	{
-		name: "John Cortesi",
-		lang: "france",
-		country: "France",
-		pm: "mailto:france@liskambassador.io"
 	},
 	{
 		name: "Edward Trosclair",
