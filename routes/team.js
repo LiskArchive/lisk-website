@@ -18,6 +18,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: 'Eve Schmiedeskamp',
+		pic: "eve",
+		post: "HR Generalist",
+		hired: " "
+	},
+	{
 		name: "François Chavant",
 		pic: "francois",
 		post: "DevOps Engineer",
@@ -80,6 +86,12 @@ var members = [
 	{
 		name: "Maciej Baj",
 		pic: "maciej",
+		post: "Back End Developer",
+		hired: " "
+	},
+	{
+		name: 'Manu Nelamane Siddalingegowda',
+		pic: "manu",
 		post: "Back End Developer",
 		hired: " "
 	},
