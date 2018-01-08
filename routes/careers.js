@@ -1,12 +1,5 @@
 var jobs = [
 	{
-		img: "backend",
-		position : "Back End Developer",
-		skills: "JavaScript · Node.JS · PostgreSQL",
-		description: "We are actively looking for back end developers who can efficiently optimise and improve our existing codebases.",
-		link: "https://angel.co/lisk/jobs/180319-back-end-developer"
-	},
-	{
 		img: "frontend",
 		position : "Front End Developer",
 		skills: "JavaScript · React",
@@ -33,13 +26,6 @@ var jobs = [
 		skills: "Photoshop · Illustrator · Vector",
 		description: "We are actively looking for a designer with a great eye for beautiful and simplistic designs. Please attach a portfolio to your application!",
 		link: "https://angel.co/lisk/jobs/251295-designer-illustrator"
-	},
-	{
-		img: "hr",
-		position : "HR Manager",
-		skills: "German native",
-		description: "We are actively looking for a HR manager to be responsible for the hiring process, operations and culture establishment of the Lisk team.",
-		link: "https://angel.co/lisk/jobs/251255-hr-manager"
 	},
 	{
 		img: "office",
