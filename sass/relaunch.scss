@@ -171,29 +171,38 @@ body.relaunch {
   .cta {
     background: #f57c00;
     color: #fff;
-    padding: 0 150px;
+    padding: 0;
     line-height: 80px;
     height: 80px;
-    font-size: 1.4rem
+    width: 100%;
+    max-width: 480px;
+    font-size: 1.4rem;
   }
 
   .intro {
     padding-top: 110px;
 
     h2 {
-      margin-top: 2vh;
+      margin-top: 18vh;
     }
 
-    h4 {
-      margin-top: 19vh;
-    }
-
-    h3, h5, .cta {
+    .cta {
       margin-top: 2.5vh;
     }
 
-    h3.margin_top {
-      margin-top:18vh; 
+    h3 {
+      margin-top: 12vh;
+    }
+
+    h3.city {
+      margin-top: 1vh
+    }
+
+    h5 {
+      margin-top: 12vh;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -312,10 +321,15 @@ body.relaunch {
   @media (max-height: 789px) {
     .intro {
       h2 {
-        font-size: 7rem;
+        font-size: 6rem;
+        margin-top: 10vh;
       }
-  
-      h4, h3.margin_top {
+
+      h3 {
+        margin-top: 10vh;
+      }
+
+      h5 {
         margin-top: 10vh;
       }
     }
@@ -327,21 +341,19 @@ body.relaunch {
   }
 
   @media (max-width: 1113px) {
-    h2 {
-      font-size: 6rem;
-    }
-
-    h3 {
-      font-size: 2rem
-    }
-
-    h4 {
-      word-spacing: 30px;
-      margin-top: 15vh;
-    }
-
-    .margin_top {
-      margin-top: 10vh;
+    .intro {
+      h2 {
+        font-size: 6rem;
+        margin-top: 10vh;
+      }
+  
+      h3 {
+        margin-top: 10vh;
+      }
+  
+      h5 {
+        margin-top: 10vh;
+      }
     }
 
     .venue {
@@ -354,11 +366,6 @@ body.relaunch {
     .intro {
       h2 {
         font-size: 5.4rem;
-      }
-  
-      h4 {
-        font-size: 1.4rem;
-        margin-top: 12vh;
       }
     }
   }
@@ -391,20 +398,19 @@ body.relaunch {
     .section_content {
       h2 {
         margin-top: 8vh;
+        font-size: 4rem;
       }
     }
 
     .intro {
       padding-top: 80px;
-      h4 {
-        word-spacing: 5px;
-      }
 
       h2 {
         font-size: 4rem;
+        margin-top: 6vh;
       }
 
-      .margin_top {
+      h3:not(.city) {
         margin-top: 8vh;
       }
 
@@ -414,10 +420,11 @@ body.relaunch {
 
       h5 {
         font-size: 1rem;
+        margin-top: 8vh;
       }
 
       a.cta {
-        margin-top: 10vh;
+        margin-top: 4vh;
         margin-bottom: 20vh;
       }
     }
