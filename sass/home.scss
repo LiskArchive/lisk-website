@@ -695,3 +695,72 @@
 }
 
 /*end Adding of mailchimp*/
+
+
+/* relaunch popup */
+.relaunch-popup {
+  position: fixed;
+  display: table;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+	background: rgba(0, 0, 0, .4);
+	
+	&.hidden {
+		display: none;
+	}
+
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+		background: #6897a8 url('../i/home/popup_bg.png') no-repeat center;
+		background-size: cover;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	
+	.border {
+		width: 100%;
+		height: 100%;
+		border: solid 1px rgba(255, 255, 255, 0.5);
+		padding: 50px 20px;
+	}
+
+	.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+		padding: 15px 20px;
+		z-index: 3;
+		cursor: pointer;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	h1 {
+		font-family: 'Gilroy';
+		line-height: 0.9em;
+	}
+
+	a {
+		margin: 25px auto 55px !important;
+	}
+
+  p {
+    color: #fff;
+	}
+	
+	a, p {
+		font-family: 'Open Sans', sans-serif;
+		line-height: 24px;
+	}
+}

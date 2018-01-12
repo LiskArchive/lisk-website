@@ -14,6 +14,23 @@ $(function($) {
 		return x1 + x2;
 	}
 
+	function createCookie(name, value, days) {
+		if (days) {
+				var now = new Date();
+				now.setTime(now.getTime() + 24 * days * 60 * 60 * 1e3);
+				var expiry = '; expires=' + now.toGMTString();
+		} else {
+			var expiry = '';
+		}
+		document.cookie = name + "=" + value + expiry + '; path=/';
+	}
+
+	function readCookie(name) {
+		var value = new RegExp(name + "=([^;]+)");
+		var parsedValue = value.exec(document.cookie);
+		return null !== parsedValue ? decodeURIComponent(parsedValue[1]) : null
+	}
+
 	var getICOCounters = function () {
 		$.getJSON("https://ico.lisk.io/exchanges.json")
 			.done(function(json) {
@@ -88,5 +105,31 @@ $(function($) {
 
 		return false;
 	});
+	var popupName = 'relaunch-popup';
 
+	var popupFadeIn = function (el) {
+		el.removeClass('hidden');
+	};
+
+	var popupFadeOut = function (el) {
+		el.addClass('hidden');
+	};
+
+	var popupShow = function () {
+		var popup = $('.' + popupName);
+		if (readCookie(popupName) !== 'seen') {
+			popupFadeIn($('.' + popupName));
+			createCookie(popupName, 'opened', 3);
+		}
+	};
+
+	var popupHide = function () {
+		popupFadeOut($('.' + popupName));
+		createCookie(popupName, 'seen', 3);
+	};
+
+	$('.relaunch-popup .close').on('click', popupHide);
+	$('.relaunch-popup .see').on('click', popupHide);
+
+	$('body > main').mouseleave(popupShow);
 });

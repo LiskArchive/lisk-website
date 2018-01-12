@@ -147,4 +147,23 @@
         </div>
         {{> menu }}
     </div>
+    <section class='relaunch-popup background hidden'>
+        <div class='wrapper'>
+            <div class="container text_center gradient">
+                <span class='close'>x</span>
+                <div class="border">
+                    <h1 class='hero_title'>Hello,</h1>
+                    <h1 class='hero_title'>come and see<br />the new Lisk.</h1>
+                    <a class='btn_v2 fw_600 wide_btn orange_btn see' target='_blank' href='https://www.eventbrite.com/e/lisk-relaunch-registration-41656803621#'>Click for details</a>
+                    <p>
+                        {{ relaunchPopup.dateTime.day }} <b>{{ relaunchPopup.dateTime.date }}</b> at <b>{{ relaunchPopup.dateTime.time }}</b>
+                        <br />
+                        <b>{{ relaunchPopup.location }}</b>
+                        <br />
+                        <i>({{ relaunchPopup.address }})</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
