@@ -8,5 +8,6 @@ module.exports = {
 	team: require('./team.js'),
 	contact_us: require('./contact_us.js'),
 	careers: require('./careers.js'),
-	missing: require('./missing.js')
+	missing: require('./missing.js'),
+	relaunch: require('./relaunch.js')
 }

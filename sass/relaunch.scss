@@ -1,0 +1,462 @@
+/* Relaunch page */
+body.relaunch {
+  background: url('../i/relaunch/berlin.png') top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .wrapper.h_420 {
+    padding-top: 0px;
+    background-color: rgba(0, 38, 103, 0.62);
+  }
+
+  .gradients {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    -webkit-transform: skewY(21deg) translate3d(0%, 30%, 0);
+    transform: skewY(21deg) translate3d(0%, 30%, 0);
+
+    span {
+      display: block;
+    }
+
+    .bg-1 {
+      background-image: linear-gradient(4deg, #002759 5%, #002667 87%);
+      opacity: 1;
+      top: 23.7rem;
+      height: .45rem;
+      width: 61.5%;
+      right: -1.66666%;
+     }
+     .bg-2 {
+      background-image: linear-gradient(180deg, #003986 1%, #00305c 95%);
+      opacity: .8;
+      height: 6rem;
+      width: 152.49999%;
+     }
+     .bg-3 {
+      background-image: linear-gradient(-44deg, #0057b8 0, #003061 98%);
+      opacity: 1;
+      top: 43.5rem;
+      height: .45rem;
+      width: 106.5%;
+      right: -1.66666%;
+     }
+     .bg-4 {
+      background-image: linear-gradient(180deg, #003986 1%, #00305c 95%);
+      opacity: .8;
+      top: 43.95rem;
+      height: 6rem;
+      width: 152.49999%;
+      right: -1.66666%;
+     }
+     .bg-5 {
+      background-image: linear-gradient(243deg, rgba(0, 28, 86, 0) 6%, rgba(0, 36, 88, .18) 43%, #0b3b67 73%, #005ea0 99%);
+      opacity: 1;
+      top: 61.95rem;
+      height: 34.5rem;
+      width: 106.5%;
+      left: -1.66666%;
+     }
+     .bg-6 {
+      background-image: linear-gradient(243deg, transparent 6%, #002e5b 64%, transparent 77%, transparent 98%);
+      opacity: .8;
+      top: 68.1rem;
+      height: 28.5rem;
+      width: 99%;
+      left: -1.66666%;
+     }
+     .bg-7 {
+      background-image: linear-gradient(-120deg, #003767 19%, #002e5d 30%, #00285a 45%, rgba(0, 38, 103, .3) 90%);
+      opacity: 1;
+      height: .6rem;
+      right: -1.66666%;
+     }
+     .bg-8 {
+      background-image: linear-gradient(-120deg, #003767 19%, #002e5d 30%, #00285a 45%, rgba(0, 38, 103, .3) 90%);
+      opacity: 1;
+      height: .6rem;
+      right: -1.66666%;
+     }
+     .bg-9 {
+      background-image: linear-gradient(180deg, rgba(0, 83, 140, .8) 11%, #00266f 87%);
+      opacity: .7;
+      top: 117rem;
+      height: 33rem;
+      width: 152.49999%;
+      left: -1.66666%;
+     }
+     .bg-10 {
+      background-image: linear-gradient(106deg, rgba(0, 96, 156, .3) 11%, #004880 19%, transparent 87%);
+      opacity: .8;
+      top: 117rem;
+      height: 9rem;
+      width: 61.5%;
+      left: -1.66666%;
+     }
+     .bg-11 {
+      background-image: linear-gradient(29deg, #007dbb 15%, #00417c 38%, #003372 66%, transparent 100%);
+      opacity: .8;
+      top: 130.5rem;
+      height: 1.5rem;
+      width: 76.5%;
+      left: -1.66666%;
+     }
+     .bg-12 {
+      background-image: linear-gradient(16deg, transparent 19%, #004780 29%, #00437d 39%, #003877 61%, #005c97 100%);
+      opacity: .8;
+      top: 120rem;
+      height: .75rem;
+      width: 76.5%;
+      right: -1.66666%;
+     }
+  }
+
+  .section_content {
+    width: 100%;
+    height: 95vh;
+    padding-top: 0;
+  }
+
+  .date_title {
+    margin-bottom: 5px;
+  }
+
+  .location_title {
+    font-size: 20px;
+  }
+
+  h2, h3, h4, h5, .cta {
+    color: #fff;
+  }
+
+  h2 {
+    font-family: Gilroy, sans-serif;
+  }
+
+  h3, h4, h5, a.cta {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h2 {
+    font-size: 8rem;
+  }
+
+  h3 {
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+  }
+
+  a {
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .cta {
+    background: #f57c00;
+    color: #fff;
+    padding: 0 150px;
+    line-height: 80px;
+    height: 80px;
+    font-size: 1.4rem
+  }
+
+  .intro {
+    padding-top: 110px;
+
+    h2 {
+      margin-top: 2vh;
+    }
+
+    h4 {
+      margin-top: 19vh;
+    }
+
+    h3, h5, .cta {
+      margin-top: 2.5vh;
+    }
+
+    h3.margin_top {
+      margin-top:18vh; 
+    }
+  }
+
+  .display_table {
+    display: table;
+
+    .table_cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .jurney {
+    p {
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      width: 60%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      text-align: justify;
+      position: relative;
+
+      span {
+        font-size: 4rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .watter_mark {
+      opacity: .2;
+      position: absolute;
+      font-family: Gilroy, sans-serif;
+      font-size: 12rem;
+      bottom: 10%;
+      right: -10%;
+      display: none;
+    }
+  }
+
+  .agenda {
+    h2 {
+      margin-bottom: 10vh;
+    }
+
+    h4 {
+      margin-top: 2vh;
+      word-spacing: 20px;
+    }
+
+    .time_table {
+      width: 100%;
+      text-align: left;
+      font-size: 0;
+
+      .right, .left {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .left {
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .venue {
+
+    h2 {
+      margin-bottom: 8vh;
+    }
+
+    div {
+      width: 100%;
+      clear: both;
+      margin-bottom: 5vh;
+    }
+    h3, p {
+      color: #fff;
+      float: left;
+    }
+
+    h3 {
+      display: block;
+      width: 30%;
+      text-align: right;
+      padding-right: 40px;
+    }
+
+    p {
+      text-align: left;
+      width: 70%;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-top: 10px;
+    }
+  }
+
+  .info {
+    padding-bottom: 25vh;
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #cacaca;
+      opacity: 0.9;
+    }
+
+    b {
+      color: #fff;
+    }
+  }
+
+  @media (max-height: 789px) {
+    .intro {
+      h2 {
+        font-size: 7rem;
+      }
+  
+      h4, h3.margin_top {
+        margin-top: 10vh;
+      }
+    }
+
+    .venue {
+      height: auto;
+      padding-bottom: 15vh;
+    }
+  }
+
+  @media (max-width: 1113px) {
+    h2 {
+      font-size: 6rem;
+    }
+
+    h3 {
+      font-size: 2rem
+    }
+
+    h4 {
+      word-spacing: 30px;
+      margin-top: 15vh;
+    }
+
+    .margin_top {
+      margin-top: 10vh;
+    }
+
+    .venue {
+      height: auto;
+      padding-bottom: 15vh;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .intro {
+      h2 {
+        font-size: 5.4rem;
+      }
+  
+      h4 {
+        font-size: 1.4rem;
+        margin-top: 12vh;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section_content {
+      height: auto;
+    }
+
+    .venue {
+      h3, p {
+        width: 90% !important;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+
+      h3 {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 80px;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section_content {
+      h2 {
+        margin-top: 8vh;
+      }
+    }
+
+    .intro {
+      padding-top: 80px;
+      h4 {
+        word-spacing: 5px;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      .margin_top {
+        margin-top: 8vh;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      h5 {
+        font-size: 1rem;
+      }
+
+      a.cta {
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+      }
+    }
+
+    .jurney {
+      p {
+        width: 90%;
+      }
+    }
+
+    .agenda {
+      .time_table h4.left,
+      .time_table h4.right {
+        padding-right: 0;
+        width: 100% !important;
+        text-align: center;
+        word-spacing: 10px;
+      }
+
+      .right {
+        margin-bottom: 10vh;
+      }
+    }
+
+    .venue {
+      a.cta {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 100% !important;
+      }
+    }
+
+    .info {
+      h3 {
+        line-height: 1.8rem;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+}
+
