@@ -27,11 +27,11 @@ var collaborations = [
 ];
 
 const relaunchPopup = {
-	location: 'Westhafen event and conversion center',
-	address: 'Westfafenstraße 1, Berlin',
+	location: 'Westhafen Event & Convention Center',
+	address: 'Westhafenstraße 1, Berlin',
 	dateTime: {
 		day: 'Tuesday',
-		date: '20 of February 2018',
+		date: '20 February 2018',
 		time: '7:30 pm',
 	}
 };
