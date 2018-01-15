@@ -7,6 +7,13 @@ var jobs = [
 		link: "https://angel.co/lisk/jobs/180316-front-end-developer"
 	},
 	{
+		img: "qa-front-end",
+		position : "Front End QA Engineer",
+		skills: "Javascript · Quality Assurance",
+		description: "We’re looking for a Frontend QA Engineer with advanced knowledge of front-end web testing, who can help the Lisk project achieve the very highest standards in code quality, performance and security.",
+		link: "https://angel.co/lisk/jobs/180316-front-end-developer"
+	},
+	{
 		img: "qa",
 		position : "Back End QA Engineer",
 		skills: "Node.JS · PostgreSQL · Cryptography",
