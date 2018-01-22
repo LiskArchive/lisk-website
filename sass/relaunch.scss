@@ -143,7 +143,7 @@ body.relaunch {
   }
 
   h2 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   h3 {
@@ -184,6 +184,7 @@ body.relaunch {
 
     h2 {
       margin-top: 18vh;
+      font-size: 8rem;
     }
 
     .cta {
@@ -221,8 +222,8 @@ body.relaunch {
       font-family: 'Open Sans', sans-serif;
       width: 60%;
       margin: 0 auto;
-      font-size: 1.6rem;
-      line-height: 3rem;
+      font-size: 1.4rem;
+      line-height: 2.9rem;
       text-align: justify;
       position: relative;
 
@@ -435,9 +436,12 @@ body.relaunch {
       }
     }
 
-    .jurney {
+    .jurney, .agenda, .venue {
       p {
         width: 90%;
+        text-align: left !important;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
       }
     }
 
