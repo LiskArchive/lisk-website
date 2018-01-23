@@ -47,6 +47,23 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-K4DZPRG');</script>
     <!-- End Google Tag Manager -->
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f57c00",
+          "text": "#fff"
+        }
+      }
+    })});
+    </script>
 </head>
 <body class="{{#if pageId}}{{pageId}}{{/if}}">
     <!-- Google Tag Manager (noscript) -->
