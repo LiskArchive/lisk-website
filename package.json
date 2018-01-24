@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "body-parser": "^1.13.3",
+    "cookieconsent": "^3.0.4",
     "email-validator": "^1.0.2",
     "express": "^4.11.1",
     "express-handlebars": "^1.1.0",
