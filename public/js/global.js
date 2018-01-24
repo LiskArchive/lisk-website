@@ -17,6 +17,8 @@ $(function($){
 	browserWindow = $(window);
 	global_window_Height = browserWindow.height();
 
+	promptCookieConsent();
+
 	if($('.scrollTo').length){
 		$('.scrollTo').on('click', function(){
 			var firedEl = $(this), target = $(firedEl.attr('href'));
@@ -129,4 +131,20 @@ function all_dialog_close_gl(){
 			$this.dialog("close");
 		}
 	});
+}
+
+function promptCookieConsent() {
+	if (window.cookieconsent && typeof window.cookieconsent.initialise === 'function') {
+		window.cookieconsent.initialise({
+			"palette": {
+				"popup": {
+					"background": "#000"
+				},
+				"button": {
+					"background": "#f57c00",
+					"text": "#fff"
+				}
+			}
+		});
+	}
 }
