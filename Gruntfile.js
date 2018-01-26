@@ -8,6 +8,7 @@ module.exports = function(grunt){
 			},
 			styles: {
 				src: [
+					'node_modules/cookieconsent/build/cookieconsent.min.css',
 					'public/styles/prism.css',
 					'public/styles/global.css'
 				],
@@ -19,6 +20,7 @@ module.exports = function(grunt){
 					'bower_components/jquery.countdown/dist/jquery.countdown.min.js',
 					'bower_components/slick.js/slick/slick.min.js',
 					'bower_components/devicejs/lib/device.min.js',
+					'node_modules/cookieconsent/build/cookieconsent.min.js',
 					'public/js/prism.js',
 					'public/js/global.js'
 				],
