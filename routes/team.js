@@ -48,6 +48,12 @@ var members = [
 		hired: " "
 	},
 	{
+		name: "Jan Liz-Fonts",
+		pic: "jan",
+		post: "Community Manager",
+		hired: " "
+	},
+	{
 		name: "Jennifer Tekneci",
 		pic: "jennifer",
 		post: "Content Strategist",
