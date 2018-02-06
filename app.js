@@ -107,13 +107,13 @@ var hbs = exphbs.create({
 			return "50";
 		},
 		nano_macos : function () {
-			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.3/lisk-nano-mac-1.3.3.dmg";
+			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.4/lisk-nano-mac-1.3.4.dmg";
 		},
 		nano_windows : function () {
-			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.3/lisk-nano-win-1.3.3.exe";
+			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.4/lisk-nano-win-1.3.4.exe";
 		},
 		nano_linux : function () {
-			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.3/lisk-nano-1.3.3-x86_64.AppImage";
+			return "https://github.com/LiskHQ/lisk-nano/releases/download/v1.3.4/lisk-nano-1.3.4-x86_64.AppImage";
 		},
 		docker : function () {
 			return "https://github.com/LiskHQ/lisk-wiki/wiki/Docker-Install";
